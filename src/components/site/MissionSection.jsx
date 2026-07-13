@@ -1,6 +1,5 @@
 import React from "react";
 import useScrollReveal from "@/hooks/useScrollReveal";
-import { Compass, Footprints, Scale } from "lucide-react";
 
 const MISSION_IMG =
   "https://media.base44.com/images/public/6a545a283c8f895ced7a3979/eefdf474e_generated_image.png";
@@ -9,23 +8,19 @@ const pillars = [
   {
     title: "Clarté",
     text: "Comprendre ce que vous vivez et identifier ce qui vous bloque.",
-    Icon: Compass,
   },
   {
     title: "Capacité d'agir",
     text: "Retrouver les ressources nécessaires pour avancer concrètement.",
-    Icon: Footprints,
   },
   {
     title: "Cohérence",
     text: "Faire des choix davantage alignés avec vos besoins et vos valeurs.",
-    Icon: Scale,
   },
 ];
 
 function PillarCard({ pillar, index }) {
   const [ref, isVisible] = useScrollReveal(0.2);
-  const Icon = pillar.Icon;
   return (
     <div
       ref={ref}
@@ -34,9 +29,7 @@ function PillarCard({ pillar, index }) {
       }`}
       style={{ transitionDelay: `${index * 150}ms` }}
     >
-      <div className="w-12 h-12 rounded-full bg-[#7C8873]/10 flex items-center justify-center mx-auto mb-5">
-        <Icon size={20} className="text-[#7C8873]" />
-      </div>
+      <div className="w-px h-10 bg-[#DED8CE] mx-auto mb-5" />
       <h3 className="font-heading text-xl md:text-2xl text-[#292824] mb-3">{pillar.title}</h3>
       <p className="font-body text-sm text-[#6E6A62] leading-relaxed">{pillar.text}</p>
     </div>

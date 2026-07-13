@@ -1,21 +1,19 @@
 import React from "react";
 import useScrollReveal from "@/hooks/useScrollReveal";
-import { User, Route, Footprints, Eye, Repeat, Compass, Brain, Sun } from "lucide-react";
 
 const services = [
-  { title: "Accompagnement individuel", text: "Un espace confidentiel pour prendre du recul et retrouver une direction.", Icon: User },
-  { title: "Transitions de vie", text: "Traverser un changement sans perdre votre axe.", Icon: Route },
-  { title: "Marche narrative", text: "Un accompagnement en mouvement, dans la nature, pour libérer la parole.", Icon: Footprints },
-  { title: "À la rencontre de soi", text: "Mieux comprendre votre fonctionnement et vos besoins.", Icon: Eye },
-  { title: "Schémas répétitifs", text: "Identifier les mécanismes qui se répètent et y répondre autrement.", Icon: Repeat },
-  { title: "Reprendre les rênes de sa vie", text: "Sortir du sentiment d'impuissance et retrouver une marge de choix.", Icon: Compass },
-  { title: "Hypersensibilité, HPI et TDAH", text: "Comprendre et apprivoiser un fonctionnement atypique.", Icon: Brain },
-  { title: "Retrouver le goût de sa vie", text: "Renouer avec ce qui donne du sens et de l'énergie.", Icon: Sun },
+  { title: "Accompagnement individuel", text: "Un espace confidentiel pour prendre du recul et retrouver une direction." },
+  { title: "Transitions de vie", text: "Traverser un changement sans perdre votre axe." },
+  { title: "Marche narrative", text: "Un accompagnement en mouvement, dans la nature, pour libérer la parole." },
+  { title: "À la rencontre de soi", text: "Mieux comprendre votre fonctionnement et vos besoins." },
+  { title: "Schémas répétitifs", text: "Identifier les mécanismes qui se répètent et y répondre autrement." },
+  { title: "Reprendre les rênes de sa vie", text: "Sortir du sentiment d'impuissance et retrouver une marge de choix." },
+  { title: "Hypersensibilité, HPI et TDAH", text: "Comprendre et apprivoiser un fonctionnement atypique." },
+  { title: "Retrouver le goût de sa vie", text: "Renouer avec ce qui donne du sens et de l'énergie." },
 ];
 
 function ServiceCard({ service, index }) {
   const [ref, isVisible] = useScrollReveal(0.1);
-  const Icon = service.Icon;
   return (
     <div
       ref={ref}
@@ -24,9 +22,6 @@ function ServiceCard({ service, index }) {
       }`}
       style={{ transitionDelay: `${index * 80}ms` }}
     >
-      <div className="w-10 h-10 rounded-full bg-[#7C8873]/10 flex items-center justify-center mb-5">
-        <Icon size={18} className="text-[#7C8873] group-hover:scale-110 transition-transform duration-300" />
-      </div>
       <h3 className="font-heading text-lg md:text-xl text-[#292824] mb-3 group-hover:text-[#7C8873] transition-colors duration-300">
         {service.title}
       </h3>
