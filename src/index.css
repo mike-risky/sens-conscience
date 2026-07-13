@@ -102,10 +102,10 @@ html {
 
 /* Fixed type scale: standard 14px / h3 16px / h2 20px / h1 30px */
 body { font-size: 14px; }
-h1 { font-size: 30px; }
-h2 { font-size: 20px; }
-h3 { font-size: 16px; }
-p { font-size: 14px; }
+h1 { font-size: 30px !important; }
+h2 { font-size: 20px !important; }
+h3 { font-size: 16px !important; }
+p { font-size: 14px !important; }
 
 @media (min-width: 1024px) {
   html { scroll-padding-top: 5rem; }
