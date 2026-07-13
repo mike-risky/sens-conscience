@@ -1,27 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import useScrollReveal from "@/hooks/useScrollReveal";
-import { Phone, Mail, Send, Check } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 
 export default function ContactSection() {
   const [ref, isVisible] = useScrollReveal();
-  const [form, setForm] = useState({ name: "", email: "", phone: "", subject: "", message: "", consent: false });
-  const [sent, setSent] = useState(false);
-  const [sending, setSending] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setForm((prev) => ({ ...prev, [name]: type === "checkbox" ? checked : value }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!form.consent) return;
-    setSending(true);
-    // Simulate form submission
-    await new Promise((r) => setTimeout(r, 1200));
-    setSent(true);
-    setSending(false);
-  };
 
   return (
     <section id="contact" className="py-32 md:py-48 bg-[#EEE9E0]/40">
@@ -43,8 +25,7 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
-          {/* Contact info */}
+        <div className="max-w-xl mx-auto">
           <div className="space-y-8">
             <div className="space-y-5">
               <div className="flex items-center gap-4">
@@ -100,108 +81,6 @@ export default function ContactSection() {
                 M'écrire
               </a>
             </div>
-          </div>
-
-          {/* Form */}
-          <div>
-            {sent ? (
-              <div className="bg-white rounded-lg p-10 text-center">
-                <div className="w-14 h-14 rounded-full bg-[#7C8873]/10 flex items-center justify-center mx-auto mb-5">
-                  <Check size={28} className="text-[#7C8873]" />
-                </div>
-                <h3 className="font-heading text-xl text-[#292824] mb-3">
-                  Merci, j'ai bien reçu votre message
-                </h3>
-                <p className="font-body text-sm text-[#6E6A62]">
-                  Je reviens vers vous très vite, avec toute mon attention.
-                </p>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="bg-white rounded-lg p-8 md:p-10 space-y-5">
-                <div>
-                  <label className="font-body text-xs text-[#6E6A62] mb-1.5 block">Prénom et nom</label>
-                  <input
-                    type="text"
-                    name="name"
-                    required
-                    value={form.name}
-                    onChange={handleChange}
-                    className="w-full bg-transparent border-b border-[#DED8CE] pb-2 font-body text-[#292824] text-sm focus:outline-none focus:border-[#7C8873] transition-colors"
-                  />
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                  <div>
-                    <label className="font-body text-xs text-[#6E6A62] mb-1.5 block">Adresse e-mail</label>
-                    <input
-                      type="email"
-                      name="email"
-                      required
-                      value={form.email}
-                      onChange={handleChange}
-                      className="w-full bg-transparent border-b border-[#DED8CE] pb-2 font-body text-[#292824] text-sm focus:outline-none focus:border-[#7C8873] transition-colors"
-                    />
-                  </div>
-                  <div>
-                    <label className="font-body text-xs text-[#6E6A62] mb-1.5 block">Téléphone</label>
-                    <input
-                      type="tel"
-                      name="phone"
-                      value={form.phone}
-                      onChange={handleChange}
-                      className="w-full bg-transparent border-b border-[#DED8CE] pb-2 font-body text-[#292824] text-sm focus:outline-none focus:border-[#7C8873] transition-colors"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label className="font-body text-xs text-[#6E6A62] mb-1.5 block">Sujet</label>
-                  <input
-                    type="text"
-                    name="subject"
-                    required
-                    value={form.subject}
-                    onChange={handleChange}
-                    className="w-full bg-transparent border-b border-[#DED8CE] pb-2 font-body text-[#292824] text-sm focus:outline-none focus:border-[#7C8873] transition-colors"
-                  />
-                </div>
-                <div>
-                  <label className="font-body text-xs text-[#6E6A62] mb-1.5 block">Message</label>
-                  <textarea
-                    name="message"
-                    required
-                    rows={4}
-                    value={form.message}
-                    onChange={handleChange}
-                    className="w-full bg-transparent border-b border-[#DED8CE] pb-2 font-body text-[#292824] text-sm focus:outline-none focus:border-[#7C8873] transition-colors resize-none"
-                  />
-                </div>
-                <label className="flex items-start gap-3 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    name="consent"
-                    checked={form.consent}
-                    onChange={handleChange}
-                    className="mt-0.5 accent-[#7C8873]"
-                  />
-                  <span className="font-body text-xs text-[#6E6A62] leading-relaxed">
-                    J'accepte que mes données soient utilisées pour répondre à ma demande, conformément à la politique de confidentialité.
-                  </span>
-                </label>
-                <button
-                  type="submit"
-                  disabled={!form.consent || sending}
-                  className="w-full flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-[#7C8873] text-white font-body font-medium text-sm hover:bg-[#6b7763] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  {sending ? (
-                    <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                  ) : (
-                    <>
-                      <Send size={14} />
-                      Envoyer mon message
-                    </>
-                  )}
-                </button>
-              </form>
-            )}
           </div>
         </div>
       </div>
