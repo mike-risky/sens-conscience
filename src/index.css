@@ -100,13 +100,12 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (min-width: 768px) {
-  .text-xs { font-size: 0.8125rem; }
-  .text-sm { font-size: 1.1875rem; }
-  .text-base { font-size: 1.3125rem; }
-  .text-lg { font-size: 1.4375rem; }
-  .text-xl { font-size: 1.5rem; }
-}
+/* Fixed type scale: standard 14px / h3 16px / h2 20px / h1 30px */
+body { font-size: 14px; }
+h1 { font-size: 30px; }
+h2 { font-size: 20px; }
+h3 { font-size: 16px; }
+p { font-size: 14px; }
 
 @media (min-width: 1024px) {
   html { scroll-padding-top: 5rem; }
