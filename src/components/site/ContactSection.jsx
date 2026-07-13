@@ -33,13 +33,13 @@ export default function ContactSection() {
           }`}
         >
           <p className="font-body text-xs tracking-[0.2em] text-[#B49A78] uppercase mb-4">
-            Premier échange
+            Un premier pas
           </p>
           <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#292824] mb-6">
-            Contacter votre coach de vie à Sion
+            Contactez-moi
           </h2>
           <p className="font-body text-[#6E6A62] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
-            Vous traversez une période difficile ou une transition ? Écrivez à Nuray pour lui présenter brièvement votre situation.
+            Vous traversez une transition, vous vous posez des questions ? Écrivez-moi quelques mots, à votre rythme. Je vous réponds personnellement.
           </p>
         </div>
 
@@ -90,14 +90,14 @@ export default function ContactSection() {
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-[#DED8CE] text-[#292824] font-body text-sm hover:bg-[#EEE9E0] transition-all duration-300"
               >
                 <Phone size={15} />
-                Appeler Nuray
+                M'appeler
               </a>
               <a
                 href="mailto:nuray.posse@gmail.com"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-[#DED8CE] text-[#292824] font-body text-sm hover:bg-[#EEE9E0] transition-all duration-300"
               >
                 <Mail size={15} />
-                Envoyer un e-mail
+                M'écrire
               </a>
             </div>
           </div>
@@ -110,10 +110,10 @@ export default function ContactSection() {
                   <Check size={28} className="text-[#7C8873]" />
                 </div>
                 <h3 className="font-heading text-xl text-[#292824] mb-3">
-                  Votre message a été envoyé
+                  Merci, j'ai bien reçu votre message
                 </h3>
                 <p className="font-body text-sm text-[#6E6A62]">
-                  Nuray reviendra vers vous dans les meilleurs délais.
+                  Je reviens vers vous très vite, avec toute mon attention.
                 </p>
               </div>
             ) : (
@@ -196,7 +196,7 @@ export default function ContactSection() {
                   ) : (
                     <>
                       <Send size={14} />
-                      Envoyer ma demande
+                      Envoyer mon message
                     </>
                   )}
                 </button>
