@@ -99,3 +99,10 @@
 html {
   scroll-behavior: smooth;
 }
+
+@media (min-width: 768px) {
+  .text-xs { font-size: 0.875rem; }
+  .text-sm { font-size: 1rem; }
+  .text-base { font-size: 1.125rem; }
+  .text-lg { font-size: 1.25rem; }
+}
