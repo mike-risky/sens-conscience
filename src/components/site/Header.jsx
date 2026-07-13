@@ -36,7 +36,7 @@ export default function Header() {
 
   return (
     <>
-      {/* Floating brand bubble — a third of the page, fades out on first scroll */}
+      {/* Mobile/tablet brand bubble — fades on scroll, hidden on desktop */}
       <motion.div
         initial={false}
         animate={{
@@ -45,8 +45,9 @@ export default function Header() {
           scale: scrolled ? 0.95 : 1,
         }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
-        className="fixed top-3 md:top-4 left-4 md:left-6 z-50 w-fit sm:w-1/3 max-w-[58vw] sm:max-w-md"
+        className="fixed top-3 md:top-4 left-4 md:left-6 z-50 w-fit sm:w-1/3 max-w-[58vw] sm:max-w-md lg:hidden"
         style={{ pointerEvents: scrolled ? "none" : "auto" }}
+        data-export-hide
       >
         <button
           onClick={() => go("#accueil")}
@@ -61,32 +62,60 @@ export default function Header() {
         </button>
       </motion.div>
 
-      {/* Floating trigger — aligned with the brand, stays clear of the header line */}
+      {/* Mobile/tablet hamburger — hidden on desktop */}
       <button
         onClick={() => setOpen((o) => !o)}
         aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
-        className="fixed top-2 md:top-4 right-5 md:right-6 z-[100] w-12 h-12 rounded-full bg-[#F8F6F1]/85 backdrop-blur-md border border-[#DED8CE] shadow-lg shadow-[#292824]/15 flex items-center justify-center text-[#292824] hover:bg-[#F8F6F1] hover:scale-105 transition-all duration-300"
+        className="fixed top-2 md:top-4 right-5 md:right-6 z-[100] w-12 h-12 rounded-full bg-[#F8F6F1]/85 backdrop-blur-md border border-[#DED8CE] shadow-lg shadow-[#292824]/15 flex items-center justify-center text-[#292824] hover:bg-[#F8F6F1] hover:scale-105 transition-all duration-300 lg:hidden"
+        data-export-hide
       >
         {open ? <X size={20} /> : <Menu size={20} />}
       </button>
 
+      {/* Desktop top bar — always visible */}
+      <header
+        className="hidden lg:block fixed top-0 inset-x-0 z-50 bg-[#F8F6F1]/80 backdrop-blur-md border-b border-[#DED8CE]"
+        data-export-hide
+      >
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
+          <button onClick={() => go("#accueil")} className="flex items-baseline gap-3 shrink-0">
+            <span className="font-heading text-[1.05rem] font-medium text-[#292824] tracking-wide whitespace-nowrap">
+              Sens & Conscience
+            </span>
+            <span className="hidden xl:inline text-[0.8rem] text-[#6E6A62] font-body whitespace-nowrap">
+              par Nuray C. Posse
+            </span>
+          </button>
+          <nav className="flex items-center gap-0.5">
+            {chapters.map((c) => (
+              <button
+                key={c.href}
+                onClick={() => go(c.href)}
+                className="px-2.5 py-2 rounded-full font-body text-[0.95rem] text-[#292824] hover:text-[#7C8873] hover:bg-[#EEE9E0]/70 transition-all duration-300 whitespace-nowrap"
+              >
+                {c.label}
+              </button>
+            ))}
+          </nav>
+        </div>
+      </header>
+
+      {/* Mobile/tablet menu overlay — hidden on desktop */}
       <AnimatePresence>
         {open && (
           <motion.div
             key="overlay"
-            className="fixed inset-0 z-[80]"
+            className="fixed inset-0 z-[80] lg:hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
+            data-export-hide
           >
-            {/* Backdrop */}
             <div
               className="absolute inset-0 bg-[#292824]/30 backdrop-blur-sm"
               onClick={() => setOpen(false)}
             />
-
-            {/* Floating panel — roughly a third of the screen */}
             <motion.div
               className="absolute top-20 md:top-24 right-5 md:right-6 w-[90vw] sm:w-1/3 max-w-md"
               initial={{ opacity: 0, y: -14, x: 10 }}

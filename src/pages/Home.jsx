@@ -12,6 +12,7 @@ import BookSection from "@/components/site/BookSection";
 import ContactSection from "@/components/site/ContactSection";
 import Footer from "@/components/site/Footer";
 import ImageBand from "@/components/site/ImageBand";
+import ExportPdfButton from "@/components/site/ExportPdfButton";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       <BookSection />
       <ContactSection />
       <Footer />
+      <ExportPdfButton />
     </div>
   );
 }
