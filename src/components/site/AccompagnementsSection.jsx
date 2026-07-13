@@ -22,7 +22,7 @@ function ServiceCard({ service, index }) {
       }`}
       style={{ transitionDelay: `${index * 80}ms` }}
     >
-      <h3 className="font-heading text-lg md:text-xl text-[#2C2C2C] mb-3 group-hover:text-[#E76F51] transition-colors duration-300">
+      <h3 className="service-card-title font-heading font-medium text-[#2C2C2C] mb-4 group-hover:text-[#E76F51] transition-colors duration-300">
         {service.title}
       </h3>
       <p className="font-body text-sm text-[#7A6952] leading-relaxed">{service.text}</p>
