@@ -24,11 +24,11 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-24 md:py-36 bg-[#EEE9E0]/40">
+    <section id="contact" className="py-32 md:py-48 bg-[#EEE9E0]/40">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <div
           ref={ref}
-          className={`text-center mb-16 transition-all duration-1000 ${
+          className={`text-center mb-20 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
@@ -38,8 +38,8 @@ export default function ContactSection() {
           <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#292824] mb-6">
             Contacter votre coach de vie à Sion
           </h2>
-          <p className="font-body text-[#6E6A62] text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
-            Vous traversez une période difficile, une transition ou une perte de repères ? Vous pouvez contacter Nuray pour lui présenter brièvement votre situation et voir si son accompagnement correspond à vos besoins.
+          <p className="font-body text-[#6E6A62] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
+            Vous traversez une période difficile ou une transition ? Écrivez à Nuray pour lui présenter brièvement votre situation.
           </p>
         </div>
 

@@ -7,7 +7,7 @@ export default function QuoteSection() {
   const [ref, isVisible] = useScrollReveal();
 
   return (
-    <section className="relative py-32 md:py-44 overflow-hidden">
+    <section className="relative py-40 md:py-56 overflow-hidden">
       <div className="absolute inset-0">
         <img
           src={QUOTE_IMG}

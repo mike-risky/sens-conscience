@@ -5,22 +5,22 @@ const steps = [
   {
     num: "01",
     title: "Observer",
-    text: "Prendre le temps de comprendre votre situation sans réduire votre expérience à un seul problème.",
+    text: "Comprendre votre situation sans la réduire à un seul problème.",
   },
   {
     num: "02",
     title: "Comprendre",
-    text: "Mettre en lumière les mécanismes, les besoins, les ressources et les schémas qui influencent votre quotidien.",
+    text: "Mettre en lumière les mécanismes et les ressources qui influencent votre quotidien.",
   },
   {
     num: "03",
     title: "Clarifier",
-    text: "Retrouver une vision plus lisible de vos priorités, de vos possibilités et de la direction que vous souhaitez prendre.",
+    text: "Retrouver une vision plus lisible de vos priorités et de votre direction.",
   },
   {
     num: "04",
     title: "Agir",
-    text: "Transformer cette compréhension en choix et en actions concrètes, réalistes et cohérentes.",
+    text: "Transformer cette compréhension en choix et en actions concrètes.",
   },
 ];
 
@@ -58,11 +58,11 @@ export default function ApproachSection() {
   const [credRef, credVisible] = useScrollReveal();
 
   return (
-    <section id="approche" className="py-24 md:py-36 bg-[#F8F6F1]">
+    <section id="approche" className="py-32 md:py-48 bg-[#F8F6F1]">
       <div className="max-w-5xl mx-auto px-6 md:px-10">
         <div
           ref={ref}
-          className={`text-center mb-16 transition-all duration-1000 ${
+          className={`text-center mb-20 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
@@ -72,12 +72,12 @@ export default function ApproachSection() {
           <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#292824] mb-6">
             Un accompagnement de vie profondément humain et personnalisé
           </h2>
-          <p className="font-body text-[#6E6A62] text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
-            Chaque accompagnement commence par un état des lieux global. La personne est considérée dans son histoire, son environnement, ses relations, son fonctionnement, ses ressources et les leviers d'action disponibles.
+          <p className="font-body text-[#6E6A62] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
+            Chaque accompagnement commence par un état des lieux global de votre situation.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 mb-24">
           {steps.map((step, i) => (
             <StepCard key={i} step={step} index={i} />
           ))}
@@ -89,8 +89,8 @@ export default function ApproachSection() {
             credVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="font-body text-[#6E6A62] text-base leading-relaxed mb-6">
-            Le regard de Nuray C. Posse est nourri par plus de vingt ans d'expérience dans les domaines suivants :
+          <p className="font-body text-[#6E6A62] text-base leading-relaxed mb-8">
+            Un regard nourri par plus de vingt ans d'expérience :
           </p>
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             {domains.map((d, i) => (
@@ -102,9 +102,6 @@ export default function ApproachSection() {
               </span>
             ))}
           </div>
-          <p className="font-body text-[#6E6A62] text-sm leading-relaxed max-w-xl mx-auto">
-            Cette expérience permet de rendre visibles les ressources et les possibilités d'action qui deviennent parfois inaccessibles dans les périodes de brouillard.
-          </p>
         </div>
       </div>
     </section>

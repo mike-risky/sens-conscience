@@ -12,11 +12,11 @@ export default function AboutSection() {
   };
 
   return (
-    <section id="a-propos" className="py-24 md:py-36 bg-[#F8F6F1]">
+    <section id="a-propos" className="py-32 md:py-48 bg-[#F8F6F1]">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <div
           ref={ref}
-          className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center transition-all duration-1000 ${
+          className={`grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-28 items-center transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
@@ -32,22 +32,16 @@ export default function AboutSection() {
             <p className="font-body text-xs tracking-[0.2em] text-[#B49A78] uppercase mb-4">
               À propos
             </p>
-            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#292824] mb-8">
+            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#292824] mb-10">
               Nuray C. Posse, coach de vie à Sion
             </h2>
 
-            <div className="space-y-4 mb-8">
-              <p className="font-body text-[#6E6A62] text-base leading-relaxed">
-                Depuis plus de vingt ans, j'accompagne des personnes dans leur apprentissage, leurs relations, leurs transitions et leurs périodes de remise en question.
+            <div className="space-y-6 mb-10">
+              <p className="font-body text-[#6E6A62] text-base md:text-lg leading-relaxed">
+                Depuis plus de vingt ans, j'accompagne des personnes dans leurs transitions et leurs périodes de remise en question, à la croisée de l'enseignement, de la médiation, de la philosophie pratique et des neurosciences.
               </p>
-              <p className="font-body text-[#6E6A62] text-base leading-relaxed">
-                Mon parcours s'est construit à la croisée de l'enseignement, de la médiation, de la philosophie pratique, des neurosciences et de l'accompagnement humain.
-              </p>
-              <p className="font-body text-[#6E6A62] text-base leading-relaxed">
-                Je ne cherche pas à imposer une réponse toute faite. Mon travail consiste à vous aider à mieux comprendre ce que vous traversez, à retrouver vos propres ressources et à identifier les possibilités d'action qui vous correspondent réellement.
-              </p>
-              <p className="font-body text-[#6E6A62] text-base leading-relaxed">
-                Je considère chaque personne dans la globalité de son histoire et de son environnement. L'objectif n'est pas de devenir quelqu'un d'autre, mais d'habiter sa vie avec davantage de lucidité, de liberté et de cohérence.
+              <p className="font-body text-[#6E6A62] text-base md:text-lg leading-relaxed">
+                Je ne cherche pas à imposer une réponse toute faite, mais à vous aider à mieux comprendre ce que vous traversez et à retrouver vos propres ressources.
               </p>
             </div>
 

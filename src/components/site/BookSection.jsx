@@ -8,11 +8,11 @@ export default function BookSection() {
   const [ref, isVisible] = useScrollReveal();
 
   return (
-    <section id="livre" className="py-24 md:py-36 bg-[#F8F6F1]">
+    <section id="livre" className="py-32 md:py-48 bg-[#F8F6F1]">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <div
           ref={ref}
-          className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center transition-all duration-1000 ${
+          className={`grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-28 items-center transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
@@ -35,12 +35,9 @@ export default function BookSection() {
               Habiter sa vie avec lucidité
             </p>
 
-            <div className="space-y-4 mb-10">
-              <p className="font-body text-[#6E6A62] text-base leading-relaxed">
-                Ce livre prolonge naturellement l'approche de Sens & Conscience. Il explore la manière dont nous pouvons mieux reconnaître nos besoins, nos contradictions et les choix qui nous éloignent parfois de nous-mêmes.
-              </p>
-              <p className="font-body text-[#6E6A62] text-base leading-relaxed">
-                Une invitation à habiter sa vie avec davantage de lucidité, de conscience et de fidélité à soi.
+            <div className="mb-10">
+              <p className="font-body text-[#6E6A62] text-base md:text-lg leading-relaxed">
+                Une invitation à mieux reconnaître vos besoins et les choix qui vous éloignent parfois de vous-même — pour habiter votre vie avec davantage de lucidité et de fidélité à soi.
               </p>
             </div>
 

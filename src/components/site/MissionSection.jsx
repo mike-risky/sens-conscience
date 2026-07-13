@@ -37,11 +37,11 @@ export default function MissionSection() {
   const [ref, isVisible] = useScrollReveal();
 
   return (
-    <section className="py-24 md:py-36 bg-[#EEE9E0]/40">
+    <section className="py-32 md:py-48 bg-[#EEE9E0]/40">
       <div className="max-w-4xl mx-auto px-6 md:px-10">
         <div
           ref={ref}
-          className={`text-center mb-16 transition-all duration-1000 ${
+          className={`text-center mb-20 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
@@ -51,15 +51,12 @@ export default function MissionSection() {
           <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#292824] mb-8">
             Vous aider à retrouver votre capacité d'agir
           </h2>
-          <p className="font-body text-[#6E6A62] text-base md:text-lg leading-relaxed max-w-2xl mx-auto mb-4">
-            Mon rôle est de vous aider à retrouver votre axe, vos ressources et votre capacité à faire des choix cohérents avec la personne que vous êtes aujourd'hui.
-          </p>
-          <p className="font-body text-[#6E6A62] text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
-            L'accompagnement vous permet de prendre du recul, de mieux comprendre votre situation et de reprendre progressivement les rênes de votre vie avec davantage de conscience, de clarté et de cohérence.
+          <p className="font-body text-[#6E6A62] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
+            Vous aider à retrouver votre axe, vos ressources et votre capacité à faire des choix cohérents avec la personne que vous êtes aujourd'hui.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {pillars.map((p, i) => (
             <PillarCard key={i} pillar={p} index={i} />
           ))}

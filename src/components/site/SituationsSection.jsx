@@ -19,7 +19,7 @@ function SituationCard({ text, index }) {
   return (
     <div
       ref={ref}
-      className={`p-6 bg-[#EEE9E0]/60 rounded-lg transition-all duration-700 ${
+      className={`p-8 bg-[#EEE9E0]/60 rounded-lg transition-all duration-700 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       }`}
       style={{ transitionDelay: `${index * 80}ms` }}
@@ -38,11 +38,11 @@ export default function SituationsSection() {
   };
 
   return (
-    <section id="situations" className="py-24 md:py-36 bg-[#F8F6F1]">
+    <section id="situations" className="py-32 md:py-48 bg-[#F8F6F1]">
       <div className="max-w-5xl mx-auto px-6 md:px-10">
         <div
           ref={ref}
-          className={`text-center mb-16 transition-all duration-1000 ${
+          className={`text-center mb-20 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
@@ -52,18 +52,18 @@ export default function SituationsSection() {
           <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#292824] mb-6">
             Pourquoi consulter une coach de vie à Sion ?
           </h2>
-          <p className="font-body text-[#6E6A62] text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
-            Il arrive que l'on perde ses repères, son énergie ou le sentiment d'être pleinement soi-même. Dans ces périodes de brouillard, un accompagnement extérieur peut aider à comprendre ce qui se joue et à retrouver une direction.
+          <p className="font-body text-[#6E6A62] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
+            Il arrive que l'on perde ses repères, son énergie, le sentiment d'être pleinement soi-même.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {situations.map((s, i) => (
             <SituationCard key={i} text={s} index={i} />
           ))}
         </div>
 
-        <div className="text-center mt-14">
+        <div className="text-center mt-20">
           <p className="font-heading italic text-lg md:text-xl text-[#7C8873] mb-8">
             Si ces mots résonnent en vous, vous êtes peut-être au bon endroit.
           </p>
