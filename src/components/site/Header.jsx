@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Leaf } from "lucide-react";
+import { Menu, X, BookOpen } from "lucide-react";
 
 const chapters = [
   { num: "I", label: "Accueil", href: "#accueil" },
@@ -31,7 +31,7 @@ export default function Header() {
     setTimeout(() => {
       const el = document.querySelector(href);
       if (el) el.scrollIntoView({ behavior: "smooth" });
-    }, 320);
+    }, 280);
   };
 
   return (
@@ -55,11 +55,11 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Floating trigger — always available, top right */}
+      {/* Floating trigger — aligned with the brand, stays clear of the header line */}
       <button
         onClick={() => setOpen((o) => !o)}
         aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
-        className="fixed top-5 right-5 md:top-6 md:right-6 z-[100] w-12 h-12 rounded-full bg-[#F8F6F1]/85 backdrop-blur-md border border-[#DED8CE] shadow-lg shadow-[#292824]/15 flex items-center justify-center text-[#292824] hover:bg-[#F8F6F1] hover:scale-105 transition-all duration-300"
+        className="fixed top-2 md:top-4 right-5 md:right-6 z-[100] w-12 h-12 rounded-full bg-[#F8F6F1]/85 backdrop-blur-md border border-[#DED8CE] shadow-lg shadow-[#292824]/15 flex items-center justify-center text-[#292824] hover:bg-[#F8F6F1] hover:scale-105 transition-all duration-300"
       >
         {open ? <X size={20} /> : <Menu size={20} />}
       </button>
@@ -68,69 +68,53 @@ export default function Header() {
         {open && (
           <motion.div
             key="overlay"
-            className="fixed inset-0 z-[80] flex items-center justify-center p-6"
+            className="fixed inset-0 z-[80]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.4 }}
-            onClick={(e) => { if (e.target === e.currentTarget) setOpen(false); }}
+            transition={{ duration: 0.3 }}
           >
             {/* Backdrop */}
             <div
-              className="absolute inset-0 bg-[#292824]/45 backdrop-blur-md"
+              className="absolute inset-0 bg-[#292824]/30 backdrop-blur-sm"
               onClick={() => setOpen(false)}
             />
 
-            {/* Book */}
-            <div className="relative w-full max-w-md" style={{ perspective: 1400 }}>
-              {/* Menu (revealed beneath the cover) */}
-              <motion.div
-                className="relative rounded-lg border border-[#DED8CE] bg-[#F8F6F1] p-8 md:p-10 shadow-2xl shadow-[#292824]/40"
-                initial={{ opacity: 0, scale: 0.96 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.96 }}
-                transition={{ delay: 0.3, duration: 0.5, ease: "easeOut" }}
-              >
+            {/* Floating panel — roughly a third of the screen */}
+            <motion.div
+              className="absolute top-20 md:top-24 right-5 md:right-6 w-[90vw] sm:w-1/3 max-w-md"
+              initial={{ opacity: 0, y: -14, x: 10 }}
+              animate={{ opacity: 1, y: 0, x: 0 }}
+              transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+            >
+              <div className="bg-[#F8F6F1] border border-[#DED8CE] rounded-lg shadow-2xl shadow-[#292824]/30 p-6 md:p-8">
+                <div className="flex items-center gap-3 mb-6 pb-5 border-b border-[#DED8CE]">
+                  <BookOpen size={18} className="text-[#7C8873]" />
+                  <span className="font-body text-xs tracking-[0.2em] text-[#6E6A62] uppercase">
+                    Sommaire
+                  </span>
+                </div>
                 <nav className="flex flex-col">
                   {chapters.map((c, i) => (
                     <motion.button
                       key={c.href}
                       onClick={() => go(c.href)}
-                      className="group flex items-baseline gap-4 py-3 border-b border-[#DED8CE]/40 last:border-b-0 text-left"
-                      initial={{ opacity: 0, y: 12 }}
+                      className="group flex items-baseline gap-3 py-2.5 border-b border-[#DED8CE]/40 last:border-b-0 text-left"
+                      initial={{ opacity: 0, y: 8 }}
                       animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.45 + i * 0.06, duration: 0.4, ease: "easeOut" }}
+                      transition={{ delay: 0.1 + i * 0.05, duration: 0.35, ease: "easeOut" }}
                     >
-                      <span className="font-heading text-sm text-[#B49A78] w-8 shrink-0">
+                      <span className="font-heading text-sm text-[#B49A78] w-6 shrink-0">
                         {c.num}
                       </span>
-                      <span className="font-heading text-2xl md:text-3xl text-[#292824] group-hover:text-[#7C8873] group-hover:translate-x-1.5 transition-all duration-300">
+                      <span className="font-heading text-xl md:text-2xl text-[#292824] group-hover:text-[#7C8873] group-hover:translate-x-1 transition-all duration-300">
                         {c.label}
                       </span>
                     </motion.button>
                   ))}
                 </nav>
-              </motion.div>
-
-              {/* Cover that flips open like a book page */}
-              <motion.div
-                className="absolute inset-0 rounded-lg border border-[#DED8CE] bg-[#EEE9E0] flex items-center justify-center shadow-2xl shadow-[#292824]/40"
-                style={{
-                  transformOrigin: "left",
-                  backfaceVisibility: "hidden",
-                  WebkitBackfaceVisibility: "hidden",
-                }}
-                initial={{ rotateY: 0 }}
-                animate={{ rotateY: -165 }}
-                transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
-              >
-                <div className="flex flex-col items-center gap-4">
-                  <span className="w-10 h-px bg-[#B49A78]" />
-                  <Leaf size={26} className="text-[#7C8873]" />
-                  <span className="w-10 h-px bg-[#B49A78]" />
-                </div>
-              </motion.div>
-            </div>
+              </div>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
