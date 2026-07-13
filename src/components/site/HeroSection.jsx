@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const HERO_IMG = "https://media.base44.com/images/public/6a545a283c8f895ced7a3979/30a5c1d97_generated_fb813ed2.png";
+const HERO_IMG = "https://media.base44.com/images/public/6a545a283c8f895ced7a3979/7c4b832d5_generated_image.png";
 
 export default function HeroSection() {
   const scrollTo = (id) => {
@@ -14,10 +14,10 @@ export default function HeroSection() {
       <div className="absolute inset-0">
         <img
           src={HERO_IMG}
-          alt="Chemin de montagne dans le Valais près de Sion, symbolisant le parcours d'un coaching de vie"
+          alt="Lever de soleil sur les Alpes valaisannes près de Sion, symbole d'un nouveau départ"
           className="w-full h-full object-cover scale-105 animate-[slowZoom_30s_ease-in-out_infinite_alternate]"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#292824]/30 via-[#292824]/20 to-[#F8F6F1]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#3A2E22]/25 via-[#3A2E22]/10 to-[#FDF6EC]" />
       </div>
 
       <div className="relative z-10 max-w-3xl mx-auto px-6 text-center pt-36 pb-48">
@@ -25,7 +25,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
-          className="font-body text-sm tracking-[0.2em] text-white/80 uppercase mb-8"
+          className="font-body text-sm tracking-[0.2em] text-white/85 uppercase mb-8"
         >
           Sens & Conscience — par Nuray C. Posse
         </motion.p>
@@ -43,7 +43,7 @@ export default function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5, delay: 1.4 }}
-          className="font-heading italic text-lg md:text-xl text-white/75 mb-14 max-w-xl mx-auto"
+          className="font-heading italic text-lg md:text-xl text-white/85 mb-14 max-w-xl mx-auto"
         >
           «&nbsp;Nous naissons une première fois dans les circonstances. Osons renaître une seconde fois, en conscience.&nbsp;»
         </motion.p>
@@ -56,13 +56,13 @@ export default function HeroSection() {
         >
           <button
             onClick={() => scrollTo("#contact")}
-            className="px-8 py-3.5 rounded-full bg-[#7C8873] text-white font-body font-medium text-sm hover:bg-[#6b7763] transition-all duration-300 shadow-lg shadow-[#7C8873]/20"
+            className="px-8 py-3.5 rounded-full bg-[#E76F51] text-white font-body font-medium text-sm hover:bg-[#D85B3D] transition-all duration-300 shadow-lg shadow-[#E76F51]/25"
           >
             Prendre rendez-vous
           </button>
           <button
             onClick={() => scrollTo("#approche")}
-            className="px-8 py-3.5 rounded-full border border-white/40 text-white font-body font-medium text-sm hover:bg-white/10 transition-all duration-300"
+            className="px-8 py-3.5 rounded-full border border-white/50 text-white font-body font-medium text-sm hover:bg-white/15 transition-all duration-300"
           >
             Découvrir mon approche
           </button>

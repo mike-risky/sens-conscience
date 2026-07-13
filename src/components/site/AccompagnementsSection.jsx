@@ -22,10 +22,10 @@ function ServiceCard({ service, index }) {
       }`}
       style={{ transitionDelay: `${index * 80}ms` }}
     >
-      <h3 className="font-heading text-lg md:text-xl text-[#292824] mb-3 group-hover:text-[#7C8873] transition-colors duration-300">
+      <h3 className="font-heading text-lg md:text-xl text-[#2C2C2C] mb-3 group-hover:text-[#E76F51] transition-colors duration-300">
         {service.title}
       </h3>
-      <p className="font-body text-sm text-[#6E6A62] leading-relaxed">{service.text}</p>
+      <p className="font-body text-sm text-[#7A6952] leading-relaxed">{service.text}</p>
     </div>
   );
 }
@@ -39,7 +39,7 @@ export default function AccompagnementsSection() {
   };
 
   return (
-    <section id="accompagnements" className="py-32 md:py-48 bg-[#EEE9E0]/40">
+    <section id="accompagnements" className="py-32 md:py-48 bg-[#F7E9D4]/40">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <div
           ref={ref}
@@ -47,13 +47,13 @@ export default function AccompagnementsSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="font-body text-xs tracking-[0.2em] text-[#B49A78] uppercase mb-4">
+          <p className="font-body text-xs tracking-[0.2em] text-[#D2691E] uppercase mb-4">
             Les accompagnements
           </p>
-          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#292824] mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#2C2C2C] mb-6">
             Coaching de vie et accompagnement personnalisé à Sion
           </h2>
-          <p className="font-body text-[#6E6A62] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
+          <p className="font-body text-[#7A6952] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
             Des accompagnements adaptés à votre situation, à votre rythme et à vos besoins.
           </p>
         </div>
@@ -67,7 +67,7 @@ export default function AccompagnementsSection() {
         <div className="text-center mt-20">
           <button
             onClick={() => scrollTo("#contact")}
-            className="px-8 py-3.5 rounded-full bg-[#7C8873] text-white font-body font-medium text-sm hover:bg-[#6b7763] transition-all duration-300"
+            className="px-8 py-3.5 rounded-full bg-[#E76F51] text-white font-body font-medium text-sm hover:bg-[#D85B3D] transition-all duration-300"
           >
             Parler de votre situation
           </button>

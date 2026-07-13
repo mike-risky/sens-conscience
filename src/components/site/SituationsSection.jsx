@@ -31,15 +31,15 @@ function SituationCard({ text, Icon, index }) {
   return (
     <div
       ref={ref}
-      className={`p-8 bg-[#EEE9E0]/60 rounded-lg transition-all duration-700 ${
+      className={`p-8 bg-[#F7E9D4]/60 rounded-lg transition-all duration-700 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       }`}
       style={{ transitionDelay: `${index * 80}ms` }}
     >
-      <div className="w-9 h-9 rounded-full bg-[#7C8873]/10 flex items-center justify-center mb-4">
-        <Icon size={16} className="text-[#7C8873]" />
+      <div className="w-9 h-9 rounded-full bg-[#E76F51]/10 flex items-center justify-center mb-4">
+        <Icon size={16} className="text-[#E76F51]" />
       </div>
-      <p className="font-body text-[#292824] text-sm md:text-base leading-relaxed">{text}</p>
+      <p className="font-body text-[#2C2C2C] text-sm md:text-base leading-relaxed">{text}</p>
     </div>
   );
 }
@@ -53,7 +53,7 @@ export default function SituationsSection() {
   };
 
   return (
-    <section id="situations" className="py-32 md:py-48 bg-[#F8F6F1]">
+    <section id="situations" className="py-32 md:py-48 bg-gradient-to-b from-[#FDF6EC] via-[#FDF6EC] to-[#FBF1E2]">
       <div className="max-w-5xl mx-auto px-6 md:px-10">
         <div
           ref={ref}
@@ -61,13 +61,13 @@ export default function SituationsSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="font-body text-xs tracking-[0.2em] text-[#B49A78] uppercase mb-4">
+          <p className="font-body text-xs tracking-[0.2em] text-[#D2691E] uppercase mb-4">
             Quand la vie ne ressemble plus à ce que vous aviez imaginé
           </p>
-          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#292824] mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#2C2C2C] mb-6">
             Pourquoi consulter une coach de vie à Sion ?
           </h2>
-          <p className="font-body text-[#6E6A62] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
+          <p className="font-body text-[#7A6952] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
             Il arrive que l'on perde ses repères, son énergie, le sentiment d'être pleinement soi-même.
           </p>
         </div>
@@ -79,12 +79,12 @@ export default function SituationsSection() {
         </div>
 
         <div className="text-center mt-20">
-          <p className="font-heading italic text-lg md:text-xl text-[#7C8873] mb-8">
+          <p className="font-heading italic text-lg md:text-xl text-[#E76F51] mb-8">
             Si ces mots résonnent en vous, vous êtes peut-être au bon endroit.
           </p>
           <button
             onClick={() => scrollTo("#contact")}
-            className="px-8 py-3.5 rounded-full bg-[#7C8873] text-white font-body font-medium text-sm hover:bg-[#6b7763] transition-all duration-300"
+            className="px-8 py-3.5 rounded-full bg-[#E76F51] text-white font-body font-medium text-sm hover:bg-[#D85B3D] transition-all duration-300"
           >
             Échanger avec moi
           </button>

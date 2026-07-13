@@ -8,7 +8,7 @@ export default function BookSection() {
   const [ref, isVisible] = useScrollReveal();
 
   return (
-    <section id="livre" className="py-32 md:py-48 bg-[#F8F6F1]">
+    <section id="livre" className="py-32 md:py-48 bg-[#F7E9D4]/40">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <div
           ref={ref}
@@ -20,23 +20,23 @@ export default function BookSection() {
             <img
               src={BOOK_IMG}
               alt="L'art de ne pas se trahir, livre de Nuray C. Posse sur la conscience de soi et le développement personnel"
-              className="w-full max-w-sm mx-auto rounded-lg object-cover shadow-xl shadow-[#292824]/10"
+              className="w-full max-w-sm mx-auto rounded-lg object-cover shadow-xl shadow-[#3A2E22]/10"
             />
           </div>
 
           <div>
-            <p className="font-body text-xs tracking-[0.2em] text-[#B49A78] uppercase mb-4">
+            <p className="font-body text-xs tracking-[0.2em] text-[#D2691E] uppercase mb-4">
               Le livre
             </p>
-            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#292824] mb-2">
+            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#2C2C2C] mb-2">
               L'art de ne pas se trahir
             </h2>
-            <p className="font-heading italic text-lg text-[#6E6A62] mb-8">
+            <p className="font-heading italic text-lg text-[#7A6952] mb-8">
               Habiter sa vie avec lucidité
             </p>
 
             <div className="mb-10">
-              <p className="font-body text-[#6E6A62] text-base md:text-lg leading-relaxed">
+              <p className="font-body text-[#7A6952] text-base md:text-lg leading-relaxed">
                 Une invitation à mieux reconnaître vos besoins et les choix qui vous éloignent parfois de vous-même — pour habiter votre vie avec davantage de lucidité et de fidélité à soi.
               </p>
             </div>
@@ -46,7 +46,7 @@ export default function BookSection() {
                 href="https://www.amazon.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#7C8873] text-white font-body font-medium text-sm hover:bg-[#6b7763] transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#E76F51] text-white font-body font-medium text-sm hover:bg-[#D85B3D] transition-all duration-300"
               >
                 Découvrir le livre sur Amazon
                 <ExternalLink size={14} />
@@ -55,7 +55,7 @@ export default function BookSection() {
                 href="https://www.google.com/maps"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full border border-[#DED8CE] text-[#292824] font-body font-medium text-sm hover:bg-[#EEE9E0] transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full border border-[#E8D5BA] text-[#2C2C2C] font-body font-medium text-sm hover:bg-[#F7E9D4] transition-all duration-300"
               >
                 Disponible à La Liseuse à Sion
                 <ExternalLink size={14} />

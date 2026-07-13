@@ -16,7 +16,7 @@ import ExportPdfButton from "@/components/site/ExportPdfButton";
 
 export default function Home() {
   return (
-    <div className="bg-[#F8F6F1] min-h-screen">
+    <div className="bg-[#FDF6EC] min-h-screen">
       <ScrollProgress />
       <Header />
       <HeroSection />

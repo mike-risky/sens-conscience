@@ -1,7 +1,7 @@
 import React from "react";
 import useScrollReveal from "@/hooks/useScrollReveal";
 
-const QUOTE_IMG = "https://media.base44.com/images/public/6a545a283c8f895ced7a3979/16c2dc9e8_generated_9781bba1.png";
+const QUOTE_IMG = "https://media.base44.com/images/public/6a545a283c8f895ced7a3979/b8d59c6ad_generated_image.png";
 
 export default function QuoteSection() {
   const [ref, isVisible] = useScrollReveal();
@@ -11,10 +11,10 @@ export default function QuoteSection() {
       <div className="absolute inset-0">
         <img
           src={QUOTE_IMG}
-          alt="Paysage alpin serein près de Sion, évoquant la paix intérieure et la reconnexion à soi"
+          alt="Lac alpin baigné de lumière dorée près de Sion, évoquant la sérénité et la clarté"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-[#292824]/50" />
+        <div className="absolute inset-0 bg-[#3A2E22]/40" />
       </div>
       <div
         ref={ref}
@@ -25,7 +25,7 @@ export default function QuoteSection() {
         <p className="font-heading italic text-2xl md:text-3xl lg:text-4xl text-white leading-snug mb-6">
           «&nbsp;L'art de vivre en conscience commence lorsque nous cessons de nous trahir.&nbsp;»
         </p>
-        <p className="font-body text-sm text-white/60 tracking-[0.15em] uppercase">
+        <p className="font-body text-sm text-white/70 tracking-[0.15em] uppercase">
           Nuray C. Posse
         </p>
       </div>

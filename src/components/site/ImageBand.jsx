@@ -2,7 +2,7 @@ import React from "react";
 import useScrollReveal from "@/hooks/useScrollReveal";
 
 const BAND_IMG =
-  "https://media.base44.com/images/public/6a545a283c8f895ced7a3979/74c9fdf0a_generated_image.png";
+  "https://media.base44.com/images/public/6a545a283c8f895ced7a3979/1ec78b23c_generated_image.png";
 
 export default function ImageBand() {
   const [ref, isVisible] = useScrollReveal();
@@ -15,10 +15,9 @@ export default function ImageBand() {
     >
       <img
         src={BAND_IMG}
-        alt="Prairie brumeuse à l'aube près de Sion, dans le Valais — une invitation à la pause"
+        alt="Prairie de fleurs sauvages baignée de soleil matinal près de Sion, dans le Valais"
         className="w-full h-full object-cover"
       />
-      <div className="absolute inset-0 bg-[#292824]/10" />
     </section>
   );
 }
