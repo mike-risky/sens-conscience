@@ -86,7 +86,7 @@ export default function SituationsSection() {
             onClick={() => scrollTo("#contact")}
             className="px-8 py-3.5 rounded-full bg-[#7C8873] text-white font-body font-medium text-sm hover:bg-[#6b7763] transition-all duration-300"
           >
-            Échanger avec Nuray
+            Échanger avec moi
           </button>
         </div>
       </div>

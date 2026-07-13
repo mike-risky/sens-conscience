@@ -36,24 +36,30 @@ export default function Header() {
 
   return (
     <>
-      <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
-          scrolled
-            ? "bg-[#F8F6F1]/95 backdrop-blur-md shadow-[0_1px_0_#DED8CE]"
-            : "bg-transparent"
-        }`}
+      {/* Floating brand bubble — a third of the page, fades out on first scroll */}
+      <motion.div
+        initial={false}
+        animate={{
+          opacity: scrolled ? 0 : 1,
+          y: scrolled ? -12 : 0,
+          scale: scrolled ? 0.95 : 1,
+        }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className="fixed top-3 md:top-4 left-4 md:left-6 z-50 w-fit sm:w-1/3 max-w-[58vw] sm:max-w-md"
+        style={{ pointerEvents: scrolled ? "none" : "auto" }}
       >
-        <div className="max-w-7xl mx-auto px-6 md:px-10 flex items-center h-16 md:h-20">
-          <button onClick={() => go("#accueil")} className="text-left">
-            <span className="font-heading text-lg md:text-xl font-medium text-[#292824] tracking-wide">
-              Sens & Conscience
-            </span>
-            <span className="hidden md:inline text-xs text-[#6E6A62] ml-2 font-body">
-              par Nuray C. Posse
-            </span>
-          </button>
-        </div>
-      </header>
+        <button
+          onClick={() => go("#accueil")}
+          className="w-full flex items-baseline justify-start md:justify-between gap-3 px-5 py-2.5 rounded-full bg-[#F8F6F1]/85 backdrop-blur-md border border-[#DED8CE] shadow-lg shadow-[#292824]/15 hover:bg-[#F8F6F1] transition-all duration-300"
+        >
+          <span className="font-heading text-base md:text-lg font-medium text-[#292824] tracking-wide whitespace-nowrap">
+            Sens & Conscience
+          </span>
+          <span className="hidden md:inline text-xs text-[#6E6A62] font-body truncate">
+            par Nuray C. Posse
+          </span>
+        </button>
+      </motion.div>
 
       {/* Floating trigger — aligned with the brand, stays clear of the header line */}
       <button
