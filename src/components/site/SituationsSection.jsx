@@ -1,20 +1,32 @@
 import React from "react";
 import useScrollReveal from "@/hooks/useScrollReveal";
+import {
+  Sparkles,
+  Mountain,
+  Wind,
+  Backpack,
+  Shell,
+  RefreshCw,
+  Repeat,
+  Compass,
+  Moon,
+  Zap,
+} from "lucide-react";
 
 const situations = [
-  "Vous ne trouvez plus de goût ou d'élan dans votre quotidien.",
-  "Vous vous sentez dépassé par vos responsabilités.",
-  "Vous traversez un divorce, une séparation ou un bouleversement familial.",
-  "Vous vous épuisez à vouloir tout porter.",
-  "Vous avez tendance à vous isoler ou à vous refermer.",
-  "Vous tournez en rond sans parvenir à avancer.",
-  "Vous répétez des schémas qui vous font souffrir.",
-  "Vous ne savez plus quelle direction prendre.",
-  "Vous avez le sentiment de ne plus être pleinement vous-même.",
-  "Vous vivez difficilement votre hypersensibilité, votre HPI, votre TDAH ou un fonctionnement atypique.",
+  { text: "Vous ne trouvez plus de goût ou d'élan dans votre quotidien.", Icon: Sparkles },
+  { text: "Vous vous sentez dépassé par vos responsabilités.", Icon: Mountain },
+  { text: "Vous traversez un divorce, une séparation ou un bouleversement familial.", Icon: Wind },
+  { text: "Vous vous épuisez à vouloir tout porter.", Icon: Backpack },
+  { text: "Vous avez tendance à vous isoler ou à vous refermer.", Icon: Shell },
+  { text: "Vous tournez en rond sans parvenir à avancer.", Icon: RefreshCw },
+  { text: "Vous répétez des schémas qui vous font souffrir.", Icon: Repeat },
+  { text: "Vous ne savez plus quelle direction prendre.", Icon: Compass },
+  { text: "Vous avez le sentiment de ne plus être pleinement vous-même.", Icon: Moon },
+  { text: "Vous vivez difficilement votre hypersensibilité, votre HPI, votre TDAH ou un fonctionnement atypique.", Icon: Zap },
 ];
 
-function SituationCard({ text, index }) {
+function SituationCard({ text, Icon, index }) {
   const [ref, isVisible] = useScrollReveal(0.1);
   return (
     <div
@@ -24,6 +36,9 @@ function SituationCard({ text, index }) {
       }`}
       style={{ transitionDelay: `${index * 80}ms` }}
     >
+      <div className="w-9 h-9 rounded-full bg-[#7C8873]/10 flex items-center justify-center mb-4">
+        <Icon size={16} className="text-[#7C8873]" />
+      </div>
       <p className="font-body text-[#292824] text-sm md:text-base leading-relaxed">{text}</p>
     </div>
   );
@@ -59,7 +74,7 @@ export default function SituationsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {situations.map((s, i) => (
-            <SituationCard key={i} text={s} index={i} />
+            <SituationCard key={i} text={s.text} Icon={s.Icon} index={i} />
           ))}
         </div>
 

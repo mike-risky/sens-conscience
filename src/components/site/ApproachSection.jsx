@@ -1,26 +1,31 @@
 import React from "react";
 import useScrollReveal from "@/hooks/useScrollReveal";
+import { Eye, Lightbulb, Sparkles, Footprints } from "lucide-react";
 
 const steps = [
   {
     num: "01",
     title: "Observer",
     text: "Comprendre votre situation sans la réduire à un seul problème.",
+    Icon: Eye,
   },
   {
     num: "02",
     title: "Comprendre",
     text: "Mettre en lumière les mécanismes et les ressources qui influencent votre quotidien.",
+    Icon: Lightbulb,
   },
   {
     num: "03",
     title: "Clarifier",
     text: "Retrouver une vision plus lisible de vos priorités et de votre direction.",
+    Icon: Sparkles,
   },
   {
     num: "04",
     title: "Agir",
     text: "Transformer cette compréhension en choix et en actions concrètes.",
+    Icon: Footprints,
   },
 ];
 
@@ -34,6 +39,7 @@ const domains = [
 
 function StepCard({ step, index }) {
   const [ref, isVisible] = useScrollReveal(0.2);
+  const Icon = step.Icon;
   return (
     <div
       ref={ref}
@@ -46,6 +52,9 @@ function StepCard({ step, index }) {
         {step.num}
       </span>
       <div>
+        <div className="w-9 h-9 rounded-full bg-[#7C8873]/10 flex items-center justify-center mb-3">
+          <Icon size={16} className="text-[#7C8873]" />
+        </div>
         <h3 className="font-heading text-xl text-[#292824] mb-2">{step.title}</h3>
         <p className="font-body text-sm text-[#6E6A62] leading-relaxed">{step.text}</p>
       </div>

@@ -11,6 +11,7 @@ import QuoteSection from "@/components/site/QuoteSection";
 import BookSection from "@/components/site/BookSection";
 import ContactSection from "@/components/site/ContactSection";
 import Footer from "@/components/site/Footer";
+import ImageBand from "@/components/site/ImageBand";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <MissionSection />
       <ApproachSection />
       <AccompagnementsSection />
+      <ImageBand />
       <AboutSection />
       <QuoteSection />
       <BookSection />
