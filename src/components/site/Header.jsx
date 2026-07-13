@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Leaf } from "lucide-react";
 
 const chapters = [
   { num: "I", label: "Accueil", href: "#accueil" },
@@ -31,7 +31,7 @@ export default function Header() {
     setTimeout(() => {
       const el = document.querySelector(href);
       if (el) el.scrollIntoView({ behavior: "smooth" });
-    }, 300);
+    }, 320);
   };
 
   return (
@@ -43,7 +43,7 @@ export default function Header() {
             : "bg-transparent"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between h-16 md:h-20">
+        <div className="max-w-7xl mx-auto px-6 md:px-10 flex items-center h-16 md:h-20">
           <button onClick={() => go("#accueil")} className="text-left">
             <span className="font-heading text-lg md:text-xl font-medium text-[#292824] tracking-wide">
               Sens & Conscience
@@ -59,7 +59,7 @@ export default function Header() {
       <button
         onClick={() => setOpen((o) => !o)}
         aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
-        className="fixed top-5 right-5 md:top-6 md:right-6 z-[90] w-12 h-12 rounded-full bg-[#F8F6F1]/85 backdrop-blur-md border border-[#DED8CE] shadow-lg shadow-[#292824]/15 flex items-center justify-center text-[#292824] hover:bg-[#F8F6F1] hover:scale-105 transition-all duration-300"
+        className="fixed top-5 right-5 md:top-6 md:right-6 z-[100] w-12 h-12 rounded-full bg-[#F8F6F1]/85 backdrop-blur-md border border-[#DED8CE] shadow-lg shadow-[#292824]/15 flex items-center justify-center text-[#292824] hover:bg-[#F8F6F1] hover:scale-105 transition-all duration-300"
       >
         {open ? <X size={20} /> : <Menu size={20} />}
       </button>
@@ -67,68 +67,70 @@ export default function Header() {
       <AnimatePresence>
         {open && (
           <motion.div
-            key="menu"
-            className="fixed inset-0 z-[80]"
+            key="overlay"
+            className="fixed inset-0 z-[80] flex items-center justify-center p-6"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.4 }}
+            onClick={(e) => { if (e.target === e.currentTarget) setOpen(false); }}
           >
-            {/* Click catcher */}
-            <div className="absolute inset-0" onClick={() => setOpen(false)} />
+            {/* Backdrop */}
+            <div
+              className="absolute inset-0 bg-[#292824]/45 backdrop-blur-md"
+              onClick={() => setOpen(false)}
+            />
 
-            {/* Menu bubble */}
-            <motion.div
-              className="absolute top-20 right-4 md:right-6 w-[270px] max-w-[calc(100vw-2rem)] relative"
-              style={{ perspective: 1200 }}
-              initial={{ opacity: 0, y: -10, scale: 0.96 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: -10, scale: 0.96 }}
-              transition={{ duration: 0.3, ease: "easeOut" }}
-            >
-              {/* Content (revealed) */}
+            {/* Book */}
+            <div className="relative w-full max-w-md" style={{ perspective: 1400 }}>
+              {/* Menu (revealed beneath the cover) */}
               <motion.div
-                className="relative rounded-lg border border-[#DED8CE] bg-[#F8F6F1] p-5 shadow-2xl shadow-[#292824]/30"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.22, duration: 0.35 }}
+                className="relative rounded-lg border border-[#DED8CE] bg-[#F8F6F1] p-8 md:p-10 shadow-2xl shadow-[#292824]/40"
+                initial={{ opacity: 0, scale: 0.96 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.96 }}
+                transition={{ delay: 0.3, duration: 0.5, ease: "easeOut" }}
               >
                 <nav className="flex flex-col">
-                  {chapters.map((c) => (
-                    <button
+                  {chapters.map((c, i) => (
+                    <motion.button
                       key={c.href}
                       onClick={() => go(c.href)}
-                      className="group flex items-baseline gap-3 py-2.5 border-b border-[#DED8CE]/40 last:border-b-0 text-left"
+                      className="group flex items-baseline gap-4 py-3 border-b border-[#DED8CE]/40 last:border-b-0 text-left"
+                      initial={{ opacity: 0, y: 12 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.45 + i * 0.06, duration: 0.4, ease: "easeOut" }}
                     >
-                      <span className="font-heading text-xs text-[#B49A78] w-5 shrink-0">
+                      <span className="font-heading text-sm text-[#B49A78] w-8 shrink-0">
                         {c.num}
                       </span>
-                      <span className="font-heading text-lg text-[#292824] group-hover:text-[#7C8873] group-hover:translate-x-1 transition-all duration-300">
+                      <span className="font-heading text-2xl md:text-3xl text-[#292824] group-hover:text-[#7C8873] group-hover:translate-x-1.5 transition-all duration-300">
                         {c.label}
                       </span>
-                    </button>
+                    </motion.button>
                   ))}
                 </nav>
               </motion.div>
 
-              {/* Left cover half — opens outward */}
+              {/* Cover that flips open like a book page */}
               <motion.div
-                className="absolute inset-y-0 left-0 w-1/2 rounded-l-lg bg-[#EEE9E0] border border-[#DED8CE] border-r-[#B49A78]/50"
-                style={{ transformOrigin: "right", backfaceVisibility: "hidden", WebkitBackfaceVisibility: "hidden" }}
+                className="absolute inset-0 rounded-lg border border-[#DED8CE] bg-[#EEE9E0] flex items-center justify-center shadow-2xl shadow-[#292824]/40"
+                style={{
+                  transformOrigin: "left",
+                  backfaceVisibility: "hidden",
+                  WebkitBackfaceVisibility: "hidden",
+                }}
                 initial={{ rotateY: 0 }}
-                animate={{ rotateY: -115 }}
-                transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              />
-
-              {/* Right cover half — opens outward */}
-              <motion.div
-                className="absolute inset-y-0 right-0 w-1/2 rounded-r-lg bg-[#EEE9E0] border border-[#DED8CE] border-l-0"
-                style={{ transformOrigin: "left", backfaceVisibility: "hidden", WebkitBackfaceVisibility: "hidden" }}
-                initial={{ rotateY: 0 }}
-                animate={{ rotateY: 115 }}
-                transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              />
-            </motion.div>
+                animate={{ rotateY: -165 }}
+                transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
+              >
+                <div className="flex flex-col items-center gap-4">
+                  <span className="w-10 h-px bg-[#B49A78]" />
+                  <Leaf size={26} className="text-[#7C8873]" />
+                  <span className="w-10 h-px bg-[#B49A78]" />
+                </div>
+              </motion.div>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
