@@ -39,14 +39,14 @@ export default function HeroSection() {
           Coach de vie à Sion pour retrouver du sens et reprendre les rênes de votre vie
         </motion.h1>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.5, delay: 1.4 }}
-          className="font-heading italic text-lg md:text-xl text-white/85 mb-14 max-w-xl mx-auto"
+        <motion.blockquote
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, delay: 1.4 }}
+          className="font-heading italic text-white text-xl md:text-2xl lg:text-3xl leading-relaxed mb-14 max-w-2xl mx-auto bg-[#3A2E22]/45 backdrop-blur-md rounded-2xl px-8 py-7 shadow-lg shadow-black/20"
         >
           «&nbsp;Nous naissons une première fois dans les circonstances. Osons renaître une seconde fois, en conscience.&nbsp;»
-        </motion.p>
+        </motion.blockquote>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
