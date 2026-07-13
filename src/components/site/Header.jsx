@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const chapters = [
   { num: "I", label: "Accueil", href: "#accueil" },
@@ -31,7 +31,7 @@ export default function Header() {
     setTimeout(() => {
       const el = document.querySelector(href);
       if (el) el.scrollIntoView({ behavior: "smooth" });
-    }, 280);
+    }, 300);
   };
 
   return (
@@ -52,103 +52,83 @@ export default function Header() {
               par Nuray C. Posse
             </span>
           </button>
-
-          <button
-            onClick={() => setOpen(true)}
-            className="group flex items-center gap-3 text-[#292824]"
-            aria-label="Ouvrir le menu"
-          >
-            <span className="font-body text-sm tracking-[0.2em] uppercase">Menu</span>
-            <span className="flex flex-col gap-[5px]">
-              <span className="block w-6 h-px bg-current transition-all duration-300 group-hover:w-4" />
-              <span className="block w-6 h-px bg-current" />
-              <span className="block w-6 h-px bg-current transition-all duration-300 group-hover:w-4" />
-            </span>
-          </button>
         </div>
       </header>
+
+      {/* Floating trigger — always available, top right */}
+      <button
+        onClick={() => setOpen((o) => !o)}
+        aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
+        className="fixed top-5 right-5 md:top-6 md:right-6 z-[90] w-12 h-12 rounded-full bg-[#F8F6F1]/85 backdrop-blur-md border border-[#DED8CE] shadow-lg shadow-[#292824]/15 flex items-center justify-center text-[#292824] hover:bg-[#F8F6F1] hover:scale-105 transition-all duration-300"
+      >
+        {open ? <X size={20} /> : <Menu size={20} />}
+      </button>
 
       <AnimatePresence>
         {open && (
           <motion.div
-            key="overlay"
-            className="fixed inset-0 z-[70] flex items-center justify-center p-4 md:p-8"
+            key="menu"
+            className="fixed inset-0 z-[80]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.4 }}
-            onClick={(e) => { if (e.target === e.currentTarget) setOpen(false); }}
+            transition={{ duration: 0.3 }}
           >
-            {/* Backdrop */}
-            <div
-              className="absolute inset-0 bg-[#292824]/40 backdrop-blur-sm"
-              onClick={() => setOpen(false)}
-            />
+            {/* Click catcher */}
+            <div className="absolute inset-0" onClick={() => setOpen(false)} />
 
-            {/* Book */}
-            <div className="relative w-full max-w-3xl" style={{ perspective: 1600 }}>
+            {/* Menu bubble */}
+            <motion.div
+              className="absolute top-20 right-4 md:right-6 w-[270px] max-w-[calc(100vw-2rem)] relative"
+              style={{ perspective: 1200 }}
+              initial={{ opacity: 0, y: -10, scale: 0.96 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -10, scale: 0.96 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
+            >
+              {/* Content (revealed) */}
               <motion.div
-                className="relative bg-[#F8F6F1] rounded-lg shadow-2xl shadow-[#292824]/40 border border-[#DED8CE] overflow-hidden flex flex-col md:flex-row"
-                style={{ transformStyle: "preserve-3d" }}
-                initial={{ opacity: 0, scale: 0.92, rotateY: 32 }}
-                animate={{ opacity: 1, scale: 1, rotateY: 0 }}
-                transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.05 }}
+                className="relative rounded-lg border border-[#DED8CE] bg-[#F8F6F1] p-5 shadow-2xl shadow-[#292824]/30"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.22, duration: 0.35 }}
               >
-                {/* Spine (desktop) */}
-                <div className="hidden md:block absolute left-1/2 top-8 bottom-8 w-px -translate-x-1/2 bg-gradient-to-b from-transparent via-[#DED8CE] to-transparent" />
-
-                {/* Left page — title page */}
-                <div className="flex-1 p-10 md:p-14 flex flex-col justify-center text-center md:text-left border-b md:border-b-0 md:border-r border-[#DED8CE]/40">
-                  <p className="font-body text-[10px] tracking-[0.3em] text-[#B49A78] uppercase mb-6">
-                    Sens &amp; Conscience
-                  </p>
-                  <h2 className="font-heading text-3xl md:text-4xl font-light text-[#292824] leading-tight mb-6">
-                    Le livre<br className="md:hidden" /> de votre vie
-                  </h2>
-                  <p className="font-heading italic text-[#6E6A62] text-lg leading-relaxed mb-8 max-w-xs mx-auto md:mx-0">
-                    «&nbsp;Osons renaître une seconde fois, en conscience.&nbsp;»
-                  </p>
-                  <div className="flex items-center gap-3 justify-center md:justify-start">
-                    <span className="w-8 h-px bg-[#B49A78]" />
-                    <span className="font-body text-xs tracking-[0.15em] text-[#6E6A62] uppercase">
-                      Nuray C. Posse
-                    </span>
-                  </div>
-                </div>
-
-                {/* Right page — table of contents */}
-                <div className="flex-1 p-10 md:p-14 flex flex-col">
-                  <p className="font-body text-[10px] tracking-[0.3em] text-[#6E6A62] uppercase mb-8 md:mb-10">
-                    Sommaire
-                  </p>
-                  <nav className="flex flex-col flex-1">
-                    {chapters.map((c, i) => (
-                      <motion.button
-                        key={c.href}
-                        onClick={() => go(c.href)}
-                        className="group flex items-baseline gap-4 py-3.5 border-b border-[#DED8CE]/40 text-left last:border-b-0"
-                        initial={{ opacity: 0, x: 18 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: 0.32 + i * 0.07, duration: 0.5, ease: "easeOut" }}
-                      >
-                        <span className="font-heading text-sm text-[#B49A78] w-8 shrink-0">
-                          {c.num}
-                        </span>
-                        <span className="font-heading text-lg md:text-xl text-[#292824] group-hover:text-[#7C8873] group-hover:translate-x-1.5 transition-all duration-300">
-                          {c.label}
-                        </span>
-                      </motion.button>
-                    ))}
-                  </nav>
-                  <button
-                    onClick={() => setOpen(false)}
-                    className="mt-8 inline-flex items-center gap-2 font-body text-xs tracking-[0.2em] uppercase text-[#6E6A62] hover:text-[#292824] transition-colors self-center md:self-start"
-                  >
-                    <X size={14} /> Fermer le livre
-                  </button>
-                </div>
+                <nav className="flex flex-col">
+                  {chapters.map((c) => (
+                    <button
+                      key={c.href}
+                      onClick={() => go(c.href)}
+                      className="group flex items-baseline gap-3 py-2.5 border-b border-[#DED8CE]/40 last:border-b-0 text-left"
+                    >
+                      <span className="font-heading text-xs text-[#B49A78] w-5 shrink-0">
+                        {c.num}
+                      </span>
+                      <span className="font-heading text-lg text-[#292824] group-hover:text-[#7C8873] group-hover:translate-x-1 transition-all duration-300">
+                        {c.label}
+                      </span>
+                    </button>
+                  ))}
+                </nav>
               </motion.div>
-            </div>
+
+              {/* Left cover half — opens outward */}
+              <motion.div
+                className="absolute inset-y-0 left-0 w-1/2 rounded-l-lg bg-[#EEE9E0] border border-[#DED8CE] border-r-[#B49A78]/50"
+                style={{ transformOrigin: "right", backfaceVisibility: "hidden", WebkitBackfaceVisibility: "hidden" }}
+                initial={{ rotateY: 0 }}
+                animate={{ rotateY: -115 }}
+                transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+              />
+
+              {/* Right cover half — opens outward */}
+              <motion.div
+                className="absolute inset-y-0 right-0 w-1/2 rounded-r-lg bg-[#EEE9E0] border border-[#DED8CE] border-l-0"
+                style={{ transformOrigin: "left", backfaceVisibility: "hidden", WebkitBackfaceVisibility: "hidden" }}
+                initial={{ rotateY: 0 }}
+                animate={{ rotateY: 115 }}
+                transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+              />
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
