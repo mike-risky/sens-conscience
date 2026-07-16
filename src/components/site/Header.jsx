@@ -66,10 +66,10 @@ export default function Header() {
       <button
         onClick={() => setOpen((o) => !o)}
         aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
-        className="fixed top-2 md:top-4 right-5 md:right-6 z-[100] w-12 h-12 rounded-full bg-[#FDF6EC]/85 backdrop-blur-md border border-[#E8D5BA] shadow-lg shadow-[#3A2E22]/15 flex items-center justify-center text-[#2C2C2C] hover:bg-[#FDF6EC] hover:scale-105 transition-all duration-300 lg:hidden"
+        className="fixed top-3 md:top-5 right-4 md:right-6 z-[110] w-14 h-14 rounded-full bg-[#FDF6EC]/85 backdrop-blur-md border border-[#E8D5BA] shadow-lg shadow-[#3A2E22]/15 flex items-center justify-center text-[#2C2C2C] hover:bg-[#FDF6EC] hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer lg:hidden"
         data-export-hide
       >
-        {open ? <X size={20} /> : <Menu size={20} />}
+        {open ? <X size={24} /> : <Menu size={24} />}
       </button>
 
       {/* Desktop top bar — always visible */}
