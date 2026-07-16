@@ -20,7 +20,10 @@ export default function BookSection() {
             <img
               src={BOOK_IMG}
               alt="L'art de ne pas se trahir, livre de Nuray C. Posse sur la conscience de soi et le développement personnel"
-              className="w-full max-w-sm mx-auto rounded-lg object-cover shadow-xl shadow-[#3A2E22]/10"
+              loading="lazy"
+              width="384"
+              height="576"
+              className="w-full max-w-sm mx-auto rounded-lg object-cover aspect-[2/3] shadow-xl shadow-[#3A2E22]/10"
             />
           </div>
 
@@ -46,7 +49,7 @@ export default function BookSection() {
                 href="https://www.amazon.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#E76F51] text-white font-body font-medium text-sm hover:bg-[#D85B3D] transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#C4522E] text-white font-body font-medium text-sm hover:bg-[#B04728] transition-all duration-300"
               >
                 Découvrir le livre sur Amazon
                 <ExternalLink size={14} />

@@ -56,7 +56,7 @@ export default function HeroSection() {
         >
           <button
             onClick={() => scrollTo("#contact")}
-            className="px-8 py-3.5 rounded-full bg-[#E76F51] text-white font-body font-medium text-sm hover:bg-[#D85B3D] transition-all duration-300 shadow-lg shadow-[#E76F51]/25"
+            className="px-8 py-3.5 rounded-full bg-[#C4522E] text-white font-body font-medium text-sm hover:bg-[#B04728] transition-all duration-300 shadow-lg shadow-[#C4522E]/25"
           >
             Prendre rendez-vous
           </button>

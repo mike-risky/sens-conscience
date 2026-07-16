@@ -24,6 +24,7 @@ export default function AboutSection() {
             <img
               src={PORTRAIT_IMG}
               alt="Nuray C. Posse, coach de vie à Sion, dans un cadre naturel et lumineux"
+              loading="lazy"
               className="w-full max-w-md mx-auto lg:mx-0 rounded-lg object-cover aspect-[3/4]"
             />
           </div>
@@ -53,7 +54,7 @@ export default function AboutSection() {
 
             <button
               onClick={() => scrollTo("#contact")}
-              className="px-8 py-3.5 rounded-full bg-[#E76F51] text-white font-body font-medium text-sm hover:bg-[#D85B3D] transition-all duration-300"
+              className="px-8 py-3.5 rounded-full bg-[#C4522E] text-white font-body font-medium text-sm hover:bg-[#B04728] transition-all duration-300"
             >
               Prendre contact avec moi
             </button>
