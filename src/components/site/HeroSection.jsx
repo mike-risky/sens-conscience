@@ -15,6 +15,8 @@ export default function HeroSection() {
         <img
           src={HERO_IMG}
           alt="Lever de soleil sur les Alpes valaisannes près de Sion, symbole d'un nouveau départ"
+          fetchpriority="high"
+          loading="eager"
           className="w-full h-full object-cover scale-105 animate-[slowZoom_30s_ease-in-out_infinite_alternate]"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#3A2E22]/25 via-[#3A2E22]/10 to-[#FDF6EC]" />
@@ -24,7 +26,7 @@ export default function HeroSection() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.3 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
           className="font-body text-sm tracking-[0.2em] text-white/85 uppercase mb-8"
         >
           Sens & Conscience — par Nuray C. Posse
@@ -33,7 +35,7 @@ export default function HeroSection() {
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.6 }}
+          transition={{ duration: 0.8, delay: 0.15 }}
           className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-light text-white leading-tight mb-12"
         >
           Coach de vie à Sion pour retrouver du sens et reprendre les rênes de votre vie
@@ -42,7 +44,7 @@ export default function HeroSection() {
         <motion.blockquote
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 1.4 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
           className="font-heading italic text-white text-lg md:text-xl lg:text-2xl leading-relaxed mb-14 max-w-2xl mx-auto bg-[#3A2E22]/45 backdrop-blur-md rounded-2xl px-8 py-6 shadow-lg shadow-black/20"
         >
           «&nbsp;Nous naissons une première fois dans les circonstances. Osons renaître une seconde fois, en conscience.&nbsp;»
@@ -51,7 +53,7 @@ export default function HeroSection() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1.8 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6"
         >
           <button
