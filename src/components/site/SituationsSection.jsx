@@ -64,9 +64,6 @@ export default function SituationsSection() {
           <p className="font-body text-xs tracking-[0.2em] text-[#D2691E] uppercase mb-4">
             Quand la vie ne ressemble plus à ce que vous aviez imaginé
           </p>
-          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#2C2C2C] mb-6">
-            Pourquoi consulter une coach de vie à Sion ?
-          </h2>
           <p className="font-body text-[#7A6952] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
             Il arrive que l'on perde ses repères, son énergie, le sentiment d'être pleinement soi-même.
           </p>
