@@ -85,7 +85,8 @@ export default function ApproachSection() {
             {domains.map((d, i) => (
               <span
                 key={i}
-                className="px-4 py-1.5 rounded-full bg-[#D6CDC0]/50 font-body text-sm text-[#87856C]"
+                className="px-4 py-1.5 rounded-full bg-[#D6CDC0]/50 font-body text-sm text-[#87856C] float-bob"
+                style={{ animationDelay: `${i * 0.5}s` }}
               >
                 {d}
               </span>
