@@ -23,19 +23,19 @@ function StepCard({ step, index }) {
   return (
     <div
       ref={ref}
-      className={`flex gap-5 transition-all duration-700 ${
+      className={`group flex gap-5 rounded-lg p-4 transition-all duration-700 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-      }`}
+      } hover:shadow-xl hover:shadow-[#3A2E22]/10 hover:bg-white/70`}
       style={{ transitionDelay: `${index * 120}ms` }}
     >
-      <span className="font-heading text-3xl text-[#87856C]/30 font-light shrink-0 mt-1">
+      <span className="font-heading text-3xl text-[#87856C]/30 font-light shrink-0 mt-1 transition-colors duration-300 group-hover:text-[#C07847]/50">
         {step.num}
       </span>
       <div>
-        <div className="w-9 h-9 rounded-full bg-[#C07847]/10 flex items-center justify-center mb-3">
-          <Icon size={16} className="text-[#C07847]" />
+        <div className="w-9 h-9 rounded-full bg-[#C07847]/10 flex items-center justify-center mb-3 transition-colors duration-300 group-hover:bg-[#C07847]">
+          <Icon size={16} className="text-[#C07847] transition-colors duration-300 group-hover:text-white" />
         </div>
-        <h3 className="font-heading text-xl text-[#2C2C2C] mb-2">{step.title}</h3>
+        <h3 className="font-heading text-xl text-[#2C2C2C] mb-2 transition-colors duration-300 group-hover:text-[#C07847]">{step.title}</h3>
         <p className="font-body text-sm text-[#7A6952] leading-relaxed">{step.text}</p>
       </div>
     </div>

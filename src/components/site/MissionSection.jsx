@@ -23,13 +23,13 @@ function PillarCard({ pillar, index }) {
   return (
     <div
       ref={ref}
-      className={`text-center transition-all duration-700 ${
+      className={`group text-center rounded-lg p-6 transition-all duration-700 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-      }`}
+      } hover:shadow-xl hover:shadow-[#3A2E22]/10 hover:bg-white/70`}
       style={{ transitionDelay: `${index * 150}ms` }}
     >
-      <div className="w-px h-10 bg-[#87856C] mx-auto mb-5" />
-      <h3 className="font-heading text-xl md:text-2xl text-[#2C2C2C] mb-3">{pillar.title}</h3>
+      <div className="w-px h-10 bg-[#87856C] mx-auto mb-5 transition-colors duration-300 group-hover:bg-[#C07847]" />
+      <h3 className="font-heading text-xl md:text-2xl text-[#2C2C2C] mb-3 transition-colors duration-300 group-hover:text-[#C07847]">{pillar.title}</h3>
       <p className="font-body text-sm text-[#7A6952] leading-relaxed">{pillar.text}</p>
     </div>
   );
