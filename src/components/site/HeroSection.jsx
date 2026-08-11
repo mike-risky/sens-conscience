@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const HERO_IMG = "https://media.base44.com/images/public/6a545a283c8f895ced7a3979/7c4b832d5_generated_image.png";
+const LOGO_WHITE = "https://media.base44.com/images/public/6a545a283c8f895ced7a3979/6c95c1201_sensconscience_logotype_SC_logo_blanc.svg";
 
 export default function HeroSection() {
   const scrollTo = (id) => {
@@ -23,14 +24,18 @@ export default function HeroSection() {
       </div>
 
       <div className="relative z-10 max-w-3xl mx-auto px-6 text-center pt-36 pb-48">
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="font-body text-sm tracking-[0.2em] text-white/85 uppercase mb-8"
+          className="mb-10 flex justify-center"
         >
-          Sens & Conscience — par Nuray C. Posse
-        </motion.p>
+          <img
+            src={LOGO_WHITE}
+            alt="Sens & Conscience — par Nuray C. Posse"
+            className="h-20 md:h-28 w-auto"
+          />
+        </motion.div>
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}

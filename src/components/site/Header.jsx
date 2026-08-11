@@ -40,27 +40,6 @@ export default function Header() {
 
   return (
     <>
-      {/* Mobile/tablet brand bubble — fades on scroll, hidden on desktop */}
-      <motion.div
-        initial={false}
-        animate={{
-          opacity: scrolled ? 0 : 1,
-          y: scrolled ? -12 : 0,
-          scale: scrolled ? 0.95 : 1,
-        }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
-        className="fixed top-3 md:top-4 left-4 md:left-6 z-50 w-fit sm:w-1/3 max-w-[58vw] sm:max-w-md lg:hidden"
-        style={{ pointerEvents: scrolled ? "none" : "auto" }}
-        data-export-hide
-      >
-        <button
-          onClick={() => go("#accueil")}
-          className="w-full flex items-center justify-start px-4 py-2 rounded-full bg-[#F2EEE4]/90 backdrop-blur-md border border-[#D6CDC0] shadow-lg shadow-black/10 hover:bg-[#F2EEE4] transition-all duration-300"
-        >
-          <img src={LOGO_GREEN} alt="Sens & Conscience" className="h-10 w-auto" />
-        </button>
-      </motion.div>
-
       {/* Mobile/tablet hamburger — hidden on desktop */}
       <button
         onClick={() => setOpen((o) => !o)}
