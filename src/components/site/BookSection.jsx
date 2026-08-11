@@ -55,7 +55,7 @@ export default function BookSection() {
                 <ExternalLink size={14} />
               </a>
               <a
-                href="https://www.google.com/maps"
+                href="https://www.laliseuse.ch/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#87856C] text-white font-body font-medium text-sm hover:bg-[#6e6c57] transition-all duration-300"
