@@ -2,7 +2,7 @@ import React from "react";
 import useScrollReveal from "@/hooks/useScrollReveal";
 import { ExternalLink } from "lucide-react";
 
-const BOOK_IMG = "https://media.base44.com/images/public/6a545a283c8f895ced7a3979/7dbad9317_generated_f005c7a8.png";
+const BOOK_IMG = "https://media.base44.com/images/public/6a545a283c8f895ced7a3979/ad2b02317_generated_image.png";
 
 export default function BookSection() {
   const [ref, isVisible] = useScrollReveal();
@@ -46,7 +46,7 @@ export default function BookSection() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="https://www.amazon.com"
+                href="https://www.amazon.ae/Lart-pas-trahir-Habiter-lucidit%C3%A9/dp/B0GTRMNT34"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#C07847] text-white font-body font-medium text-sm hover:bg-[#a8663a] transition-all duration-300"
