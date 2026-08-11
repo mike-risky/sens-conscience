@@ -23,10 +23,10 @@ function StepCard({ step, index }) {
   return (
     <div
       ref={ref}
-      className={`flex gap-5 transition-all duration-700 ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+      className={`flex gap-5 transition-opacity duration-700 float-bob ${
+        isVisible ? "opacity-100" : "opacity-0"
       }`}
-      style={{ transitionDelay: `${index * 120}ms` }}
+      style={{ transitionDelay: `${index * 120}ms`, animationDelay: `${index * 0.7}s` }}
     >
       <span className="font-heading text-3xl text-[#87856C]/30 font-light shrink-0 mt-1">
         {step.num}
