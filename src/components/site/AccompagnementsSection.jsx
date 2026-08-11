@@ -17,12 +17,12 @@ function ServiceCard({ service, index }) {
   return (
     <div
       ref={ref}
-      className={`group p-8 md:p-10 bg-white rounded-lg hover:shadow-md transition-all duration-700 ${
+      className={`group p-8 md:p-10 bg-[#F2EEE4] rounded-lg hover:shadow-md border border-[#D6CDC0]/50 transition-all duration-700 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       }`}
       style={{ transitionDelay: `${index * 80}ms` }}
     >
-      <h3 className="service-card-title font-heading font-medium text-[#2C2C2C] mb-4 group-hover:text-[#E76F51] transition-colors duration-300">
+      <h3 className="service-card-title font-heading font-medium text-[#4a4838] mb-4 group-hover:text-[#C07847] transition-colors duration-300">
         {service.title}
       </h3>
       <p className="font-body text-sm text-[#7A6952] leading-relaxed">{service.text}</p>
@@ -39,7 +39,7 @@ export default function AccompagnementsSection() {
   };
 
   return (
-    <section id="accompagnements" className="py-32 md:py-48 bg-[#F7E9D4]/40">
+    <section id="accompagnements" className="py-32 md:py-48 bg-[#D6CDC0]/30">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <div
           ref={ref}
@@ -47,7 +47,7 @@ export default function AccompagnementsSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="font-body text-xs tracking-[0.2em] text-[#D2691E] uppercase mb-4">
+          <p className="font-body text-xs tracking-[0.2em] text-[#87856C] uppercase mb-4">
             Les accompagnements
           </p>
           <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#2C2C2C] mb-6">
@@ -67,7 +67,7 @@ export default function AccompagnementsSection() {
         <div className="text-center mt-20">
           <button
             onClick={() => scrollTo("#contact")}
-            className="px-8 py-3.5 rounded-full bg-[#C4522E] text-white font-body font-medium text-sm hover:bg-[#B04728] transition-all duration-300"
+            className="px-8 py-3.5 rounded-full bg-[#C07847] text-white font-body font-medium text-sm hover:bg-[#a8663a] transition-all duration-300"
           >
             Parler de votre situation
           </button>

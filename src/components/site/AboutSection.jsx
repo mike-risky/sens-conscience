@@ -12,7 +12,7 @@ export default function AboutSection() {
   };
 
   return (
-    <section id="a-propos" className="py-32 md:py-48 bg-[#FDF6EC]">
+    <section id="a-propos" className="py-32 md:py-48 bg-[#F2EEE4]">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <div
           ref={ref}
@@ -30,7 +30,7 @@ export default function AboutSection() {
           </div>
 
           <div className="order-1 lg:order-2">
-            <p className="font-body text-xs tracking-[0.2em] text-[#D2691E] uppercase mb-4">
+            <p className="font-body text-xs tracking-[0.2em] text-[#87856C] uppercase mb-4">
               À propos
             </p>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#2C2C2C] mb-10">
@@ -46,7 +46,7 @@ export default function AboutSection() {
               </p>
             </div>
 
-            <blockquote className="border-l-2 border-[#D2691E] pl-5 mb-8">
+            <blockquote className="border-l-2 border-[#C07847] pl-5 mb-8">
               <p className="font-heading italic text-lg text-[#2C2C2C]">
                 «&nbsp;Retrouver son chemin ne signifie pas revenir en arrière. Cela signifie apprendre à avancer autrement.&nbsp;»
               </p>
@@ -54,7 +54,7 @@ export default function AboutSection() {
 
             <button
               onClick={() => scrollTo("#contact")}
-              className="px-8 py-3.5 rounded-full bg-[#C4522E] text-white font-body font-medium text-sm hover:bg-[#B04728] transition-all duration-300"
+              className="px-8 py-3.5 rounded-full bg-[#C07847] text-white font-body font-medium text-sm hover:bg-[#a8663a] transition-all duration-300"
             >
               Prendre contact avec moi
             </button>

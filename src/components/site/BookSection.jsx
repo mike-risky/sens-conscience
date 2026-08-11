@@ -8,7 +8,7 @@ export default function BookSection() {
   const [ref, isVisible] = useScrollReveal();
 
   return (
-    <section id="livre" className="py-32 md:py-48 bg-[#F7E9D4]/40">
+    <section id="livre" className="py-32 md:py-48 bg-[#F2EEE4]">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <div
           ref={ref}
@@ -28,7 +28,7 @@ export default function BookSection() {
           </div>
 
           <div>
-            <p className="font-body text-xs tracking-[0.2em] text-[#D2691E] uppercase mb-4">
+            <p className="font-body text-xs tracking-[0.2em] text-[#87856C] uppercase mb-4">
               Le livre
             </p>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#2C2C2C] mb-2">
@@ -49,7 +49,7 @@ export default function BookSection() {
                 href="https://www.amazon.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#C4522E] text-white font-body font-medium text-sm hover:bg-[#B04728] transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#C07847] text-white font-body font-medium text-sm hover:bg-[#a8663a] transition-all duration-300"
               >
                 Découvrir le livre sur Amazon
                 <ExternalLink size={14} />
@@ -58,7 +58,7 @@ export default function BookSection() {
                 href="https://www.google.com/maps"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full border border-[#E8D5BA] text-[#2C2C2C] font-body font-medium text-sm hover:bg-[#F7E9D4] transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#87856C] text-white font-body font-medium text-sm hover:bg-[#6e6c57] transition-all duration-300"
               >
                 Disponible à La Liseuse à Sion
                 <ExternalLink size={14} />

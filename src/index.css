@@ -1,28 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 38 68% 96%;
+    /* Charte Sens & Conscience */
+    --brand-cream: #F2EEE4;
+    --brand-sand: #D6CDC0;
+    --brand-olive: #87856C;
+    --brand-orange: #C07847;
+
+    --background: 40 27% 93%;
     --foreground: 30 6% 17%;
     --card: 0 0% 100%;
     --card-foreground: 30 6% 17%;
     --popover: 0 0% 100%;
     --popover-foreground: 30 6% 17%;
-    --primary: 11 76% 61%;
-    --primary-foreground: 38 68% 96%;
-    --secondary: 36 65% 90%;
-    --secondary-foreground: 30 6% 17%;
-    --muted: 36 65% 90%;
+    --primary: 28 46% 52%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 40 15% 58%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 36 20% 81%;
     --muted-foreground: 35 20% 40%;
-    --accent: 25 75% 47%;
+    --accent: 28 46% 52%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 36 44% 82%;
-    --input: 36 44% 82%;
-    --ring: 11 76% 61%;
+    --border: 36 20% 81%;
+    --input: 36 20% 81%;
+    --ring: 28 46% 52%;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
@@ -30,7 +38,7 @@
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
     --font-heading: 'Cormorant Garamond', Georgia, serif;
-    --font-body: 'Manrope', system-ui, sans-serif;
+    --font-body: 'Raleway', system-ui, sans-serif;
     --font-display: 'Cormorant Garamond', Georgia, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --sidebar-background: 0 0% 98%;

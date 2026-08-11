@@ -1,14 +1,15 @@
 import React from "react";
 
+const LOGO_WHITE = "https://media.base44.com/images/public/6a545a283c8f895ced7a3979/6c95c1201_sensconscience_logotype_SC_logo_blanc.svg";
+
 export default function Footer() {
   return (
-    <footer className="bg-[#3A2E22] text-white/80 py-16">
+    <footer className="bg-[#87856C] text-white py-16">
       <div className="max-w-5xl mx-auto px-6 md:px-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
           <div>
-            <p className="font-heading text-xl text-white mb-1">Sens & Conscience</p>
-            <p className="font-body text-xs text-white/50 mb-3">par Nuray C. Posse</p>
-            <p className="font-body text-sm text-white/60">Coach de vie à Sion</p>
+            <img src={LOGO_WHITE} alt="Sens & Conscience" className="h-16 w-auto mb-3" />
+            <p className="font-body text-sm text-white/80">Coach de vie à Sion</p>
           </div>
           <div>
             <p className="font-body text-xs tracking-[0.15em] text-white/70 uppercase mb-4">Contact</p>

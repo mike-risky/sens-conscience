@@ -28,12 +28,12 @@ function StepCard({ step, index }) {
       }`}
       style={{ transitionDelay: `${index * 120}ms` }}
     >
-      <span className="font-heading text-3xl text-[#E8D5BA] font-light shrink-0 mt-1">
+      <span className="font-heading text-3xl text-[#D6CDC0] font-light shrink-0 mt-1">
         {step.num}
       </span>
       <div>
-        <div className="w-9 h-9 rounded-full bg-[#E76F51]/10 flex items-center justify-center mb-3">
-          <Icon size={16} className="text-[#E76F51]" />
+        <div className="w-9 h-9 rounded-full bg-[#C07847]/10 flex items-center justify-center mb-3">
+          <Icon size={16} className="text-[#C07847]" />
         </div>
         <h3 className="font-heading text-xl text-[#2C2C2C] mb-2">{step.title}</h3>
         <p className="font-body text-sm text-[#7A6952] leading-relaxed">{step.text}</p>
@@ -47,7 +47,7 @@ export default function ApproachSection() {
   const [credRef, credVisible] = useScrollReveal();
 
   return (
-    <section id="approche" className="py-32 md:py-48 bg-gradient-to-b from-[#FDF6EC] to-[#FBF1E2]">
+    <section id="approche" className="py-32 md:py-48 bg-[#F2EEE4]">
       <div className="max-w-5xl mx-auto px-6 md:px-10">
         <div
           ref={ref}
@@ -55,7 +55,7 @@ export default function ApproachSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="font-body text-xs tracking-[0.2em] text-[#D2691E] uppercase mb-4">
+          <p className="font-body text-xs tracking-[0.2em] text-[#87856C] uppercase mb-4">
             Une approche globale
           </p>
           <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#2C2C2C] mb-6">
@@ -74,7 +74,7 @@ export default function ApproachSection() {
 
         <div
           ref={credRef}
-          className={`border-t border-[#E8D5BA] pt-12 max-w-3xl mx-auto text-center transition-all duration-1000 ${
+          className={`border-t border-[#D6CDC0] pt-12 max-w-3xl mx-auto text-center transition-all duration-1000 ${
             credVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
@@ -85,7 +85,7 @@ export default function ApproachSection() {
             {domains.map((d, i) => (
               <span
                 key={i}
-                className="px-4 py-1.5 rounded-full bg-[#F7E9D4] font-body text-sm text-[#D2691E]"
+                className="px-4 py-1.5 rounded-full bg-[#D6CDC0]/50 font-body text-sm text-[#87856C]"
               >
                 {d}
               </span>

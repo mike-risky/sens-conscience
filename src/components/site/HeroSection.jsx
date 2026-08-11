@@ -58,13 +58,13 @@ export default function HeroSection() {
         >
           <button
             onClick={() => scrollTo("#contact")}
-            className="px-8 py-3.5 rounded-full bg-[#C4522E] text-white font-body font-medium text-sm hover:bg-[#B04728] transition-all duration-300 shadow-lg shadow-[#C4522E]/25"
+            className="px-8 py-3.5 rounded-full bg-[#C07847] text-white font-body font-medium text-sm hover:bg-[#a8663a] transition-all duration-300 shadow-lg shadow-[#C07847]/30"
           >
             Prendre rendez-vous
           </button>
           <button
             onClick={() => scrollTo("#approche")}
-            className="px-8 py-3.5 rounded-full border border-white/50 text-white font-body font-medium text-sm hover:bg-white/15 transition-all duration-300"
+            className="px-8 py-3.5 rounded-full bg-[#87856C] text-white font-body font-medium text-sm hover:bg-[#6e6c57] transition-all duration-300"
           >
             Découvrir mon approche
           </button>

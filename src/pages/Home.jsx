@@ -15,7 +15,7 @@ import ImageBand from "@/components/site/ImageBand";
 
 export default function Home() {
   return (
-    <div className="bg-[#FDF6EC] min-h-screen">
+    <div className="bg-[#F2EEE4] min-h-screen">
       <ScrollProgress />
       <Header />
       <HeroSection />
