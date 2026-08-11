@@ -2,7 +2,7 @@ import React from "react";
 import useScrollReveal from "@/hooks/useScrollReveal";
 import { ExternalLink } from "lucide-react";
 
-const BOOK_IMG = "https://media.base44.com/images/public/6a545a283c8f895ced7a3979/ad2b02317_generated_image.png";
+const BOOK_IMG = "https://media.base44.com/images/public/6a545a283c8f895ced7a3979/24e022799_generated_image.png";
 
 export default function BookSection() {
   const [ref, isVisible] = useScrollReveal();
