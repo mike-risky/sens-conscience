@@ -28,7 +28,7 @@ function StepCard({ step, index }) {
       }`}
       style={{ transitionDelay: `${index * 120}ms` }}
     >
-      <span className="font-heading text-3xl text-[#D6CDC0] font-light shrink-0 mt-1">
+      <span className="font-heading text-3xl text-[#87856C]/30 font-light shrink-0 mt-1">
         {step.num}
       </span>
       <div>
@@ -47,7 +47,7 @@ export default function ApproachSection() {
   const [credRef, credVisible] = useScrollReveal();
 
   return (
-    <section id="approche" className="py-32 md:py-48 bg-[#F2EEE4]">
+    <section id="approche" className="py-32 md:py-48 bg-white">
       <div className="max-w-5xl mx-auto px-6 md:px-10">
         <div
           ref={ref}

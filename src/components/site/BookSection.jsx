@@ -8,7 +8,7 @@ export default function BookSection() {
   const [ref, isVisible] = useScrollReveal();
 
   return (
-    <section id="livre" className="py-32 md:py-48 bg-[#F2EEE4]">
+    <section id="livre" className="py-32 md:py-48 bg-[#D6CDC0]/50">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <div
           ref={ref}
