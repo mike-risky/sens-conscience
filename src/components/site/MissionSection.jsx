@@ -23,10 +23,10 @@ function PillarCard({ pillar, index }) {
   return (
     <div
       ref={ref}
-      className={`text-center transition-opacity duration-700 float-bob ${
-        isVisible ? "opacity-100" : "opacity-0"
+      className={`text-center transition-all duration-700 ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       }`}
-      style={{ transitionDelay: `${index * 150}ms`, animationDelay: `${index * 0.8}s` }}
+      style={{ transitionDelay: `${index * 150}ms` }}
     >
       <div className="w-px h-10 bg-[#87856C] mx-auto mb-5" />
       <h3 className="font-heading text-xl md:text-2xl text-[#2C2C2C] mb-3">{pillar.title}</h3>

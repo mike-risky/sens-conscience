@@ -31,13 +31,13 @@ function SituationCard({ text, Icon, index }) {
   return (
     <div
       ref={ref}
-      className={`p-8 bg-white/60 border border-[#D6CDC0]/40 rounded-lg transition-opacity duration-700 float-bob ${
-        isVisible ? "opacity-100" : "opacity-0"
-      }`}
-      style={{ transitionDelay: `${index * 80}ms`, animationDelay: `${index * 0.6}s` }}
+      className={`group p-8 bg-white/60 border border-[#D6CDC0]/40 rounded-lg transition-all duration-700 ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+      } hover:shadow-xl hover:shadow-[#3A2E22]/10 hover:bg-white hover:border-[#C07847]/40`}
+      style={{ transitionDelay: `${index * 80}ms` }}
     >
-      <div className="w-9 h-9 rounded-full bg-[#C07847]/10 flex items-center justify-center mb-4">
-        <Icon size={16} className="text-[#C07847]" />
+      <div className="w-9 h-9 rounded-full bg-[#C07847]/10 flex items-center justify-center mb-4 transition-colors duration-300 group-hover:bg-[#C07847]">
+        <Icon size={16} className="text-[#C07847] transition-colors duration-300 group-hover:text-white" />
       </div>
       <p className="font-body text-[#2C2C2C] text-sm md:text-base leading-relaxed">{text}</p>
     </div>
