@@ -12,6 +12,12 @@ import BookSection from "@/components/site/BookSection";
 import ContactSection from "@/components/site/ContactSection";
 import Footer from "@/components/site/Footer";
 import ImageBand from "@/components/site/ImageBand";
+import SectionDivider from "@/components/site/SectionDivider";
+
+const CREAM = "#F2EEE4";
+const SAND = "#E4DED2";
+const WHITE = "#FFFFFF";
+const OLIVE = "#87856C";
 
 export default function Home() {
   return (
@@ -20,14 +26,19 @@ export default function Home() {
       <Header />
       <HeroSection />
       <SituationsSection />
+      <SectionDivider fromColor={CREAM} toColor={SAND} />
       <MissionSection />
+      <SectionDivider fromColor={SAND} toColor={WHITE} />
       <ApproachSection />
+      <SectionDivider fromColor={WHITE} toColor={OLIVE} />
       <AccompagnementsSection />
       <ImageBand />
       <AboutSection />
       <QuoteSection />
       <BookSection />
+      <SectionDivider fromColor={SAND} toColor={CREAM} />
       <ContactSection />
+      <SectionDivider fromColor={CREAM} toColor={OLIVE} />
       <Footer />
     </div>
   );
