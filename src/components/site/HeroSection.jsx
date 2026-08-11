@@ -23,12 +23,12 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#3A2E22]/25 via-[#3A2E22]/10 to-[#FDF6EC]" />
       </div>
 
-      <div className="relative z-10 max-w-3xl mx-auto px-6 text-center pt-36 pb-48">
+      <div className="relative z-10 max-w-3xl mx-auto px-6 text-center pt-20 pb-32">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="mb-10 flex justify-center"
+          className="mb-6 flex justify-center"
         >
           <img
             src={LOGO_WHITE}
