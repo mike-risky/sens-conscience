@@ -32,6 +32,7 @@ function ServiceCard({ service, index }) {
 
 export default function AccompagnementsSection() {
   const [ref, isVisible] = useScrollReveal();
+  const [ctaRef, ctaVisible] = useScrollReveal();
 
   const scrollTo = (id) => {
     const el = document.querySelector(id);
@@ -64,7 +65,12 @@ export default function AccompagnementsSection() {
           ))}
         </div>
 
-        <div className="text-center mt-20">
+        <div
+          ref={ctaRef}
+          className={`text-center mt-20 transition-all duration-1000 ${
+            ctaVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
           <button
             onClick={() => scrollTo("#contact")}
             className="px-8 py-3.5 rounded-full bg-[#C07847] text-white font-body font-medium text-sm hover:bg-[#a8663a] transition-all duration-300"

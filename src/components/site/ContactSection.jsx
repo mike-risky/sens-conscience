@@ -4,6 +4,7 @@ import { Phone, Mail } from "lucide-react";
 
 export default function ContactSection() {
   const [ref, isVisible] = useScrollReveal();
+  const [detailsRef, detailsVisible] = useScrollReveal();
 
   return (
     <section id="contact" className="py-32 md:py-48 bg-[#F2EEE4]">
@@ -25,7 +26,12 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <div className="max-w-xl mx-auto">
+        <div
+          ref={detailsRef}
+          className={`max-w-xl mx-auto transition-all duration-1000 ${
+            detailsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
           <div className="space-y-8">
             <div className="space-y-5">
               <div className="flex items-center gap-4">

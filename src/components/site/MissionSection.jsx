@@ -37,12 +37,18 @@ function PillarCard({ pillar, index }) {
 
 export default function MissionSection() {
   const [ref, isVisible] = useScrollReveal();
+  const [imgRef, imgVisible] = useScrollReveal();
 
   return (
     <section className="py-32 md:py-48 bg-[#D6CDC0]/50">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-          <div>
+          <div
+            ref={imgRef}
+            className={`transition-all duration-1000 ${
+              imgVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            }`}
+          >
             <img
               src={MISSION_IMG}
               alt="Nature morte chaleureuse au soleil du matin près de Sion — la clarté retrouvée"
