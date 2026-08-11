@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const LOGO_WHITE = "https://media.base44.com/images/public/6a545a283c8f895ced7a3979/6c95c1201_sensconscience_logotype_SC_logo_blanc.svg";
 
@@ -8,7 +9,7 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto px-6 md:px-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
           <div>
-            <img src={LOGO_WHITE} alt="Sens & Conscience" className="h-16 w-auto mb-3" />
+            <img src={LOGO_WHITE} alt="Sens & Conscience" className="h-28 md:h-32 w-auto mb-4" />
             <p className="font-body text-sm text-white/80">Coach de vie à Sion</p>
           </div>
           <div>
@@ -28,12 +29,12 @@ export default function Footer() {
               <a href="https://www.instagram.com/nuraycposse" target="_blank" rel="noopener noreferrer" className="block font-body text-sm text-white/70 hover:text-white transition-colors">
                 Instagram
               </a>
-              <a href="#mentions-legales" className="block font-body text-sm text-white/70 hover:text-white transition-colors">
+              <Link to="/mentions-legales" className="block font-body text-sm text-white/70 hover:text-white transition-colors">
                 Mentions légales
-              </a>
-              <a href="#politique-de-confidentialite" className="block font-body text-sm text-white/70 hover:text-white transition-colors">
+              </Link>
+              <Link to="/politique-de-confidentialite" className="block font-body text-sm text-white/70 hover:text-white transition-colors">
                 Politique de confidentialité
-              </a>
+              </Link>
             </div>
           </div>
         </div>
