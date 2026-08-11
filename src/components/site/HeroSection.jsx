@@ -50,7 +50,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="italic text-white text-2xl md:text-3xl lg:text-4xl leading-relaxed mb-14 max-w-2xl mx-auto bg-[#3A2E22]/45 backdrop-blur-md rounded-2xl px-8 py-6 shadow-lg shadow-black/20"
+          className="italic text-white text-xs leading-relaxed mb-14 max-w-2xl mx-auto bg-[#3A2E22]/45 backdrop-blur-md rounded-2xl px-8 py-6 shadow-lg shadow-black/20"
         >
           «&nbsp;Nous naissons une première fois dans les circonstances. Osons renaître une seconde fois, en conscience.&nbsp;»
         </motion.blockquote>

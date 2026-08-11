@@ -47,7 +47,7 @@ export default function AboutSection() {
             </div>
 
             <blockquote className="border-l-2 border-[#C07847] pl-5 mb-8">
-              <p className="italic text-2xl text-[#2C2C2C]">
+              <p className="italic text-xs text-[#2C2C2C]">
                 «&nbsp;Retrouver son chemin ne signifie pas revenir en arrière. Cela signifie apprendre à avancer autrement.&nbsp;»
               </p>
             </blockquote>
