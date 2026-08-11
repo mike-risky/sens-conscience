@@ -76,7 +76,7 @@ export default function SituationsSection() {
         </div>
 
         <div className="text-center mt-20">
-          <p className="font-heading italic text-2xl md:text-3xl text-[#C07847] mb-8">
+          <p className="italic text-2xl md:text-3xl text-[#C07847] mb-8">
             Si ces mots résonnent en vous, vous êtes peut-être au bon endroit.
           </p>
           <button

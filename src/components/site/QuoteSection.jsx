@@ -22,7 +22,7 @@ export default function QuoteSection() {
           isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
         }`}
       >
-        <p className="font-heading italic text-2xl md:text-3xl lg:text-4xl text-white leading-snug mb-6">
+        <p className="italic text-2xl md:text-3xl lg:text-4xl text-white leading-snug mb-6">
           «&nbsp;L'art de vivre en conscience commence lorsque nous cessons de nous trahir.&nbsp;»
         </p>
         <p className="font-body text-sm text-white/70 tracking-[0.15em] uppercase">
