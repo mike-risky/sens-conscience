@@ -97,7 +97,7 @@ export default function Header() {
             >
               <div className="bg-[#F2EEE4] border border-[#D6CDC0] rounded-lg shadow-2xl shadow-black/20 p-6 md:p-8">
                 <div className="flex items-center gap-4 mb-6 pb-5 border-b border-[#D6CDC0]">
-                  <img src={LOGO_GREEN} alt="Sens & Conscience" className="h-28 md:h-36 w-auto max-w-full" />
+                  <img src={LOGO_GREEN} alt="Sens & Conscience" className="h-40 md:h-52 w-auto max-w-full" />
                 </div>
                 <nav className="flex flex-col">
                   {chapters.map((c, i) => (

@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto px-6 md:px-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
           <div>
-            <img src={LOGO_WHITE} alt="Sens & Conscience" className="h-28 md:h-32 w-auto mb-4" />
+            <img src={LOGO_WHITE} alt="Sens & Conscience" className="h-40 md:h-48 w-auto mb-4" />
             <p className="font-body text-sm text-white/80">Coach de vie à Sion</p>
           </div>
           <div>
