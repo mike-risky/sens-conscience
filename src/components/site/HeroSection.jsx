@@ -33,7 +33,7 @@ export default function HeroSection() {
           <img
             src={LOGO_WHITE}
             alt="Sens & Conscience — par Nuray C. Posse"
-            className="h-52 md:h-72 lg:h-80 w-auto"
+            className="h-[26rem] md:h-[36rem] lg:h-[40rem] w-auto"
           />
         </motion.div>
 
