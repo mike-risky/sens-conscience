@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
 
+@font-face {
+  font-family: "Dream Avenue";
+  src: url("https://db.onlinewebfonts.com/t/5da49843f66caf14799662bd12aa55a2.woff2") format("woff2"),
+       url("https://db.onlinewebfonts.com/t/5da49843f66caf14799662bd12aa55a2.woff") format("woff"),
+       url("https://db.onlinewebfonts.com/t/5da49843f66caf14799662bd12aa55a2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -37,9 +47,9 @@
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
-    --font-heading: 'Cormorant Garamond', Georgia, serif;
+    --font-heading: 'Dream Avenue', 'Cormorant Garamond', Georgia, serif;
     --font-body: 'Raleway', system-ui, sans-serif;
-    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-display: 'Dream Avenue', 'Cormorant Garamond', Georgia, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
