@@ -26,19 +26,19 @@ export default function Home() {
       <Header />
       <HeroSection />
       <SituationsSection />
-      <SectionDivider fromColor={CREAM} toColor={SAND} />
+      <SectionDivider fromColor={CREAM} toColor={SAND} variant={0} />
       <MissionSection />
-      <SectionDivider fromColor={SAND} toColor={WHITE} />
+      <SectionDivider fromColor={SAND} toColor={WHITE} variant={1} />
       <ApproachSection />
-      <SectionDivider fromColor={WHITE} toColor={OLIVE} />
+      <SectionDivider fromColor={WHITE} toColor={OLIVE} variant={2} />
       <AccompagnementsSection />
       <ImageBand />
       <AboutSection />
       <QuoteSection />
       <BookSection />
-      <SectionDivider fromColor={SAND} toColor={CREAM} />
+      <SectionDivider fromColor={SAND} toColor={CREAM} variant={0} />
       <ContactSection />
-      <SectionDivider fromColor={CREAM} toColor={OLIVE} />
+      <SectionDivider fromColor={CREAM} toColor={OLIVE} variant={1} />
       <Footer />
     </div>
   );
