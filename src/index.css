@@ -118,20 +118,20 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Fixed type scale: standard 14px / h3 16px / h2 20px / h1 30px */
+/* Type scale — Dream Avenue (headings) floor: 24px */
 body { font-size: 14px; }
 h1 { font-size: 30px !important; }
-h2 { font-size: 20px !important; }
-h3 { font-size: 16px !important; }
-p { font-size: 14px !important; }
-.service-card-title { font-size: 20px !important; line-height: 1.25 !important; }
+h2 { font-size: 24px !important; }
+h3 { font-size: 24px !important; }
+p.font-body { font-size: 14px !important; }
+.service-card-title { font-size: 24px !important; line-height: 1.25 !important; }
 
 @media (min-width: 1024px) {
   html { scroll-padding-top: 5rem; }
   body { font-size: 18px; }
-  p { font-size: 18px !important; }
+  p.font-body { font-size: 18px !important; }
   h1 { font-size: 42px !important; }
-  h2 { font-size: 28px !important; }
-  h3 { font-size: 22px !important; }
+  h2 { font-size: 30px !important; }
+  h3 { font-size: 24px !important; }
   .service-card-title { font-size: 26px !important; }
 }
