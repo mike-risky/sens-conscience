@@ -20,12 +20,12 @@ export default function AboutSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <div className="order-2 lg:order-1">
+          <div className="order-2 lg:order-1 lg:sticky lg:top-24 lg:self-start">
             <img
               src={PORTRAIT_IMG}
               alt="Nuray C. Posse, coach de vie à Sion, dans un cadre naturel et lumineux"
               loading="lazy"
-              className="w-full max-w-md mx-auto lg:mx-0 rounded-lg object-cover aspect-[3/4]"
+              className="w-full max-w-sm mx-auto lg:mx-0 rounded-lg object-cover aspect-[3/4] shadow-lg shadow-[#3A2E22]/10"
             />
           </div>
 
@@ -39,7 +39,7 @@ export default function AboutSection() {
             <p className="font-body text-sm text-[#87856C] mb-8">Coach de vie à Sion</p>
 
             <div className="space-y-5 mb-8">
-              <p className="font-body text-[#4a4838] text-base md:text-lg leading-relaxed">
+              <p className="font-body text-[#2C2C2C] text-lg md:text-xl leading-relaxed">
                 Je m'appelle Nuray C. Posse. Depuis plus de vingt ans, j'accompagne des êtres humains dans des moments où quelque chose ne fonctionne plus comme avant.
               </p>
               <p className="font-body text-[#4a4838] text-base md:text-lg leading-relaxed">
