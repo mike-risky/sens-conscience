@@ -20,7 +20,7 @@ export default function HeroSection() {
           loading="eager"
           className="w-full h-full object-cover scale-105 animate-[slowZoom_30s_ease-in-out_infinite_alternate]"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#3A2E22]/25 via-[#3A2E22]/10 to-[#FDF6EC]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#3A2E22]/30 via-[#3A2E22]/15 to-[#FDF6EC]" />
       </div>
 
       <div className="relative z-10 max-w-3xl mx-auto px-6 text-center pt-2 pb-10">
@@ -33,24 +33,33 @@ export default function HeroSection() {
           <img
             src={LOGO_WHITE}
             alt="Sens & Conscience — par Nuray C. Posse"
-            className="h-[26rem] md:h-[36rem] lg:h-[40rem] w-auto"
+            className="h-[24rem] md:h-[32rem] lg:h-[36rem] w-auto"
           />
         </motion.div>
+
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="font-body text-[0.7rem] tracking-[0.25em] text-white/80 uppercase mb-6"
+        >
+          Coach de vie à Sion
+        </motion.p>
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.15 }}
-          className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-light text-white leading-tight mb-12"
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-light text-white leading-tight mb-10"
         >
-          Coach de vie à Sion pour retrouver du sens et reprendre les rênes de votre vie
+          À quel endroit de votre vie avez-vous cessé d'habiter votre propre existence&nbsp;?
         </motion.h1>
 
         <motion.blockquote
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="italic text-white text-xs leading-relaxed mb-14 max-w-2xl mx-auto bg-[#3A2E22]/45 backdrop-blur-md rounded-2xl px-8 py-6 shadow-lg shadow-black/20"
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="italic text-white text-xs leading-relaxed mb-12 max-w-2xl mx-auto bg-[#3A2E22]/45 backdrop-blur-md rounded-2xl px-8 py-6 shadow-lg shadow-black/20"
         >
           «&nbsp;Nous naissons une première fois dans les circonstances. Osons renaître une seconde fois, en conscience.&nbsp;»
         </motion.blockquote>
@@ -58,8 +67,8 @@ export default function HeroSection() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6"
+          transition={{ duration: 0.6, delay: 0.9 }}
+          className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <button
             onClick={() => scrollTo("#contact")}

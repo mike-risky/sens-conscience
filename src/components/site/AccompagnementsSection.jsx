@@ -1,31 +1,47 @@
 import React from "react";
 import useScrollReveal from "@/hooks/useScrollReveal";
+import { Pause, Compass, Home } from "lucide-react";
 
-const services = [
-  { title: "Accompagnement individuel", text: "Un espace confidentiel pour prendre du recul et retrouver une direction." },
-  { title: "Transitions de vie", text: "Traverser un changement sans perdre votre axe." },
-  { title: "Marche narrative", text: "Un accompagnement en mouvement, dans la nature, pour libérer la parole." },
-  { title: "À la rencontre de soi", text: "Mieux comprendre votre fonctionnement et vos besoins." },
-  { title: "Schémas répétitifs", text: "Identifier les mécanismes qui se répètent et y répondre autrement." },
-  { title: "Reprendre les rênes de sa vie", text: "Sortir du sentiment d'impuissance et retrouver une marge de choix." },
-  { title: "Hypersensibilité, HPI et TDAH", text: "Comprendre et apprivoiser un fonctionnement atypique." },
-  { title: "Retrouver le goût de sa vie", text: "Renouer avec ce qui donne du sens et de l'énergie." },
+const doors = [
+  {
+    title: "Faire halte",
+    lead: "Quand tout devient flou.",
+    text: "Faire l'état des lieux de votre situation, prendre du recul et identifier ce qui, aujourd'hui, mérite réellement votre attention.",
+    Icon: Pause,
+  },
+  {
+    title: "Revenir à soi",
+    lead: "Retrouver l'endroit où vous vous êtes quitté.",
+    text: "Comprendre votre fonctionnement, vos adaptations, vos schémas et ce qui vous a progressivement éloigné de vous-même.",
+    Icon: Compass,
+  },
+  {
+    title: "Habiter pleinement sa vie",
+    lead: "Devenir son propre repère.",
+    text: "Transformer les prises de conscience en choix, retrouver votre marge d'action et apprendre à revenir à votre axe sans dépendre de l'accompagnement.",
+    Icon: Home,
+  },
 ];
 
-function ServiceCard({ service, index }) {
-  const [ref, isVisible] = useScrollReveal(0.1);
+function DoorCard({ door, index }) {
+  const [ref, isVisible] = useScrollReveal(0.15);
+  const Icon = door.Icon;
   return (
     <div
       ref={ref}
-      className={`group p-8 md:p-10 bg-[#F2EEE4] rounded-lg hover:shadow-md border border-[#D6CDC0]/50 transition-all duration-700 ${
+      className={`group p-8 md:p-10 bg-[#F2EEE4] rounded-lg border border-white/10 transition-all duration-700 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-      }`}
-      style={{ transitionDelay: `${index * 80}ms` }}
+      } hover:shadow-xl hover:shadow-black/20 hover:bg-white`}
+      style={{ transitionDelay: `${index * 120}ms` }}
     >
-      <h3 className="service-card-title font-heading font-medium text-[#4a4838] mb-4 group-hover:text-[#C07847] transition-colors duration-300">
-        {service.title}
+      <div className="w-11 h-11 rounded-full bg-[#C07847]/15 flex items-center justify-center mb-5 transition-colors duration-300 group-hover:bg-[#C07847]">
+        <Icon size={18} className="text-[#C07847] transition-colors duration-300 group-hover:text-white" />
+      </div>
+      <h3 className="service-card-title font-heading font-medium text-[#4a4838] mb-2 group-hover:text-[#C07847] transition-colors duration-300">
+        {door.title}
       </h3>
-      <p className="font-body text-sm text-[#7A6952] leading-relaxed">{service.text}</p>
+      <p className="font-body text-sm text-[#C07847] italic mb-4">{door.lead}</p>
+      <p className="font-body text-sm text-[#7A6952] leading-relaxed">{door.text}</p>
     </div>
   );
 }
@@ -52,22 +68,32 @@ export default function AccompagnementsSection() {
             Les accompagnements
           </p>
           <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-white mb-6">
-            Coaching de vie et accompagnement personnalisé à Sion
+            Trois portes d'entrée
           </h2>
           <p className="font-body text-white/80 text-base md:text-lg leading-relaxed max-w-xl mx-auto">
-            Des accompagnements adaptés à votre situation, à votre rythme et à vos besoins.
+            Coach de vie à Sion, j'accompagne la personne dans sa globalité, au-delà de toute étiquette.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((s, i) => (
-            <ServiceCard key={i} service={s} index={i} />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {doors.map((d, i) => (
+            <DoorCard key={i} door={d} index={i} />
           ))}
         </div>
 
         <div
+          className={`max-w-2xl mx-auto text-center mt-16 transition-all duration-1000 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          <p className="font-body text-white/80 text-sm md:text-base leading-relaxed">
+            Ces accompagnements peuvent notamment trouver leur place lors d'une transition de vie, d'un épuisement, de schémas qui se répètent, d'une perte de sens ou lorsqu'un fonctionnement singulier devient difficile à comprendre ou à réguler. Cela permet également d'accueillir des personnes HPI, hypersensibles, TDAH ou simplement en décalage, avec ou sans diagnostic, sans transformer ces étiquettes en prestations.
+          </p>
+        </div>
+
+        <div
           ref={ctaRef}
-          className={`text-center mt-20 transition-all duration-1000 ${
+          className={`text-center mt-16 transition-all duration-1000 ${
             ctaVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >

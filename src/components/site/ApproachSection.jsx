@@ -3,18 +3,42 @@ import useScrollReveal from "@/hooks/useScrollReveal";
 import { Eye, Lightbulb, Sparkles, Footprints } from "lucide-react";
 
 const steps = [
-  { num: "01", title: "Observer", text: "Comprendre votre situation sans la réduire à un seul problème.", Icon: Eye },
-  { num: "02", title: "Comprendre", text: "Mettre en lumière les mécanismes et les ressources qui influencent votre quotidien.", Icon: Lightbulb },
-  { num: "03", title: "Clarifier", text: "Retrouver une vision plus lisible de vos priorités et de votre direction.", Icon: Sparkles },
-  { num: "04", title: "Agir", text: "Transformer cette compréhension en choix et en actions concrètes.", Icon: Footprints },
+  {
+    num: "01",
+    title: "Observer",
+    lead: "Faire l'état des lieux de votre existence.",
+    text: "Regarder votre situation dans son ensemble, sans jugement et sans la réduire au problème qui vous amène.",
+    Icon: Eye,
+  },
+  {
+    num: "02",
+    title: "Comprendre",
+    lead: "Repérer l'endroit où quelque chose a basculé.",
+    text: "Comprendre votre fonctionnement, vos mécanismes d'adaptation et ce qui vous a progressivement éloigné de vous-même.",
+    Icon: Lightbulb,
+  },
+  {
+    num: "03",
+    title: "Clarifier",
+    lead: "Distinguer ce qui dépend de vous de ce qui ne vous appartient pas.",
+    text: "Retrouver vos priorités, vos ressources et l'axe à partir duquel vous souhaitez désormais avancer.",
+    Icon: Sparkles,
+  },
+  {
+    num: "04",
+    title: "Agir",
+    lead: "Reprendre les rênes de votre existence.",
+    text: "Transformer cette compréhension en choix concrets et apprendre progressivement à avancer sans dépendre de l'accompagnement.",
+    Icon: Footprints,
+  },
 ];
 
 const domains = [
-  "enseignement",
-  "médiation",
-  "accompagnement humain",
-  "philosophie pratique",
-  "neurosciences",
+  { title: "Enseignement", sub: "Sciences de l'éducation" },
+  { title: "Médiation", sub: "Accompagnement existentiel" },
+  { title: "Philosophie pratique", sub: null },
+  { title: "Neurosciences & cognition", sub: null },
+  { title: "Coaching professionnel", sub: null },
 ];
 
 function StepCard({ step, index }) {
@@ -36,6 +60,7 @@ function StepCard({ step, index }) {
           <Icon size={16} className="text-[#C07847] transition-colors duration-300 group-hover:text-white" />
         </div>
         <h3 className="font-heading text-xl text-[#2C2C2C] mb-2 transition-colors duration-300 group-hover:text-[#C07847]">{step.title}</h3>
+        <p className="font-body text-sm md:text-base text-[#4a4838] leading-relaxed mb-2">{step.lead}</p>
         <p className="font-body text-sm text-[#7A6952] leading-relaxed">{step.text}</p>
       </div>
     </div>
@@ -45,6 +70,7 @@ function StepCard({ step, index }) {
 export default function ApproachSection() {
   const [ref, isVisible] = useScrollReveal();
   const [credRef, credVisible] = useScrollReveal();
+  const [sysRef, sysVisible] = useScrollReveal();
 
   return (
     <section id="approche" className="py-32 md:py-48 bg-white">
@@ -66,10 +92,20 @@ export default function ApproachSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 mb-16">
           {steps.map((step, i) => (
             <StepCard key={i} step={step} index={i} />
           ))}
+        </div>
+
+        <div
+          className={`text-center mb-24 transition-all duration-1000 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          <p className="font-body text-sm md:text-base text-[#4a4838] leading-relaxed">
+            Où suis-je&nbsp;? <span className="text-[#C07847]">→</span> Comment suis-je arrivé là&nbsp;? <span className="text-[#C07847]">→</span> Qu'est-ce qui dépend de moi&nbsp;? <span className="text-[#C07847]">→</span> Qu'est-ce que j'en fais maintenant&nbsp;?
+          </p>
         </div>
 
         <div
@@ -78,20 +114,35 @@ export default function ApproachSection() {
             credVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="font-body text-[#7A6952] text-base leading-relaxed mb-8">
-            Un regard nourri par plus de vingt ans d'expérience :
+          <p className="font-body text-xs tracking-[0.2em] text-[#87856C] uppercase mb-4">
+            Ce qui nourrit mon regard
           </p>
-          <div className="flex flex-wrap justify-center gap-3 mb-8">
+          <p className="font-body text-[#7A6952] text-base leading-relaxed mb-8">
+            Plus de vingt ans d'expérience au croisement de plusieurs disciplines :
+          </p>
+          <div className="flex flex-wrap justify-center gap-3 mb-12">
             {domains.map((d, i) => (
               <span
                 key={i}
-                className="px-4 py-1.5 rounded-full bg-[#D6CDC0]/50 font-body text-sm text-[#87856C] float-bob"
-                style={{ animationDelay: `${i * 0.5}s` }}
+                className="px-5 py-2 rounded-full bg-[#D6CDC0]/50 font-body text-sm text-[#87856C] text-center"
               >
-                {d}
+                {d.title}
+                {d.sub && <span className="block text-xs text-[#87856C]/70 mt-0.5">{d.sub}</span>}
               </span>
             ))}
           </div>
+        </div>
+
+        <div
+          ref={sysRef}
+          className={`max-w-2xl mx-auto text-center transition-all duration-1000 ${
+            sysVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          <h3 className="font-heading text-xl md:text-2xl text-[#2C2C2C] mb-4">Le regard systémique</h3>
+          <p className="font-body text-[#7A6952] text-base md:text-lg leading-relaxed">
+            Des disciplines différentes, un même regard : comprendre la personne dans son ensemble plutôt que l'enfermer dans un symptôme, une difficulté ou une étiquette.
+          </p>
         </div>
       </div>
     </section>
