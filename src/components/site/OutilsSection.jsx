@@ -21,7 +21,7 @@ export default function OutilsSection() {
   const [convRef, convVisible] = useScrollReveal();
 
   return (
-    <section className="py-28 md:py-40 bg-[#D6CDC0]/50">
+    <section id="outils" className="py-28 md:py-40 bg-[#D6CDC0]/50">
       <div className="max-w-4xl mx-auto px-6 md:px-10">
         <div
           ref={ref}

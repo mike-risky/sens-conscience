@@ -6,7 +6,7 @@ export default function MarcheSection() {
   const [ref, isVisible] = useScrollReveal();
 
   return (
-    <section className="py-28 md:py-40 bg-white">
+    <section id="marche" className="py-28 md:py-40 bg-white">
       <div className="max-w-3xl mx-auto px-6 md:px-10">
         <div
           ref={ref}

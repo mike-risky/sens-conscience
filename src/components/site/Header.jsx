@@ -8,11 +8,13 @@ const LOGO_ORANGE = "https://media.base44.com/images/public/6a545a283c8f895ced7a
 
 const chapters = [
   { num: "I", label: "Accueil", href: "#accueil" },
-  { num: "II", label: "Accompagnements", href: "#accompagnements" },
-  { num: "III", label: "Mon approche", href: "#approche" },
-  { num: "IV", label: "À propos", href: "#a-propos" },
-  { num: "V", label: "Le livre", href: "#livre" },
-  { num: "VI", label: "Contact", href: "#contact" },
+  { num: "II", label: "Mon approche", href: "#approche" },
+  { num: "III", label: "Accompagnements", href: "#accompagnements" },
+  { num: "IV", label: "La marche", href: "#marche" },
+  { num: "V", label: "Mes outils", href: "#outils" },
+  { num: "VI", label: "À propos", href: "#a-propos" },
+  { num: "VII", label: "Le livre", href: "#livre" },
+  { num: "VIII", label: "Contact", href: "#contact" },
 ];
 
 export default function Header() {
