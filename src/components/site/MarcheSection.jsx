@@ -68,13 +68,14 @@ export default function MarcheSection() {
           >
             <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white shadow" />
           </motion.div>
-        </div>
-      </div>
 
-      <div className="max-w-2xl mx-auto px-6 md:px-10 pb-28 md:pb-40 text-center">
-        <p className="font-body text-[#7A6952] text-base md:text-lg leading-relaxed">
-          Lorsque cela fait sens, l'accompagnement peut se poursuivre en marchant dans la nature.
-        </p>
+          {/* Synthèse — toujours lisible, centrée en bas */}
+          <div className="absolute bottom-12 md:bottom-16 left-0 right-0 px-6 text-center pointer-events-none">
+            <p className="font-body text-sm md:text-base text-[#2C2C2C]/80 leading-relaxed max-w-xl mx-auto bg-white/70 backdrop-blur-sm rounded-full px-6 py-2.5 inline-block">
+              Lorsque cela fait sens, l'accompagnement peut se poursuivre en marchant dans la nature.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
