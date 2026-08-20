@@ -1,5 +1,6 @@
 import React from "react";
 import useScrollReveal from "@/hooks/useScrollReveal";
+import PortraitGallery from "./PortraitGallery";
 
 const PORTRAIT_IMG = "https://media.base44.com/images/public/6a545a283c8f895ced7a3979/c434c1563_generated_2b157cf6.png";
 
@@ -21,12 +22,7 @@ export default function AboutSection() {
           }`}
         >
           <div className="order-2 lg:order-1 lg:sticky lg:top-24 lg:self-start">
-            <img
-              src={PORTRAIT_IMG}
-              alt="Nuray C. Posse, coach de vie à Sion, dans un cadre naturel et lumineux"
-              loading="lazy"
-              className="w-full max-w-sm mx-auto lg:mx-0 rounded-lg object-cover aspect-[3/4] shadow-lg shadow-[#3A2E22]/10"
-            />
+            <PortraitGallery />
           </div>
 
           <div className="order-1 lg:order-2">

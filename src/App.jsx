@@ -9,6 +9,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Home from '@/pages/Home';
 import MentionsLegales from '@/pages/MentionsLegales';
 import PolitiqueConfidentialite from '@/pages/PolitiqueConfidentialite';
+import TypographyShowcase from '@/pages/TypographyShowcase';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -40,6 +41,7 @@ const AuthenticatedApp = () => {
       <Route path="/" element={<Home />} />
       <Route path="/mentions-legales" element={<MentionsLegales />} />
       <Route path="/politique-de-confidentialite" element={<PolitiqueConfidentialite />} />
+      <Route path="/typographie" element={<TypographyShowcase />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
