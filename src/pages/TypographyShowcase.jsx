@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const DREAM = "'Dream Avenue', 'Cormorant Garamond', Georgia, serif";
-const SPECTRAL = "'Spectral', Georgia, serif";
-const FRAUNCES = "'Fraunces', Georgia, serif";
+const CORMORANT = "'Cormorant Garamond', Georgia, serif";
 const RALEWAY = "'Raleway', system-ui, sans-serif";
 
 const HERO_IMG = "https://media.base44.com/images/public/6a545a283c8f895ced7a3979/7c4b832d5_generated_image.png";
@@ -102,25 +101,26 @@ export default function TypographyShowcase() {
         bFont={RALEWAY}
         bWeight={400}
       />
+
       <OptionPanel
         index="02"
-        label="Spectral"
-        desc="Spectral pour les titres (serif lisible, plus de corps), Raleway 500 pour le corps. Sobre, présente, immédiatement lisible."
+        label="Cormorant Garamond — 500"
+        desc="Cormorant Garamond pour les titres (serif élégant, plus de corps que Dream Avenue), Raleway 400 pour le corps. Sobre, présente, immédiatement lisible."
         bg="bg-white"
-        hFont={SPECTRAL}
+        hFont={CORMORANT}
         hWeight={500}
         bFont={RALEWAY}
-        bWeight={500}
+        bWeight={400}
       />
       <OptionPanel
         index="03"
-        label="Fraunces"
-        desc="Fraunces pour les titres (serif chaleureux et affirmé), Raleway 500 pour le corps. Caractère plus marqué, très lisible."
+        label="Cormorant Garamond — 600"
+        desc="Cormorant Garamond en graisse 600 pour les titres (présence affirmée), Raleway 400 pour le corps. Caractère plus marqué, très lisible."
         bg="bg-[#EDE7DA]"
-        hFont={FRAUNCES}
-        hWeight={500}
+        hFont={CORMORANT}
+        hWeight={600}
         bFont={RALEWAY}
-        bWeight={500}
+        bWeight={400}
       />
 
       <section className="px-6 md:px-12 py-12 md:py-16 bg-[#D6CDC0]/40 border-t border-[#D6CDC0]">
@@ -149,7 +149,7 @@ export default function TypographyShowcase() {
               <div className="absolute inset-0 bg-gradient-to-b from-[#3A2E22]/25 to-[#3A2E22]/45" />
               <div className="relative h-full flex items-center justify-center px-6 text-center">
                 <p
-                  style={{ fontFamily: SPECTRAL, fontWeight: 500 }}
+                  style={{ fontFamily: CORMORANT, fontWeight: 600 }}
                   className="text-white text-xl leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]"
                 >
                   À quel endroit de votre vie avez-vous cessé d'habiter votre propre existence&nbsp;?
