@@ -25,7 +25,7 @@ export default function NarrativeSection() {
               Nous naissons. Nous grandissons. Nous traversons des joies, des blessures, des ruptures, des épreuves. Puis un jour, sans même nous en rendre compte, nous cessons peu à peu d'habiter notre propre vie. Nous faisons ce qu'il faut. Nous assumons nos responsabilités. Nous tenons bon. Nous nous adaptons. Nous survivons. Et cette survie finit par ressembler à une vie.
             </p>
             <p>
-              Pourtant, quelque chose en nous continue de murmurer qu'il existe un autre chemin.
+              Pourtant, quelque chose en nous continue de murmurer qu'il existe une autre voie.
             </p>
             <p>
               Je ne crois pas que nous soyons brisés. Je crois qu'à un moment précis de notre histoire, nous avons cessé d'être profondément nous-mêmes. Par peur. Par loyauté. Pour protéger quelqu'un. Pour être aimé. Pour répondre aux attentes. Parce que nous n'avions tout simplement pas d'autre choix.
