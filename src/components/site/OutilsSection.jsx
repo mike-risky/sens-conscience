@@ -62,12 +62,9 @@ export default function OutilsSection() {
             convVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="font-body text-[#7A6952] text-base leading-relaxed mb-4">
-            Tous ces outils convergent vers un même objectif :
-          </p>
-          <p className="font-heading text-2xl md:text-3xl text-[#C07847] mb-6">L'autonomie.</p>
+          <p className="font-heading text-2xl md:text-3xl text-[#C07847] mb-4">L'autonomie.</p>
           <p className="font-body text-[#7A6952] text-base md:text-lg leading-relaxed">
-            Je ne souhaite pas créer une dépendance à l'accompagnement. Je souhaite transmettre progressivement à la personne suffisamment de compréhension et d'outils pour qu'elle puisse retrouver elle-même son axe.
+            Que vous retrouviez votre axe sans dépendre de l'accompagnement.
           </p>
         </div>
       </div>

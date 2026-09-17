@@ -93,12 +93,6 @@ export default function ApproachSection() {
           })}
         </div>
 
-        <div className="text-center mb-16 md:mb-20">
-          <p className="font-body text-sm md:text-base text-[#4a4838] leading-relaxed">
-            Où suis-je&nbsp;? <span className="text-[#C07847]">→</span> Comment suis-je arrivé là&nbsp;? <span className="text-[#C07847]">→</span> Qu'est-ce qui dépend de moi&nbsp;? <span className="text-[#C07847]">→</span> Qu'est-ce que j'en fais maintenant&nbsp;?
-          </p>
-        </div>
-
         <div
           ref={credRef}
           className={`border-t border-[#D6CDC0] pt-12 text-center transition-all duration-1000 ${

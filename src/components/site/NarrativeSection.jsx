@@ -38,18 +38,9 @@ export default function NarrativeSection() {
           <p className="font-heading text-xl md:text-2xl text-[#2C2C2C] mt-14 mb-10">
             Mon accompagnement commence ici.
           </p>
-
-          <div className="space-y-6 font-body text-[#4a4838] text-base md:text-lg leading-relaxed">
-            <p>
-              Ensemble, nous faisons l'état des lieux de votre existence. Nous remontons le fil de votre histoire jusqu'à l'endroit où vous vous êtes quitté. Nous identifions ce qui vous appartient réellement, ce qui relève des circonstances, des autres ou de votre histoire.
-            </p>
-            <p>
-              Puis, pas à pas, nous vous ramenons vers vous-même. Non pas pour devenir quelqu'un d'autre. Mais pour retrouver celui ou celle que vous n'avez jamais cessé d'être.
-            </p>
-            <p>
-              Je ne vous dirai pas comment vivre votre vie. Je marcherai à vos côtés jusqu'à ce que vous retrouviez votre propre axe, votre lucidité et la liberté de reprendre les rênes de votre existence avec dignité.
-            </p>
-          </div>
+          <p className="font-body text-[#4a4838] text-base md:text-lg leading-relaxed max-w-xl">
+            Faire l'état des lieux, remonter le fil de votre histoire jusqu'à l'endroit où vous vous êtes quitté, et pas à pas vous ramener vers vous-même — non pas pour devenir quelqu'un d'autre, mais pour retrouver celui ou celle que vous n'avez jamais cessé d'être.
+          </p>
 
           <p className="font-body italic text-[#7A6952] text-base md:text-lg leading-relaxed mt-12">
             Si, en lisant ces lignes, vous avez le sentiment qu'elles parlent de vous, alors notre rencontre n'est peut-être pas un hasard.

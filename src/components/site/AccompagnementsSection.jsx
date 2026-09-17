@@ -87,7 +87,7 @@ export default function AccompagnementsSection() {
           }`}
         >
           <p className="font-body text-white/80 text-sm md:text-base leading-relaxed">
-            Ces accompagnements peuvent notamment trouver leur place lors d'une transition de vie, d'un épuisement, de schémas qui se répètent, d'une perte de sens ou lorsqu'un fonctionnement singulier devient difficile à comprendre ou à réguler. Cela permet également d'accueillir des personnes HPI, hypersensibles, TDAH ou simplement en décalage, avec ou sans diagnostic, sans transformer ces étiquettes en prestations.
+            Ces accompagnements trouvent notamment leur place lors d'une transition, d'un épuisement, de schémas répétitifs ou d'un fonctionnement atypique difficile à réguler.
           </p>
         </div>
 
