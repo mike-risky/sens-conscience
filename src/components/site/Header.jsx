@@ -9,12 +9,13 @@ const LOGO_ORANGE = "https://media.base44.com/images/public/6a545a283c8f895ced7a
 const chapters = [
   { num: "I", label: "Accueil", href: "#accueil" },
   { num: "II", label: "Mon approche", href: "#approche" },
-  { num: "III", label: "Accompagnements", href: "#accompagnements" },
-  { num: "IV", label: "La marche", href: "#marche" },
-  { num: "V", label: "Mes outils", href: "#outils" },
-  { num: "VI", label: "À propos", href: "#a-propos" },
-  { num: "VII", label: "Le livre", href: "#livre" },
-  { num: "VIII", label: "Contact", href: "#contact" },
+  { num: "III", label: "Accompagnements", href: "#accompagnements", children: [
+    { label: "La marche", href: "#marche" },
+    { label: "Mes outils", href: "#outils" },
+  ]},
+  { num: "IV", label: "À propos", href: "#a-propos" },
+  { num: "V", label: "Le livre", href: "#livre" },
+  { num: "VI", label: "Contact", href: "#contact" },
 ];
 
 export default function Header() {
@@ -103,21 +104,38 @@ export default function Header() {
                 </div>
                 <nav className="flex flex-col">
                   {chapters.map((c, i) => (
-                    <motion.button
-                      key={c.href}
-                      onClick={() => go(c.href)}
-                      className="group flex items-baseline gap-3 py-2.5 border-b border-[#D6CDC0]/60 last:border-b-0 text-left"
-                      initial={{ opacity: 0, y: 8 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.1 + i * 0.05, duration: 0.35, ease: "easeOut" }}
-                    >
-                      <span className="font-heading text-sm text-[#C07847] w-6 shrink-0">
-                        {c.num}
-                      </span>
-                      <span className="font-heading text-xl md:text-2xl text-[#4a4838] group-hover:text-[#C07847] group-hover:translate-x-1 transition-all duration-300">
-                        {c.label}
-                      </span>
-                    </motion.button>
+                    <div key={c.href} className="border-b border-[#D6CDC0]/60 last:border-b-0">
+                      <motion.button
+                        onClick={() => go(c.href)}
+                        className="group w-full flex items-baseline gap-3 py-2.5 text-left"
+                        initial={{ opacity: 0, y: 8 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.1 + i * 0.05, duration: 0.35, ease: "easeOut" }}
+                      >
+                        <span className="font-heading text-sm text-[#C07847] w-6 shrink-0">
+                          {c.num}
+                        </span>
+                        <span className="font-heading text-xl md:text-2xl text-[#4a4838] group-hover:text-[#C07847] group-hover:translate-x-1 transition-all duration-300">
+                          {c.label}
+                        </span>
+                      </motion.button>
+                      {c.children && (
+                        <div className="ml-9 mb-2 flex flex-col gap-1">
+                          {c.children.map((ch) => (
+                            <button
+                              key={ch.href}
+                              onClick={() => go(ch.href)}
+                              className="group flex items-baseline gap-2 py-1.5 text-left"
+                            >
+                              <span className="text-[#C07847]/50 text-sm">—</span>
+                              <span className="font-body text-base text-[#7A6952] group-hover:text-[#C07847] transition-colors duration-300">
+                                {ch.label}
+                              </span>
+                            </button>
+                          ))}
+                        </div>
+                      )}
+                    </div>
                   ))}
                 </nav>
               </div>

@@ -44,9 +44,9 @@ export default function BookSection() {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <a
-                href="https://www.amazon.ae/Lart-pas-trahir-Habiter-lucidit%C3%A9/dp/B0GTRMNT34"
+                href="https://www.amazon.fr/Lart-pas-trahir-Habiter-lucidit%C3%A9/dp/B0GTRMNT34/ref=asc_df_B0GTRMNT34?mcid=bdc9516d10c4322cb4bc8882a205acab&tag=googshopfr-21&linkCode=df0&hvadid=784704994067&hvpos=&hvnetw=g&hvrand=8091067891497487443&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9187748&hvtargid=pla-2475842791378&psc=1&hvocijid=8091067891497487443-B0GTRMNT34-&hvexpln=0"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#C07847] text-white font-body font-medium text-sm hover:bg-[#a8663a] transition-all duration-300"
@@ -54,14 +54,38 @@ export default function BookSection() {
                 Découvrir le livre sur Amazon
                 <ExternalLink size={14} />
               </a>
+            </div>
+
+            <p className="font-body text-xs tracking-[0.2em] text-[#87856C] uppercase mb-3">
+              Disponible également chez
+            </p>
+            <div className="flex flex-wrap gap-x-6 gap-y-2">
               <a
                 href="https://www.laliseuse.ch/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#87856C] text-white font-body font-medium text-sm hover:bg-[#6e6c57] transition-all duration-300"
+                className="inline-flex items-center gap-1.5 font-body text-sm text-[#4a4838] hover:text-[#C07847] transition-colors duration-300"
               >
-                Disponible à La Liseuse à Sion
-                <ExternalLink size={14} />
+                La Liseuse — Sion
+                <ExternalLink size={12} />
+              </a>
+              <a
+                href="https://www.fr.fnac.ch/Conthey/Fnac-Conthey/cl663"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 font-body text-sm text-[#4a4838] hover:text-[#C07847] transition-colors duration-300"
+              >
+                FNAC — Conthey
+                <ExternalLink size={12} />
+              </a>
+              <a
+                href="https://payot.ch/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 font-body text-sm text-[#4a4838] hover:text-[#C07847] transition-colors duration-300"
+              >
+                Payot — Sion & Sierre
+                <ExternalLink size={12} />
               </a>
             </div>
           </div>
