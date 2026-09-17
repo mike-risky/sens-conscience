@@ -20,7 +20,7 @@ export default function HeroSection() {
           loading="eager"
           className="w-full h-full object-cover scale-105 animate-[slowZoom_30s_ease-in-out_infinite_alternate]"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#3A2E22]/30 via-[#3A2E22]/15 to-[#FDF6EC]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#3A2E22]/45 via-[#3A2E22]/25 to-[#FDF6EC]" />
       </div>
 
       <div className="relative z-10 max-w-3xl mx-auto px-6 text-center pt-2 pb-10">
