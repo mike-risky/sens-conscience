@@ -107,7 +107,7 @@ export default function Header() {
                     <div key={c.href} className="border-b border-[#D6CDC0]/60 last:border-b-0">
                       <motion.button
                         onClick={() => go(c.href)}
-                        className="group w-full flex items-baseline gap-3 py-2.5 text-left"
+                        className="group w-full flex items-baseline gap-3 py-2.5 text-left min-w-0"
                         initial={{ opacity: 0, y: 8 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 + i * 0.05, duration: 0.35, ease: "easeOut" }}
@@ -115,7 +115,7 @@ export default function Header() {
                         <span className="font-heading text-sm text-[#C07847] w-6 shrink-0">
                           {c.num}
                         </span>
-                        <span className="font-heading text-2xl md:text-3xl text-[#4a4838] group-hover:text-[#C07847] group-hover:translate-x-1 transition-all duration-300">
+                        <span className="font-heading text-2xl md:text-3xl text-[#4a4838] group-hover:text-[#C07847] group-hover:translate-x-1 transition-all duration-300 min-w-0 break-words leading-tight">
                           {c.label}
                         </span>
                       </motion.button>
