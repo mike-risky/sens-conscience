@@ -56,7 +56,7 @@ export default function ApproachSection() {
           <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#2C2C2C] mb-6">
             Un accompagnement de vie profondément humain et personnalisé
           </h2>
-          <p className="font-body text-[#7A6952] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
+          <p className="font-body text-[#5d5648] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
             Chaque accompagnement commence par un état des lieux global de votre situation.
           </p>
         </div>
@@ -84,7 +84,7 @@ export default function ApproachSection() {
                   <p className="font-body text-[#4a4838] text-base md:text-lg leading-relaxed mb-2">
                     {step.lead}
                   </p>
-                  <p className="font-body text-[#7A6952] text-sm md:text-base leading-relaxed">
+                  <p className="font-body text-[#5d5648] text-sm md:text-base leading-relaxed">
                     {step.text}
                   </p>
                 </div>
@@ -102,7 +102,7 @@ export default function ApproachSection() {
           <p className="font-body text-xs tracking-[0.2em] text-[#87856C] uppercase mb-4">
             Ce qui nourrit mon regard
           </p>
-          <p className="font-body text-[#7A6952] text-base leading-relaxed mb-8">
+          <p className="font-body text-[#5d5648] text-base leading-relaxed mb-8">
             Plus de vingt ans d'expérience au croisement de plusieurs disciplines :
           </p>
           <div className="flex flex-wrap justify-center gap-3 mb-12">
@@ -125,7 +125,7 @@ export default function ApproachSection() {
           }`}
         >
           <h3 className="font-heading text-xl md:text-2xl text-[#2C2C2C] mb-4">Le regard systémique</h3>
-          <p className="font-body text-[#7A6952] text-base md:text-lg leading-relaxed">
+          <p className="font-body text-[#5d5648] text-base md:text-lg leading-relaxed">
             Des disciplines différentes, un même regard : comprendre la personne dans son ensemble plutôt que l'enfermer dans un symptôme, une difficulté ou une étiquette.
           </p>
         </div>

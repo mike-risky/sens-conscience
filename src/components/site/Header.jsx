@@ -60,14 +60,14 @@ export default function Header() {
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
           <button onClick={() => go("#accueil")} className="flex items-center shrink-0">
-            <img src={LOGO_GREEN} alt="Sens & Conscience" className="h-10 w-auto" />
+            <img src={LOGO_GREEN} alt="Sens & Conscience" className="h-12 w-auto" />
           </button>
           <nav className="flex items-center gap-0.5">
             {chapters.map((c) => (
               <button
                 key={c.href}
                 onClick={() => go(c.href)}
-                className="px-2.5 py-2 rounded-full font-body text-[0.95rem] text-[#4a4838] hover:text-[#C07847] hover:bg-[#D6CDC0]/40 transition-all duration-300 whitespace-nowrap"
+                className="px-2.5 py-2 rounded-full font-body text-base text-[#4a4838] hover:text-[#C07847] hover:bg-[#D6CDC0]/40 transition-all duration-300 whitespace-nowrap"
               >
                 {c.label}
               </button>
@@ -100,7 +100,7 @@ export default function Header() {
             >
               <div className="bg-[#F2EEE4] border border-[#D6CDC0] rounded-lg shadow-2xl shadow-black/20 p-6 md:p-8">
                 <div className="flex items-center gap-4 mb-6 pb-5 border-b border-[#D6CDC0]">
-                  <img src={LOGO_GREEN} alt="Sens & Conscience" className="h-40 md:h-52 w-auto max-w-full" />
+                  <img src={LOGO_GREEN} alt="Sens & Conscience" className="h-44 md:h-56 w-auto max-w-full" />
                 </div>
                 <nav className="flex flex-col">
                   {chapters.map((c, i) => (
@@ -115,7 +115,7 @@ export default function Header() {
                         <span className="font-heading text-sm text-[#C07847] w-6 shrink-0">
                           {c.num}
                         </span>
-                        <span className="font-heading text-xl md:text-2xl text-[#4a4838] group-hover:text-[#C07847] group-hover:translate-x-1 transition-all duration-300">
+                        <span className="font-heading text-2xl md:text-3xl text-[#4a4838] group-hover:text-[#C07847] group-hover:translate-x-1 transition-all duration-300">
                           {c.label}
                         </span>
                       </motion.button>

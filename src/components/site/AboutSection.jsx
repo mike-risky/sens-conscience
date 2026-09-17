@@ -68,7 +68,7 @@ export default function AboutSection() {
               onClick={() => scrollTo("#contact")}
               className="px-8 py-3.5 rounded-full bg-[#C07847] text-white font-body font-medium text-sm hover:bg-[#a8663a] transition-all duration-300"
             >
-              Prendre contact avec moi
+              Échanger avec moi
             </button>
           </div>
         </div>

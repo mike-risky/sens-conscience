@@ -21,7 +21,7 @@ export default function ContactSection() {
           <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#2C2C2C] mb-6">
             Contactez-moi
           </h2>
-          <p className="font-body text-[#7A6952] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
+          <p className="font-body text-[#5d5648] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
             Vous traversez une transition, vous vous posez des questions ? Écrivez-moi quelques mots, à votre rythme. Je vous réponds personnellement.
           </p>
         </div>
@@ -39,7 +39,7 @@ export default function ContactSection() {
                   <Phone size={18} className="text-[#C07847]" />
                 </div>
                 <div>
-                  <p className="font-body text-xs text-[#7A6952] mb-0.5">Téléphone</p>
+                  <p className="font-body text-xs text-[#5d5648] mb-0.5">Téléphone</p>
                   <a href="tel:+41794446977" className="font-body text-[#2C2C2C] hover:text-[#E76F51] transition-colors">
                     +41 79 444 69 77
                   </a>
@@ -50,7 +50,7 @@ export default function ContactSection() {
                   <Mail size={18} className="text-[#C07847]" />
                 </div>
                 <div>
-                  <p className="font-body text-xs text-[#7A6952] mb-0.5">E-mail</p>
+                  <p className="font-body text-xs text-[#5d5648] mb-0.5">E-mail</p>
                   <a href="mailto:nuray.posse@gmail.com" className="font-body text-[#2C2C2C] hover:text-[#E76F51] transition-colors">
                     nuray.posse@gmail.com
                   </a>
@@ -63,7 +63,7 @@ export default function ContactSection() {
                   </svg>
                 </div>
                 <div>
-                  <p className="font-body text-xs text-[#7A6952] mb-0.5">Instagram</p>
+                  <p className="font-body text-xs text-[#5d5648] mb-0.5">Instagram</p>
                   <a href="https://www.instagram.com/nuraycposse" target="_blank" rel="noopener noreferrer" className="font-body text-[#2C2C2C] hover:text-[#E76F51] transition-colors">
                     Nuray C. Posse
                   </a>

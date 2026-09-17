@@ -92,6 +92,30 @@ export default function AccompagnementsSection() {
         </div>
 
         <div
+          className={`max-w-3xl mx-auto text-center mt-16 transition-all duration-1000 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          <p className="font-body text-xs tracking-[0.2em] text-white/70 uppercase mb-6">
+            Mes formats
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-6 sm:gap-10">
+            <div className="text-center">
+              <p className="font-heading text-lg md:text-xl text-white mb-1">Séance individuelle</p>
+              <p className="font-body text-sm text-white/80 leading-relaxed max-w-[12rem] mx-auto">Une rencontre pour faire le point.</p>
+            </div>
+            <div className="text-center">
+              <p className="font-heading text-lg md:text-xl text-white mb-1">Plusieurs séances</p>
+              <p className="font-body text-sm text-white/80 leading-relaxed max-w-[12rem] mx-auto">Un accompagnement sur la durée.</p>
+            </div>
+            <div className="text-center">
+              <p className="font-heading text-lg md:text-xl text-white mb-1">En marchant</p>
+              <p className="font-body text-sm text-white/80 leading-relaxed max-w-[12rem] mx-auto">Au cabinet ou dans la nature.</p>
+            </div>
+          </div>
+        </div>
+
+        <div
           ref={ctaRef}
           className={`text-center mt-16 transition-all duration-1000 ${
             ctaVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
@@ -101,7 +125,7 @@ export default function AccompagnementsSection() {
             onClick={() => scrollTo("#contact")}
             className="px-8 py-3.5 rounded-full bg-[#C07847] text-white font-body font-medium text-sm hover:bg-[#a8663a] transition-all duration-300"
           >
-            Parler de votre situation
+            Échanger avec moi
           </button>
         </div>
       </div>

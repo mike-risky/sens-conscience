@@ -41,9 +41,18 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="font-body text-[0.7rem] tracking-[0.25em] text-white/80 uppercase mb-6"
+          className="font-body text-xs tracking-[0.25em] text-white/90 uppercase mb-6"
         >
           Coach de vie à Sion
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.25 }}
+          className="font-body text-sm md:text-base text-white/90 leading-relaxed mb-8 max-w-xl mx-auto"
+        >
+          Vous traversez une période où votre vie ne vous ressemble plus&nbsp;? Je vous accompagne pour faire le point, retrouver de la clarté et reprendre votre capacité d'agir.
         </motion.p>
 
         <motion.h1
@@ -59,7 +68,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="italic text-white text-xs leading-relaxed mb-12 max-w-2xl mx-auto bg-[#3A2E22]/45 backdrop-blur-md rounded-2xl px-8 py-6 shadow-lg shadow-black/20"
+          className="italic text-white text-sm md:text-base leading-relaxed mb-12 max-w-2xl mx-auto bg-[#3A2E22]/55 backdrop-blur-md rounded-2xl px-8 py-6 shadow-lg shadow-black/20"
         >
           «&nbsp;Nous naissons une première fois dans les circonstances. Osons renaître une seconde fois, en conscience.&nbsp;»
         </motion.blockquote>
@@ -74,7 +83,7 @@ export default function HeroSection() {
             onClick={() => scrollTo("#contact")}
             className="px-8 py-3.5 rounded-full bg-[#C07847] text-white font-body font-medium text-sm hover:bg-[#a8663a] transition-all duration-300 shadow-lg shadow-[#C07847]/30"
           >
-            Prendre rendez-vous
+            Échanger avec moi
           </button>
           <button
             onClick={() => scrollTo("#approche")}

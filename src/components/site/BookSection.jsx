@@ -34,12 +34,12 @@ export default function BookSection() {
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#2C2C2C] mb-2">
               L'art de ne pas se trahir
             </h2>
-            <p className="italic text-xs text-[#7A6952] mb-8">
+            <p className="italic text-xs text-[#5d5648] mb-8">
               Habiter sa vie avec lucidité
             </p>
 
             <div className="mb-10">
-              <p className="font-body text-[#7A6952] text-base md:text-lg leading-relaxed">
+              <p className="font-body text-[#5d5648] text-base md:text-lg leading-relaxed">
                 Une invitation à mieux reconnaître vos besoins et les choix qui vous éloignent parfois de vous-même — pour habiter votre vie avec davantage de lucidité et de fidélité à soi.
               </p>
             </div>

@@ -35,7 +35,7 @@ export default function OutilsSection() {
           <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#2C2C2C] mb-4">
             Avec quoi nous cheminons
           </h2>
-          <p className="font-body text-[#7A6952] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
+          <p className="font-body text-[#5d5648] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
             Des repères pratiques, jamais un catalogue de méthodes.
           </p>
         </div>
@@ -63,7 +63,7 @@ export default function OutilsSection() {
           }`}
         >
           <p className="font-heading text-2xl md:text-3xl text-[#C07847] mb-4">L'autonomie.</p>
-          <p className="font-body text-[#7A6952] text-base md:text-lg leading-relaxed">
+          <p className="font-body text-[#5d5648] text-base md:text-lg leading-relaxed">
             Que vous retrouviez votre axe sans dépendre de l'accompagnement.
           </p>
         </div>
