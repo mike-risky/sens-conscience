@@ -98,16 +98,16 @@ export default function Header() {
               animate={{ opacity: 1, y: 0, x: 0 }}
               transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
             >
-              <div className="bg-[#F2EEE4] border border-[#D6CDC0] rounded-lg shadow-2xl shadow-black/20 p-6 md:p-8 max-h-full overflow-y-auto overscroll-contain">
-                <div className="flex items-center gap-4 mb-6 pb-5 border-b border-[#D6CDC0]">
-                  <img src={LOGO_GREEN} alt="Sens & Conscience" className="h-44 md:h-56 w-auto max-w-full" />
+              <div className="bg-[#F2EEE4] border border-[#D6CDC0] rounded-lg shadow-2xl shadow-black/20 p-5 md:p-8 max-h-full overflow-y-auto overscroll-contain">
+                <div className="flex items-center gap-4 mb-4 md:mb-6 pb-4 md:pb-5 border-b border-[#D6CDC0]">
+                  <img src={LOGO_GREEN} alt="Sens & Conscience" className="h-20 md:h-40 w-auto max-w-full" />
                 </div>
                 <nav className="flex flex-col">
                   {chapters.map((c, i) => (
                     <div key={c.href} className="border-b border-[#D6CDC0]/60 last:border-b-0">
                       <motion.button
                         onClick={() => go(c.href)}
-                        className="group w-full flex items-baseline gap-3 py-2.5 text-left min-w-0"
+                        className="group w-full flex items-baseline gap-3 py-2 md:py-2.5 text-left min-w-0"
                         initial={{ opacity: 0, y: 8 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 + i * 0.05, duration: 0.35, ease: "easeOut" }}
@@ -115,7 +115,7 @@ export default function Header() {
                         <span className="font-heading text-sm text-[#C07847] w-6 shrink-0">
                           {c.num}
                         </span>
-                        <span className="font-heading text-2xl md:text-3xl text-[#4a4838] group-hover:text-[#C07847] group-hover:translate-x-1 transition-all duration-300 min-w-0 break-words leading-tight">
+                        <span className="font-heading text-xl md:text-3xl text-[#4a4838] group-hover:text-[#C07847] group-hover:translate-x-1 transition-all duration-300 min-w-0 break-words leading-tight">
                           {c.label}
                         </span>
                       </motion.button>
