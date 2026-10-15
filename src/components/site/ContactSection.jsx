@@ -64,7 +64,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="font-body text-xs text-[#5d5648] mb-0.5">Instagram</p>
-                  <a href="https://www.instagram.com/nuraycposse" target="_blank" rel="noopener noreferrer" className="font-body text-[#2C2C2C] hover:text-[#E76F51] transition-colors">
+                  <a href="https://www.instagram.com/nurayc.posse/" target="_blank" rel="noopener noreferrer" className="font-body text-[#2C2C2C] hover:text-[#E76F51] transition-colors">
                     Nuray C. Posse
                   </a>
                 </div>

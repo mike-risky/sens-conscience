@@ -26,7 +26,7 @@ export default function Footer() {
           <div>
             <p className="font-body text-xs tracking-[0.15em] text-white/70 uppercase mb-4">Liens</p>
             <div className="space-y-2">
-              <a href="https://www.instagram.com/nuraycposse" target="_blank" rel="noopener noreferrer" className="block font-body text-sm text-white/70 hover:text-white transition-colors">
+              <a href="https://www.instagram.com/nurayc.posse/" target="_blank" rel="noopener noreferrer" className="block font-body text-sm text-white/70 hover:text-white transition-colors">
                 Instagram
               </a>
               <Link to="/mentions-legales" className="block font-body text-sm text-white/70 hover:text-white transition-colors">
