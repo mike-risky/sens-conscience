@@ -93,12 +93,12 @@ export default function Header() {
               onClick={() => setOpen(false)}
             />
             <motion.div
-              className="absolute top-20 md:top-24 right-5 md:right-6 w-[90vw] sm:w-1/3 max-w-md"
+              className="absolute top-20 md:top-24 right-5 md:right-6 w-[90vw] sm:w-1/3 max-w-md max-h-[calc(100vh-7rem)]"
               initial={{ opacity: 0, y: -14, x: 10 }}
               animate={{ opacity: 1, y: 0, x: 0 }}
               transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
             >
-              <div className="bg-[#F2EEE4] border border-[#D6CDC0] rounded-lg shadow-2xl shadow-black/20 p-6 md:p-8">
+              <div className="bg-[#F2EEE4] border border-[#D6CDC0] rounded-lg shadow-2xl shadow-black/20 p-6 md:p-8 max-h-full overflow-y-auto overscroll-contain">
                 <div className="flex items-center gap-4 mb-6 pb-5 border-b border-[#D6CDC0]">
                   <img src={LOGO_GREEN} alt="Sens & Conscience" className="h-44 md:h-56 w-auto max-w-full" />
                 </div>
