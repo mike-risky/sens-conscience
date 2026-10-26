@@ -25,12 +25,12 @@ function PillarCard({ pillar, index }) {
       ref={ref}
       className={`group text-center rounded-lg p-6 transition-all duration-700 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-      } hover:shadow-xl hover:shadow-[#241F1B]/10 hover:bg-white/70`}
+      } hover:shadow-xl hover:shadow-[#1F2E26]/10 hover:bg-white/70`}
       style={{ transitionDelay: `${index * 150}ms` }}
     >
-      <div className="w-px h-10 bg-[#6C543B] mx-auto mb-5 transition-colors duration-300 group-hover:bg-[#A34D20]" />
-      <h3 className="font-heading text-xl md:text-2xl text-[#241F1B] mb-3 transition-colors duration-300 group-hover:text-[#A34D20]">{pillar.title}</h3>
-      <p className="font-body text-sm text-[#604B38] leading-relaxed">{pillar.text}</p>
+      <div className="w-px h-10 bg-[#2D4A3A] mx-auto mb-5 transition-colors duration-300 group-hover:bg-[#A34D20]" />
+      <h3 className="font-heading text-xl md:text-2xl text-[#1F2E26] mb-3 transition-colors duration-300 group-hover:text-[#A34D20]">{pillar.title}</h3>
+      <p className="font-body text-sm text-[#4E6156] leading-relaxed">{pillar.text}</p>
     </div>
   );
 }
@@ -52,7 +52,7 @@ export default function MissionSection() {
             <img
               src={MISSION_IMG}
               alt="Nature morte chaleureuse au soleil du matin près de Sion — la clarté retrouvée"
-              className="w-full max-w-md mx-auto lg:mx-0 rounded-lg object-cover aspect-[4/5] shadow-lg shadow-[#241F1B]/10"
+              className="w-full max-w-md mx-auto lg:mx-0 rounded-lg object-cover aspect-[4/5] shadow-lg shadow-[#1F2E26]/10"
             />
           </div>
 
@@ -63,13 +63,13 @@ export default function MissionSection() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              <p className="font-body text-xs tracking-[0.2em] text-[#6C543B] uppercase mb-4">
+              <p className="font-body text-xs tracking-[0.2em] text-[#2D4A3A] uppercase mb-4">
                 Ma mission
               </p>
-              <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#241F1B] mb-6">
+              <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#1F2E26] mb-6">
                 Vous aider à retrouver votre capacité d'agir
               </h2>
-              <p className="font-body text-[#604B38] text-base md:text-lg leading-relaxed max-w-xl">
+              <p className="font-body text-[#4E6156] text-base md:text-lg leading-relaxed max-w-xl">
                 Vous aider à retrouver votre axe, vos ressources et votre capacité à faire des choix cohérents avec la personne que vous êtes aujourd'hui.
               </p>
             </div>

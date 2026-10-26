@@ -50,13 +50,13 @@ export default function ApproachSection() {
     <section id="approche" className="bg-white py-32 md:py-48">
       <div className="max-w-5xl mx-auto px-6 md:px-10">
         <div className="text-center mb-16 md:mb-20">
-          <p className="font-body text-xs tracking-[0.2em] text-[#6C543B] uppercase mb-4">
+          <p className="font-body text-xs tracking-[0.2em] text-[#2D4A3A] uppercase mb-4">
             Une approche globale
           </p>
-          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#241F1B] mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#1F2E26] mb-6">
             Un accompagnement de vie profondément humain et personnalisé
           </h2>
-          <p className="font-body text-[#604B38] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
+          <p className="font-body text-[#4E6156] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
             Chaque accompagnement commence par un état des lieux global de votre situation.
           </p>
         </div>
@@ -78,13 +78,13 @@ export default function ApproachSection() {
                 </div>
                 <div>
                   <div className="flex items-baseline gap-3 mb-2">
-                    <span className="font-heading text-sm text-[#6C543B]/60">{step.num}</span>
-                    <h3 className="font-heading text-xl md:text-2xl text-[#241F1B]">{step.title}</h3>
+                    <span className="font-heading text-sm text-[#2D4A3A]/60">{step.num}</span>
+                    <h3 className="font-heading text-xl md:text-2xl text-[#1F2E26]">{step.title}</h3>
                   </div>
-                  <p className="font-body text-[#3E3227] text-base md:text-lg leading-relaxed mb-2">
+                  <p className="font-body text-[#22332B] text-base md:text-lg leading-relaxed mb-2">
                     {step.lead}
                   </p>
-                  <p className="font-body text-[#604B38] text-sm md:text-base leading-relaxed">
+                  <p className="font-body text-[#4E6156] text-sm md:text-base leading-relaxed">
                     {step.text}
                   </p>
                 </div>
@@ -99,20 +99,20 @@ export default function ApproachSection() {
             credVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="font-body text-xs tracking-[0.2em] text-[#6C543B] uppercase mb-4">
+          <p className="font-body text-xs tracking-[0.2em] text-[#2D4A3A] uppercase mb-4">
             Ce qui nourrit mon regard
           </p>
-          <p className="font-body text-[#604B38] text-base leading-relaxed mb-8">
+          <p className="font-body text-[#4E6156] text-base leading-relaxed mb-8">
             Plus de vingt ans d'expérience au croisement de plusieurs disciplines :
           </p>
           <div className="flex flex-wrap justify-center gap-3 mb-12">
             {domains.map((d, i) => (
               <span
                 key={i}
-                className="px-5 py-2 rounded-full bg-[#EAD9C7]/50 font-body text-sm text-[#6C543B] text-center"
+                className="px-5 py-2 rounded-full bg-[#EAD9C7]/50 font-body text-sm text-[#2D4A3A] text-center"
               >
                 {d.title}
-                {d.sub && <span className="block text-xs text-[#6C543B]/70 mt-0.5">{d.sub}</span>}
+                {d.sub && <span className="block text-xs text-[#2D4A3A]/70 mt-0.5">{d.sub}</span>}
               </span>
             ))}
           </div>
@@ -124,8 +124,8 @@ export default function ApproachSection() {
             sysVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <h3 className="font-heading text-xl md:text-2xl text-[#241F1B] mb-4">Le regard systémique</h3>
-          <p className="font-body text-[#604B38] text-base md:text-lg leading-relaxed">
+          <h3 className="font-heading text-xl md:text-2xl text-[#1F2E26] mb-4">Le regard systémique</h3>
+          <p className="font-body text-[#4E6156] text-base md:text-lg leading-relaxed">
             Des disciplines différentes, un même regard : comprendre la personne dans son ensemble plutôt que l'enfermer dans un symptôme, une difficulté ou une étiquette.
           </p>
         </div>

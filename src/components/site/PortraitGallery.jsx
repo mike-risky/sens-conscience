@@ -20,7 +20,7 @@ export default function PortraitGallery() {
 
   return (
     <div className="relative w-full max-w-sm mx-auto lg:mx-0">
-      <div className="relative w-full aspect-[3/4] rounded-lg overflow-hidden shadow-lg shadow-[#241F1B]/10">
+      <div className="relative w-full aspect-[3/4] rounded-lg overflow-hidden shadow-lg shadow-[#1F2E26]/10">
         <Image
           key={images[i].src}
           src={images[i].src}
@@ -31,14 +31,14 @@ export default function PortraitGallery() {
         <button
           onClick={() => go(-1)}
           aria-label="Photo précédente"
-          className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 hover:bg-white text-[#3E3227] flex items-center justify-center shadow transition-colors"
+          className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 hover:bg-white text-[#2D4A3A] flex items-center justify-center shadow transition-colors"
         >
           <ChevronLeft size={18} />
         </button>
         <button
           onClick={() => go(1)}
           aria-label="Photo suivante"
-          className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 hover:bg-white text-[#3E3227] flex items-center justify-center shadow transition-colors"
+          className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 hover:bg-white text-[#2D4A3A] flex items-center justify-center shadow transition-colors"
         >
           <ChevronRight size={18} />
         </button>

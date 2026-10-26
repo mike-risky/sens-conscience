@@ -14,7 +14,7 @@ export default function QuoteSection() {
           alt="Lac alpin baigné de lumière dorée près de Sion, évoquant la sérénité et la clarté"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-[#241F1B]/40" />
+        <div className="absolute inset-0 bg-[#FBF5EC]/75 backdrop-blur-[2px]" />
       </div>
       <div
         ref={ref}
@@ -22,10 +22,10 @@ export default function QuoteSection() {
           isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
         }`}
       >
-        <p className="italic text-xs text-white leading-snug mb-6">
+        <p className="italic text-xs text-[#1F2E26] leading-snug mb-6">
           «&nbsp;L'art de vivre en conscience commence lorsque nous cessons de nous trahir.&nbsp;»
         </p>
-        <p className="font-body text-sm text-white/70 tracking-[0.15em] uppercase">
+        <p className="font-body text-sm text-[#2D4A3A]/80 tracking-[0.15em] uppercase">
           Nuray C. Posse
         </p>
       </div>

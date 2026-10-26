@@ -38,10 +38,10 @@ export default function SituationsSection() {
     <section id="situations" className="bg-[#FBF5EC] py-32 md:py-48">
       <div className="max-w-5xl mx-auto px-6 md:px-10">
         <div className="text-center mb-16 md:mb-20">
-          <p className="font-body text-xs tracking-[0.2em] text-[#6C543B] uppercase mb-4">
+          <p className="font-body text-xs tracking-[0.2em] text-[#2D4A3A] uppercase mb-4">
             Quand la vie ne ressemble plus à ce que vous aviez imaginé
           </p>
-          <p className="font-body text-[#604B38] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
+          <p className="font-body text-[#4E6156] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
             Il arrive que l'on perde ses repères, son énergie, le sentiment d'être pleinement soi-même.
           </p>
         </div>
@@ -62,7 +62,7 @@ export default function SituationsSection() {
                 <div className="w-10 h-10 shrink-0 rounded-full bg-[#A34D20]/10 flex items-center justify-center">
                   <Icon size={18} className="text-[#A34D20]" />
                 </div>
-                <p className="font-body text-[#241F1B] text-base md:text-lg leading-relaxed">
+                <p className="font-body text-[#1F2E26] text-base md:text-lg leading-relaxed">
                   {s.text}
                 </p>
               </article>
@@ -76,7 +76,7 @@ export default function SituationsSection() {
           </p>
           <button
             onClick={() => scrollTo("#contact")}
-            className="px-8 py-3.5 rounded-full bg-[#A34D20] text-white font-body font-medium text-sm hover:bg-[#8C4018] transition-all duration-300"
+            className="px-8 py-3.5 rounded-full bg-white text-[#1F2E26] border border-[#A34D20]/70 font-body font-medium text-sm shadow-sm hover:bg-[#FBF5EC] hover:border-[#A34D20] hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
           >
             Échanger avec moi
           </button>

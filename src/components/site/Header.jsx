@@ -47,7 +47,7 @@ export default function Header() {
       <button
         onClick={() => setOpen((o) => !o)}
         aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
-        className="fixed top-3 md:top-5 right-4 md:right-6 z-[110] w-14 h-14 rounded-full bg-[#FBF5EC]/90 backdrop-blur-md border border-[#EAD9C7] shadow-lg shadow-black/10 flex items-center justify-center text-[#6C543B] hover:bg-[#FBF5EC] hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer lg:hidden"
+        className="fixed top-3 md:top-5 right-4 md:right-6 z-[110] w-14 h-14 rounded-full bg-[#FBF5EC]/90 backdrop-blur-md border border-[#EAD9C7] shadow-lg shadow-black/10 flex items-center justify-center text-[#2D4A3A] hover:bg-[#FBF5EC] hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer lg:hidden"
         data-export-hide
       >
         {open ? <X size={24} /> : <Menu size={24} />}
@@ -67,7 +67,7 @@ export default function Header() {
               <button
                 key={c.href}
                 onClick={() => go(c.href)}
-                className="px-2.5 py-2 rounded-full font-body text-base text-[#3E3227] hover:text-[#A34D20] hover:bg-[#EAD9C7]/40 transition-all duration-300 whitespace-nowrap"
+                className="px-2.5 py-2 rounded-full font-body text-base text-[#22332B] hover:text-[#A34D20] hover:bg-[#EAD9C7]/40 transition-all duration-300 whitespace-nowrap"
               >
                 {c.label}
               </button>
@@ -115,7 +115,7 @@ export default function Header() {
                         <span className="font-heading text-sm text-[#A34D20] w-6 shrink-0">
                           {c.num}
                         </span>
-                        <span className="font-heading text-xl md:text-3xl text-[#3E3227] group-hover:text-[#A34D20] group-hover:translate-x-1 transition-all duration-300 min-w-0 break-words leading-tight">
+                        <span className="font-heading text-xl md:text-3xl text-[#22332B] group-hover:text-[#A34D20] group-hover:translate-x-1 transition-all duration-300 min-w-0 break-words leading-tight">
                           {c.label}
                         </span>
                       </motion.button>
@@ -128,7 +128,7 @@ export default function Header() {
                               className="group flex items-baseline gap-2 py-1.5 text-left"
                             >
                               <span className="text-[#A34D20]/50 text-sm">—</span>
-                              <span className="font-body text-base text-[#604B38] group-hover:text-[#A34D20] transition-colors duration-300">
+                              <span className="font-body text-base text-[#4E6156] group-hover:text-[#A34D20] transition-colors duration-300">
                                 {ch.label}
                               </span>
                             </button>

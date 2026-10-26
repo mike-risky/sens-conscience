@@ -29,19 +29,19 @@ function DoorCard({ door, index }) {
   return (
     <div
       ref={ref}
-      className={`group p-8 md:p-10 bg-[#FBF5EC] rounded-lg border border-white/10 transition-all duration-700 ${
+      className={`group p-8 md:p-10 bg-white rounded-lg border border-[#D9E5DC] shadow-sm transition-all duration-700 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-      } hover:shadow-xl hover:shadow-black/20 hover:bg-white`}
+      } hover:shadow-xl hover:shadow-[#1F2E26]/10 hover:-translate-y-1`}
       style={{ transitionDelay: `${index * 120}ms` }}
     >
       <div className="w-11 h-11 rounded-full bg-[#A34D20]/15 flex items-center justify-center mb-5 transition-colors duration-300 group-hover:bg-[#A34D20]">
         <Icon size={18} className="text-[#A34D20] transition-colors duration-300 group-hover:text-white" />
       </div>
-      <h3 className="service-card-title font-heading font-medium text-[#3E3227] mb-2 group-hover:text-[#A34D20] transition-colors duration-300">
+      <h3 className="service-card-title font-heading font-medium text-[#22332B] mb-2 group-hover:text-[#A34D20] transition-colors duration-300">
         {door.title}
       </h3>
       <p className="font-body text-sm text-[#A34D20] italic mb-4">{door.lead}</p>
-      <p className="font-body text-sm text-[#604B38] leading-relaxed">{door.text}</p>
+      <p className="font-body text-sm text-[#4E6156] leading-relaxed">{door.text}</p>
     </div>
   );
 }
@@ -56,7 +56,7 @@ export default function AccompagnementsSection() {
   };
 
   return (
-    <section id="accompagnements" className="py-32 md:py-48 bg-[#6C543B]">
+    <section id="accompagnements" className="py-32 md:py-48 bg-[#E8F0E9]">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <div
           ref={ref}
@@ -64,13 +64,13 @@ export default function AccompagnementsSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="font-body text-xs tracking-[0.2em] text-white/70 uppercase mb-4">
+          <p className="font-body text-xs tracking-[0.2em] text-[#2D4A3A] uppercase mb-4">
             Les accompagnements
           </p>
-          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-white mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#1F2E26] mb-6">
             Trois portes d'entrée
           </h2>
-          <p className="font-body text-white/80 text-base md:text-lg leading-relaxed max-w-xl mx-auto">
+          <p className="font-body text-[#4E6156] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
             Coach de vie à Sion, j'accompagne la personne dans sa globalité, au-delà de toute étiquette.
           </p>
         </div>
@@ -86,7 +86,7 @@ export default function AccompagnementsSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="font-body text-white/80 text-sm md:text-base leading-relaxed">
+          <p className="font-body text-[#4E6156] text-sm md:text-base leading-relaxed">
             Ces accompagnements trouvent notamment leur place lors d'une transition, d'un épuisement, de schémas répétitifs ou d'un fonctionnement atypique difficile à réguler.
           </p>
         </div>
@@ -96,21 +96,21 @@ export default function AccompagnementsSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="font-body text-xs tracking-[0.2em] text-white/70 uppercase mb-6">
+          <p className="font-body text-xs tracking-[0.2em] text-[#2D4A3A] uppercase mb-6">
             Mes formats
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-6 sm:gap-10">
             <div className="text-center">
-              <p className="font-heading text-lg md:text-xl text-white mb-1">Séance individuelle</p>
-              <p className="font-body text-sm text-white/80 leading-relaxed max-w-[12rem] mx-auto">Une rencontre pour faire le point.</p>
+              <p className="font-heading text-lg md:text-xl text-[#1F2E26] mb-1">Séance individuelle</p>
+              <p className="font-body text-sm text-[#4E6156] leading-relaxed max-w-[12rem] mx-auto">Une rencontre pour faire le point.</p>
             </div>
             <div className="text-center">
-              <p className="font-heading text-lg md:text-xl text-white mb-1">Plusieurs séances</p>
-              <p className="font-body text-sm text-white/80 leading-relaxed max-w-[12rem] mx-auto">Un accompagnement sur la durée.</p>
+              <p className="font-heading text-lg md:text-xl text-[#1F2E26] mb-1">Plusieurs séances</p>
+              <p className="font-body text-sm text-[#4E6156] leading-relaxed max-w-[12rem] mx-auto">Un accompagnement sur la durée.</p>
             </div>
             <div className="text-center">
-              <p className="font-heading text-lg md:text-xl text-white mb-1">En marchant</p>
-              <p className="font-body text-sm text-white/80 leading-relaxed max-w-[12rem] mx-auto">Au cabinet ou dans la nature.</p>
+              <p className="font-heading text-lg md:text-xl text-[#1F2E26] mb-1">En marchant</p>
+              <p className="font-body text-sm text-[#4E6156] leading-relaxed max-w-[12rem] mx-auto">Au cabinet ou dans la nature.</p>
             </div>
           </div>
         </div>
@@ -123,7 +123,7 @@ export default function AccompagnementsSection() {
         >
           <button
             onClick={() => scrollTo("#contact")}
-            className="px-8 py-3.5 rounded-full bg-[#A34D20] text-white font-body font-medium text-sm hover:bg-[#8C4018] transition-all duration-300"
+            className="px-8 py-3.5 rounded-full bg-white text-[#1F2E26] border border-[#A34D20]/70 font-body font-medium text-sm shadow-md hover:bg-[#FBF5EC] hover:border-[#A34D20] hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
           >
             Échanger avec moi
           </button>

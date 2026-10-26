@@ -29,13 +29,13 @@ export default function OutilsSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="font-body text-xs tracking-[0.2em] text-[#6C543B] uppercase mb-4">
+          <p className="font-body text-xs tracking-[0.2em] text-[#2D4A3A] uppercase mb-4">
             Mes outils
           </p>
-          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#241F1B] mb-4">
+          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#1F2E26] mb-4">
             Avec quoi nous cheminons
           </h2>
-          <p className="font-body text-[#604B38] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
+          <p className="font-body text-[#4E6156] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
             Des repères pratiques, jamais un catalogue de méthodes.
           </p>
         </div>
@@ -48,7 +48,7 @@ export default function OutilsSection() {
           {tools.map((t, i) => (
             <div
               key={i}
-              className="flex items-baseline gap-3 font-body text-sm md:text-base text-[#3E3227] leading-relaxed"
+              className="flex items-baseline gap-3 font-body text-sm md:text-base text-[#22332B] leading-relaxed"
             >
               <span className="text-[#A34D20] shrink-0">—</span>
               <span>{t}</span>
@@ -63,7 +63,7 @@ export default function OutilsSection() {
           }`}
         >
           <p className="font-heading text-2xl md:text-3xl text-[#A34D20] mb-4">L'autonomie.</p>
-          <p className="font-body text-[#604B38] text-base md:text-lg leading-relaxed">
+          <p className="font-body text-[#4E6156] text-base md:text-lg leading-relaxed">
             Que vous retrouviez votre axe sans dépendre de l'accompagnement.
           </p>
         </div>

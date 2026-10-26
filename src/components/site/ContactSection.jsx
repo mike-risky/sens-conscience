@@ -26,13 +26,13 @@ export default function ContactSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="font-body text-xs tracking-[0.2em] text-[#6C543B] uppercase mb-4">
+          <p className="font-body text-xs tracking-[0.2em] text-[#2D4A3A] uppercase mb-4">
             Un premier pas
           </p>
-          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#241F1B] mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#1F2E26] mb-6">
             Contactez-moi
           </h2>
-          <p className="font-body text-[#604B38] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
+          <p className="font-body text-[#4E6156] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
             Vous traversez une transition, vous vous posez des questions ? Écrivez-moi quelques mots, à votre rythme. Je vous réponds personnellement.
           </p>
         </div>
@@ -46,10 +46,10 @@ export default function ContactSection() {
           <div className="space-y-8">
             {offer && (
               <div className="rounded-lg bg-[#EAD9C7] border border-[#D9C1A9] px-5 py-4 text-center">
-                <p className="font-body text-xs text-[#604B38] uppercase tracking-[0.15em] mb-1">
+                <p className="font-body text-xs text-[#4E6156] uppercase tracking-[0.15em] mb-1">
                   Votre demande concerne
                 </p>
-                <p className="font-heading text-xl text-[#241F1B]">{offer.title}</p>
+                <p className="font-heading text-xl text-[#1F2E26]">{offer.title}</p>
               </div>
             )}
             <div className="space-y-5">
@@ -58,8 +58,8 @@ export default function ContactSection() {
                   <Phone size={18} className="text-[#A34D20]" />
                 </div>
                 <div>
-                  <p className="font-body text-xs text-[#604B38] mb-0.5">Téléphone</p>
-                  <a href="tel:+41794446977" className="font-body text-[#241F1B] hover:text-[#A34D20] transition-colors">
+                  <p className="font-body text-xs text-[#4E6156] mb-0.5">Téléphone</p>
+                  <a href="tel:+41794446977" className="font-body text-[#1F2E26] hover:text-[#A34D20] transition-colors">
                     +41 79 444 69 77
                   </a>
                 </div>
@@ -69,8 +69,8 @@ export default function ContactSection() {
                   <Mail size={18} className="text-[#A34D20]" />
                 </div>
                 <div>
-                  <p className="font-body text-xs text-[#604B38] mb-0.5">E-mail</p>
-                  <a href={mailto} className="font-body text-[#241F1B] hover:text-[#A34D20] transition-colors">
+                  <p className="font-body text-xs text-[#4E6156] mb-0.5">E-mail</p>
+                  <a href={mailto} className="font-body text-[#1F2E26] hover:text-[#A34D20] transition-colors">
                     nuray.posse@gmail.com
                   </a>
                 </div>
@@ -82,8 +82,8 @@ export default function ContactSection() {
                   </svg>
                 </div>
                 <div>
-                  <p className="font-body text-xs text-[#604B38] mb-0.5">Instagram</p>
-                  <a href="https://www.instagram.com/nurayc.posse/" target="_blank" rel="noopener noreferrer" className="font-body text-[#241F1B] hover:text-[#A34D20] transition-colors">
+                  <p className="font-body text-xs text-[#4E6156] mb-0.5">Instagram</p>
+                  <a href="https://www.instagram.com/nurayc.posse/" target="_blank" rel="noopener noreferrer" className="font-body text-[#1F2E26] hover:text-[#A34D20] transition-colors">
                     Nuray C. Posse
                   </a>
                 </div>
@@ -93,14 +93,14 @@ export default function ContactSection() {
             <div className="flex flex-col sm:flex-row gap-3 pt-4">
               <a
                 href="tel:+41794446977"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#A34D20] text-white font-body text-sm hover:bg-[#8C4018] transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white text-[#1F2E26] border border-[#A34D20]/70 font-body text-sm shadow-sm hover:bg-[#FBF5EC] hover:border-[#A34D20] hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
               >
                 <Phone size={15} />
                 M'appeler
               </a>
               <a
                 href={mailto}
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#6C543B] text-white font-body text-sm hover:bg-[#54402C] transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white text-[#1F2E26] border border-[#2D4A3A]/40 font-body text-sm shadow-sm hover:bg-[#FBF5EC] hover:border-[#2D4A3A] hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
               >
                 <Mail size={15} />
                 M'écrire
