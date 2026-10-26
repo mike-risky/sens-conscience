@@ -49,7 +49,7 @@ export default function BookSection() {
                 href="https://www.amazon.fr/Lart-pas-trahir-Habiter-lucidit%C3%A9/dp/B0GTRMNT34/ref=asc_df_B0GTRMNT34?mcid=bdc9516d10c4322cb4bc8882a205acab&tag=googshopfr-21&linkCode=df0&hvadid=784704994067&hvpos=&hvnetw=g&hvrand=8091067891497487443&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9187748&hvtargid=pla-2475842791378&psc=1&hvocijid=8091067891497487443-B0GTRMNT34-&hvexpln=0"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#1F2E26] border border-[#A34D20]/70 font-body font-medium text-sm shadow-sm hover:bg-[#FBF5EC] hover:border-[#A34D20] hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#A34D20] text-white border border-[#A34D20] font-body font-medium text-sm shadow-sm hover:bg-[#8F4119] hover:border-[#8F4119] hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
               >
                 Découvrir le livre sur Amazon
                 <ExternalLink size={14} />

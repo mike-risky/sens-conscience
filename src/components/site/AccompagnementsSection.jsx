@@ -123,7 +123,7 @@ export default function AccompagnementsSection() {
         >
           <button
             onClick={() => scrollTo("#contact")}
-            className="px-8 py-3.5 rounded-full bg-white text-[#1F2E26] border border-[#A34D20]/70 font-body font-medium text-sm shadow-md hover:bg-[#FBF5EC] hover:border-[#A34D20] hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+            className="px-8 py-3.5 rounded-full bg-[#A34D20] text-white border border-[#A34D20] font-body font-medium text-sm shadow-md hover:bg-[#8F4119] hover:border-[#8F4119] hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
           >
             Échanger avec moi
           </button>
