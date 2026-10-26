@@ -28,9 +28,9 @@ function PillarCard({ pillar, index }) {
       } hover:shadow-xl hover:shadow-[#241F1B]/10 hover:bg-white/70`}
       style={{ transitionDelay: `${index * 150}ms` }}
     >
-      <div className="w-px h-10 bg-[#4C6355] mx-auto mb-5 transition-colors duration-300 group-hover:bg-[#2F5240]" />
-      <h3 className="font-heading text-xl md:text-2xl text-[#241F1B] mb-3 transition-colors duration-300 group-hover:text-[#2F5240]">{pillar.title}</h3>
-      <p className="font-body text-sm text-[#4E5C50] leading-relaxed">{pillar.text}</p>
+      <div className="w-px h-10 bg-[#6C543B] mx-auto mb-5 transition-colors duration-300 group-hover:bg-[#A34D20]" />
+      <h3 className="font-heading text-xl md:text-2xl text-[#241F1B] mb-3 transition-colors duration-300 group-hover:text-[#A34D20]">{pillar.title}</h3>
+      <p className="font-body text-sm text-[#604B38] leading-relaxed">{pillar.text}</p>
     </div>
   );
 }
@@ -63,13 +63,13 @@ export default function MissionSection() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              <p className="font-body text-xs tracking-[0.2em] text-[#4C6355] uppercase mb-4">
+              <p className="font-body text-xs tracking-[0.2em] text-[#6C543B] uppercase mb-4">
                 Ma mission
               </p>
               <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#241F1B] mb-6">
                 Vous aider à retrouver votre capacité d'agir
               </h2>
-              <p className="font-body text-[#4E5C50] text-base md:text-lg leading-relaxed max-w-xl">
+              <p className="font-body text-[#604B38] text-base md:text-lg leading-relaxed max-w-xl">
                 Vous aider à retrouver votre axe, vos ressources et votre capacité à faire des choix cohérents avec la personne que vous êtes aujourd'hui.
               </p>
             </div>

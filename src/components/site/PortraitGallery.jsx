@@ -31,14 +31,14 @@ export default function PortraitGallery() {
         <button
           onClick={() => go(-1)}
           aria-label="Photo précédente"
-          className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 hover:bg-white text-[#2A342C] flex items-center justify-center shadow transition-colors"
+          className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 hover:bg-white text-[#3E3227] flex items-center justify-center shadow transition-colors"
         >
           <ChevronLeft size={18} />
         </button>
         <button
           onClick={() => go(1)}
           aria-label="Photo suivante"
-          className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 hover:bg-white text-[#2A342C] flex items-center justify-center shadow transition-colors"
+          className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 hover:bg-white text-[#3E3227] flex items-center justify-center shadow transition-colors"
         >
           <ChevronRight size={18} />
         </button>
@@ -50,7 +50,7 @@ export default function PortraitGallery() {
             onClick={() => setI(idx)}
             aria-label={`Photo ${idx + 1}`}
             className={`h-1.5 rounded-full transition-all duration-300 ${
-              idx === i ? "w-8 bg-[#2F5240]" : "w-1.5 bg-[#EAD9C7]"
+              idx === i ? "w-8 bg-[#A34D20]" : "w-1.5 bg-[#EAD9C7]"
             }`}
           />
         ))}

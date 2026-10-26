@@ -28,18 +28,18 @@ export default function BookSection() {
           </div>
 
           <div>
-            <p className="font-body text-xs tracking-[0.2em] text-[#4C6355] uppercase mb-4">
+            <p className="font-body text-xs tracking-[0.2em] text-[#6C543B] uppercase mb-4">
               Le livre
             </p>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#241F1B] mb-2">
               L'art de ne pas se trahir
             </h2>
-            <p className="italic text-xs text-[#4E5C50] mb-8">
+            <p className="italic text-xs text-[#604B38] mb-8">
               Habiter sa vie avec lucidité
             </p>
 
             <div className="mb-10">
-              <p className="font-body text-[#4E5C50] text-base md:text-lg leading-relaxed">
+              <p className="font-body text-[#604B38] text-base md:text-lg leading-relaxed">
                 Une invitation à mieux reconnaître vos besoins et les choix qui vous éloignent parfois de vous-même — pour habiter votre vie avec davantage de lucidité et de fidélité à soi.
               </p>
             </div>
@@ -49,14 +49,14 @@ export default function BookSection() {
                 href="https://www.amazon.fr/Lart-pas-trahir-Habiter-lucidit%C3%A9/dp/B0GTRMNT34/ref=asc_df_B0GTRMNT34?mcid=bdc9516d10c4322cb4bc8882a205acab&tag=googshopfr-21&linkCode=df0&hvadid=784704994067&hvpos=&hvnetw=g&hvrand=8091067891497487443&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9187748&hvtargid=pla-2475842791378&psc=1&hvocijid=8091067891497487443-B0GTRMNT34-&hvexpln=0"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#2F5240] text-white font-body font-medium text-sm hover:bg-[#234032] transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#A34D20] text-white font-body font-medium text-sm hover:bg-[#8C4018] transition-all duration-300"
               >
                 Découvrir le livre sur Amazon
                 <ExternalLink size={14} />
               </a>
             </div>
 
-            <p className="font-body text-xs tracking-[0.2em] text-[#4C6355] uppercase mb-3">
+            <p className="font-body text-xs tracking-[0.2em] text-[#6C543B] uppercase mb-3">
               Disponible également chez
             </p>
             <div className="flex flex-wrap gap-x-6 gap-y-2">
@@ -64,7 +64,7 @@ export default function BookSection() {
                 href="https://www.laliseuse.ch/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 font-body text-sm text-[#2A342C] hover:text-[#2F5240] transition-colors duration-300"
+                className="inline-flex items-center gap-1.5 font-body text-sm text-[#3E3227] hover:text-[#A34D20] transition-colors duration-300"
               >
                 La Liseuse — Sion
                 <ExternalLink size={12} />
@@ -73,7 +73,7 @@ export default function BookSection() {
                 href="https://www.fr.fnac.ch/Conthey/Fnac-Conthey/cl663"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 font-body text-sm text-[#2A342C] hover:text-[#2F5240] transition-colors duration-300"
+                className="inline-flex items-center gap-1.5 font-body text-sm text-[#3E3227] hover:text-[#A34D20] transition-colors duration-300"
               >
                 FNAC — Conthey
                 <ExternalLink size={12} />
@@ -82,7 +82,7 @@ export default function BookSection() {
                 href="https://payot.ch/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 font-body text-sm text-[#2A342C] hover:text-[#2F5240] transition-colors duration-300"
+                className="inline-flex items-center gap-1.5 font-body text-sm text-[#3E3227] hover:text-[#A34D20] transition-colors duration-300"
               >
                 Payot — Sion & Sierre
                 <ExternalLink size={12} />

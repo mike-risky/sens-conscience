@@ -26,13 +26,13 @@ export default function ContactSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="font-body text-xs tracking-[0.2em] text-[#4C6355] uppercase mb-4">
+          <p className="font-body text-xs tracking-[0.2em] text-[#6C543B] uppercase mb-4">
             Un premier pas
           </p>
           <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#241F1B] mb-6">
             Contactez-moi
           </h2>
-          <p className="font-body text-[#4E5C50] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
+          <p className="font-body text-[#604B38] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
             Vous traversez une transition, vous vous posez des questions ? Écrivez-moi quelques mots, à votre rythme. Je vous réponds personnellement.
           </p>
         </div>
@@ -45,8 +45,8 @@ export default function ContactSection() {
         >
           <div className="space-y-8">
             {offer && (
-              <div className="rounded-lg bg-[#EAD9C7] border border-[#C7D4C5] px-5 py-4 text-center">
-                <p className="font-body text-xs text-[#4E5C50] uppercase tracking-[0.15em] mb-1">
+              <div className="rounded-lg bg-[#EAD9C7] border border-[#D9C1A9] px-5 py-4 text-center">
+                <p className="font-body text-xs text-[#604B38] uppercase tracking-[0.15em] mb-1">
                   Votre demande concerne
                 </p>
                 <p className="font-heading text-xl text-[#241F1B]">{offer.title}</p>
@@ -54,36 +54,36 @@ export default function ContactSection() {
             )}
             <div className="space-y-5">
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-[#2F5240]/10 flex items-center justify-center shrink-0">
-                  <Phone size={18} className="text-[#2F5240]" />
+                <div className="w-10 h-10 rounded-full bg-[#A34D20]/10 flex items-center justify-center shrink-0">
+                  <Phone size={18} className="text-[#A34D20]" />
                 </div>
                 <div>
-                  <p className="font-body text-xs text-[#4E5C50] mb-0.5">Téléphone</p>
-                  <a href="tel:+41794446977" className="font-body text-[#241F1B] hover:text-[#2F5240] transition-colors">
+                  <p className="font-body text-xs text-[#604B38] mb-0.5">Téléphone</p>
+                  <a href="tel:+41794446977" className="font-body text-[#241F1B] hover:text-[#A34D20] transition-colors">
                     +41 79 444 69 77
                   </a>
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-[#2F5240]/10 flex items-center justify-center shrink-0">
-                  <Mail size={18} className="text-[#2F5240]" />
+                <div className="w-10 h-10 rounded-full bg-[#A34D20]/10 flex items-center justify-center shrink-0">
+                  <Mail size={18} className="text-[#A34D20]" />
                 </div>
                 <div>
-                  <p className="font-body text-xs text-[#4E5C50] mb-0.5">E-mail</p>
-                  <a href={mailto} className="font-body text-[#241F1B] hover:text-[#2F5240] transition-colors">
+                  <p className="font-body text-xs text-[#604B38] mb-0.5">E-mail</p>
+                  <a href={mailto} className="font-body text-[#241F1B] hover:text-[#A34D20] transition-colors">
                     nuray.posse@gmail.com
                   </a>
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-[#2F5240]/10 flex items-center justify-center shrink-0">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#2F5240]">
+                <div className="w-10 h-10 rounded-full bg-[#A34D20]/10 flex items-center justify-center shrink-0">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#A34D20]">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
                   </svg>
                 </div>
                 <div>
-                  <p className="font-body text-xs text-[#4E5C50] mb-0.5">Instagram</p>
-                  <a href="https://www.instagram.com/nurayc.posse/" target="_blank" rel="noopener noreferrer" className="font-body text-[#241F1B] hover:text-[#2F5240] transition-colors">
+                  <p className="font-body text-xs text-[#604B38] mb-0.5">Instagram</p>
+                  <a href="https://www.instagram.com/nurayc.posse/" target="_blank" rel="noopener noreferrer" className="font-body text-[#241F1B] hover:text-[#A34D20] transition-colors">
                     Nuray C. Posse
                   </a>
                 </div>
@@ -93,14 +93,14 @@ export default function ContactSection() {
             <div className="flex flex-col sm:flex-row gap-3 pt-4">
               <a
                 href="tel:+41794446977"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#2F5240] text-white font-body text-sm hover:bg-[#234032] transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#A34D20] text-white font-body text-sm hover:bg-[#8C4018] transition-all duration-300"
               >
                 <Phone size={15} />
                 M'appeler
               </a>
               <a
                 href={mailto}
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#4C6355] text-white font-body text-sm hover:bg-[#3B4F42] transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#6C543B] text-white font-body text-sm hover:bg-[#54402C] transition-all duration-300"
               >
                 <Mail size={15} />
                 M'écrire
