@@ -5,7 +5,7 @@ const LOGO_WHITE = "https://media.base44.com/images/public/6a545a283c8f895ced7a3
 
 export default function Footer() {
   return (
-    <footer className="bg-[#6C543B] text-white py-16">
+    <footer className="bg-[#4C6355] text-white py-16">
       <div className="max-w-5xl mx-auto px-6 md:px-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
           <div>

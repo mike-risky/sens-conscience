@@ -22,8 +22,8 @@
     /* Charte Sens & Conscience */
     --brand-cream: #FBF5EC;
     --brand-sand: #EAD9C7;
-    --brand-olive: #6C543B;
-    --brand-orange: #A34D20;
+    --brand-olive: #4C6355;
+    --brand-green: #2F5240;
 
     --background: 36 65% 95%;
     --foreground: 27 14% 12%;
@@ -31,19 +31,19 @@
     --card-foreground: 27 14% 12%;
     --popover: 0 0% 100%;
     --popover-foreground: 27 14% 12%;
-    --primary: 21 67% 38%;
+    --primary: 149 27% 25%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 31 29% 33%;
+    --secondary: 144 13% 34%;
     --secondary-foreground: 0 0% 100%;
     --muted: 31 45% 85%;
-    --muted-foreground: 29 26% 30%;
-    --accent: 28 66% 54%;
+    --muted-foreground: 132 12% 30%;
+    --accent: 150 22% 38%;
     --accent-foreground: 27 14% 12%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 30 39% 76%;
     --input: 30 39% 76%;
-    --ring: 21 67% 38%;
+    --ring: 149 27% 25%;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;

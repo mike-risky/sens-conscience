@@ -34,14 +34,14 @@ function DoorCard({ door, index }) {
       } hover:shadow-xl hover:shadow-black/20 hover:bg-white`}
       style={{ transitionDelay: `${index * 120}ms` }}
     >
-      <div className="w-11 h-11 rounded-full bg-[#A34D20]/15 flex items-center justify-center mb-5 transition-colors duration-300 group-hover:bg-[#A34D20]">
-        <Icon size={18} className="text-[#A34D20] transition-colors duration-300 group-hover:text-white" />
+      <div className="w-11 h-11 rounded-full bg-[#2F5240]/15 flex items-center justify-center mb-5 transition-colors duration-300 group-hover:bg-[#2F5240]">
+        <Icon size={18} className="text-[#2F5240] transition-colors duration-300 group-hover:text-white" />
       </div>
-      <h3 className="service-card-title font-heading font-medium text-[#3E3227] mb-2 group-hover:text-[#A34D20] transition-colors duration-300">
+      <h3 className="service-card-title font-heading font-medium text-[#2A342C] mb-2 group-hover:text-[#2F5240] transition-colors duration-300">
         {door.title}
       </h3>
-      <p className="font-body text-sm text-[#A34D20] italic mb-4">{door.lead}</p>
-      <p className="font-body text-sm text-[#604B38] leading-relaxed">{door.text}</p>
+      <p className="font-body text-sm text-[#2F5240] italic mb-4">{door.lead}</p>
+      <p className="font-body text-sm text-[#4E5C50] leading-relaxed">{door.text}</p>
     </div>
   );
 }
@@ -56,7 +56,7 @@ export default function AccompagnementsSection() {
   };
 
   return (
-    <section id="accompagnements" className="py-32 md:py-48 bg-[#6C543B]">
+    <section id="accompagnements" className="py-32 md:py-48 bg-[#4C6355]">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <div
           ref={ref}
@@ -123,7 +123,7 @@ export default function AccompagnementsSection() {
         >
           <button
             onClick={() => scrollTo("#contact")}
-            className="px-8 py-3.5 rounded-full bg-[#A34D20] text-white font-body font-medium text-sm hover:bg-[#8C4018] transition-all duration-300"
+            className="px-8 py-3.5 rounded-full bg-[#2F5240] text-white font-body font-medium text-sm hover:bg-[#234032] transition-all duration-300"
           >
             Échanger avec moi
           </button>

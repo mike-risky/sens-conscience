@@ -34,16 +34,16 @@ function OfferCard({ offer, index, onChoose }) {
   return (
     <div
       ref={ref}
-      className={`group bg-white border border-[#D9C1A9] rounded-lg p-8 md:p-10 shadow-sm hover:shadow-xl hover:shadow-[#241F1B]/10 transition-all duration-700 ${
+      className={`group bg-white border border-[#C7D4C5] rounded-lg p-8 md:p-10 shadow-sm hover:shadow-xl hover:shadow-[#241F1B]/10 transition-all duration-700 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       }`}
       style={{ transitionDelay: `${index * 120}ms` }}
     >
       <div className="flex items-center gap-4 mb-6">
-        <div className="w-11 h-11 shrink-0 rounded-full bg-[#A34D20]/10 flex items-center justify-center">
-          <Icon size={20} className="text-[#A34D20]" />
+        <div className="w-11 h-11 shrink-0 rounded-full bg-[#2F5240]/10 flex items-center justify-center">
+          <Icon size={20} className="text-[#2F5240]" />
         </div>
-        <p className="font-body text-xs tracking-[0.2em] text-[#A34D20] uppercase">
+        <p className="font-body text-xs tracking-[0.2em] text-[#2F5240] uppercase">
           {offer.audience}
         </p>
       </div>
@@ -51,25 +51,25 @@ function OfferCard({ offer, index, onChoose }) {
       <h3 className="font-heading text-2xl md:text-3xl text-[#241F1B] mb-4">
         {offer.title}
       </h3>
-      <p className="inline-block font-body text-sm font-medium text-[#6C543B] bg-[#EAD9C7] rounded-full px-4 py-1.5 mb-6">
+      <p className="inline-block font-body text-sm font-medium text-[#4C6355] bg-[#EAD9C7] rounded-full px-4 py-1.5 mb-6">
         {offer.price}
       </p>
 
       <div className="space-y-4 mb-8">
         {offer.paragraphs.map((p, i) => (
-          <p key={i} className="font-body text-sm md:text-base text-[#604B38] leading-relaxed">
+          <p key={i} className="font-body text-sm md:text-base text-[#4E5C50] leading-relaxed">
             {p}
           </p>
         ))}
       </div>
 
-      <p className="font-body text-sm font-medium text-[#241F1B] border-t border-[#D9C1A9] pt-5 mb-8">
+      <p className="font-body text-sm font-medium text-[#241F1B] border-t border-[#C7D4C5] pt-5 mb-8">
         Sans engagement pour la suite.
       </p>
 
       <button
         onClick={onChoose}
-        className="w-full inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-[#A34D20] text-white font-body font-medium text-sm hover:bg-[#8C4018] transition-all duration-300"
+        className="w-full inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-[#2F5240] text-white font-body font-medium text-sm hover:bg-[#234032] transition-all duration-300"
       >
         {offer.cta}
       </button>
@@ -98,7 +98,7 @@ export default function DiscoverySection() {
           <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#241F1B] mb-6">
             Et si tout commençait par un premier regard&nbsp;?
           </h2>
-          <p className="font-body text-[#604B38] text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
+          <p className="font-body text-[#4E5C50] text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
             Un temps pour prendre du recul, comprendre ce qui se joue et découvrir de nouvelles
             possibilités d'action. Deux approches, sans engagement pour la suite.
           </p>
