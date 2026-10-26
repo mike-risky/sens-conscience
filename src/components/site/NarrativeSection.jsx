@@ -42,7 +42,7 @@ export default function NarrativeSection() {
             Faire l'état des lieux, remonter le fil de votre histoire jusqu'à l'endroit où vous vous êtes quitté, et pas à pas vous ramener vers vous-même — non pas pour devenir quelqu'un d'autre, mais pour retrouver celui ou celle que vous n'avez jamais cessé d'être.
           </p>
 
-          <p className="font-body italic text-[#4E6156] text-base md:text-lg leading-relaxed mt-12">
+          <p className="font-body italic text-[#2D4A3A] text-base md:text-lg leading-relaxed mt-12">
             Si, en lisant ces lignes, vous avez le sentiment qu'elles parlent de vous, alors notre rencontre n'est peut-être pas un hasard.
           </p>
 

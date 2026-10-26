@@ -25,7 +25,7 @@ export default function QuoteSection() {
         <p className="italic text-xs text-[#1F2E26] leading-snug mb-6">
           «&nbsp;L'art de vivre en conscience commence lorsque nous cessons de nous trahir.&nbsp;»
         </p>
-        <p className="font-body text-sm text-[#2D4A3A]/80 tracking-[0.15em] uppercase">
+        <p className="font-body text-sm text-[#2D4A3A] tracking-[0.15em] uppercase">
           Nuray C. Posse
         </p>
       </div>

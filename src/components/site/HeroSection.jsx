@@ -50,7 +50,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.25 }}
-          className="font-body text-sm md:text-base text-[#22332B]/90 leading-relaxed mb-8 max-w-xl mx-auto"
+          className="font-body text-sm md:text-base text-[#22332B] leading-relaxed mb-8 max-w-xl mx-auto"
         >
           Vous traversez une période où votre vie ne vous ressemble plus&nbsp;? Je vous accompagne pour faire le point, retrouver de la clarté et reprendre votre capacité d'agir.
         </motion.p>

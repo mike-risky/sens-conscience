@@ -37,7 +37,7 @@ export default function MarcheSection() {
                 <Armchair size={24} className="text-[#2D4A3A]" />
               </div>
               <h3 className="font-heading text-2xl md:text-3xl text-[#22332B] mb-3">Au cabinet</h3>
-              <p className="font-body text-sm md:text-base text-[#4E6156] leading-relaxed max-w-xs ml-auto">
+              <p className="font-body text-sm md:text-base text-[#2D4A3A] leading-relaxed max-w-xs ml-auto">
                 Certaines rencontres ont besoin d'une table et de silence.
               </p>
             </div>

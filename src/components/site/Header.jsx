@@ -128,7 +128,7 @@ export default function Header() {
                               className="group flex items-baseline gap-2 py-1.5 text-left"
                             >
                               <span className="text-[#A34D20]/50 text-sm">—</span>
-                              <span className="font-body text-base text-[#4E6156] group-hover:text-[#A34D20] transition-colors duration-300">
+                              <span className="font-body text-base text-[#2D4A3A] group-hover:text-[#A34D20] transition-colors duration-300">
                                 {ch.label}
                               </span>
                             </button>

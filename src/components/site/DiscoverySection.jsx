@@ -57,7 +57,7 @@ function OfferCard({ offer, index, onChoose }) {
 
       <div className="space-y-4 mb-8">
         {offer.paragraphs.map((p, i) => (
-          <p key={i} className="font-body text-sm md:text-base text-[#4E6156] leading-relaxed">
+          <p key={i} className="font-body text-sm md:text-base text-[#2D4A3A] leading-relaxed">
             {p}
           </p>
         ))}
@@ -98,7 +98,7 @@ export default function DiscoverySection() {
           <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#1F2E26] mb-6">
             Et si tout commençait par un premier regard&nbsp;?
           </h2>
-          <p className="font-body text-[#4E6156] text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
+          <p className="font-body text-[#2D4A3A] text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
             Un temps pour prendre du recul, comprendre ce qui se joue et découvrir de nouvelles
             possibilités d'action. Deux approches, sans engagement pour la suite.
           </p>

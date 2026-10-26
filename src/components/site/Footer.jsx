@@ -13,33 +13,33 @@ export default function Footer() {
             <p className="font-body text-sm text-[#2D4A3A]">Coach de vie à Sion</p>
           </div>
           <div>
-            <p className="font-body text-xs tracking-[0.15em] text-[#2D4A3A]/70 uppercase mb-4">Contact</p>
+            <p className="font-body text-xs tracking-[0.15em] text-[#2D4A3A] uppercase mb-4">Contact</p>
             <div className="space-y-2">
-              <a href="tel:+41794446977" className="block font-body text-sm text-[#2D4A3A]/80 hover:text-[#A34D20] transition-colors">
+              <a href="tel:+41794446977" className="block font-body text-sm text-[#2D4A3A] hover:text-[#A34D20] transition-colors">
                 +41 79 444 69 77
               </a>
-              <a href="mailto:nuray.posse@gmail.com" className="block font-body text-sm text-[#2D4A3A]/80 hover:text-[#A34D20] transition-colors">
+              <a href="mailto:nuray.posse@gmail.com" className="block font-body text-sm text-[#2D4A3A] hover:text-[#A34D20] transition-colors">
                 nuray.posse@gmail.com
               </a>
             </div>
           </div>
           <div>
-            <p className="font-body text-xs tracking-[0.15em] text-[#2D4A3A]/70 uppercase mb-4">Liens</p>
+            <p className="font-body text-xs tracking-[0.15em] text-[#2D4A3A] uppercase mb-4">Liens</p>
             <div className="space-y-2">
-              <a href="https://www.instagram.com/nurayc.posse/" target="_blank" rel="noopener noreferrer" className="block font-body text-sm text-[#2D4A3A]/80 hover:text-[#A34D20] transition-colors">
+              <a href="https://www.instagram.com/nurayc.posse/" target="_blank" rel="noopener noreferrer" className="block font-body text-sm text-[#2D4A3A] hover:text-[#A34D20] transition-colors">
                 Instagram
               </a>
-              <Link to="/mentions-legales" className="block font-body text-sm text-[#2D4A3A]/80 hover:text-[#A34D20] transition-colors">
+              <Link to="/mentions-legales" className="block font-body text-sm text-[#2D4A3A] hover:text-[#A34D20] transition-colors">
                 Mentions légales
               </Link>
-              <Link to="/politique-de-confidentialite" className="block font-body text-sm text-[#2D4A3A]/80 hover:text-[#A34D20] transition-colors">
+              <Link to="/politique-de-confidentialite" className="block font-body text-sm text-[#2D4A3A] hover:text-[#A34D20] transition-colors">
                 Politique de confidentialité
               </Link>
             </div>
           </div>
         </div>
         <div className="border-t border-[#2D4A3A]/15 pt-8 text-center">
-          <p className="font-body text-xs text-[#2D4A3A]/70">
+          <p className="font-body text-xs text-[#2D4A3A]">
             © 2026 Sens & Conscience — Tous droits réservés.
           </p>
         </div>

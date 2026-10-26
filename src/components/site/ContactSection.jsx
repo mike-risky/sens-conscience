@@ -32,7 +32,7 @@ export default function ContactSection() {
           <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#1F2E26] mb-6">
             Contactez-moi
           </h2>
-          <p className="font-body text-[#4E6156] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
+          <p className="font-body text-[#2D4A3A] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
             Vous traversez une transition, vous vous posez des questions ? Écrivez-moi quelques mots, à votre rythme. Je vous réponds personnellement.
           </p>
         </div>
@@ -46,7 +46,7 @@ export default function ContactSection() {
           <div className="space-y-8">
             {offer && (
               <div className="rounded-lg bg-[#EAD9C7] border border-[#D9C1A9] px-5 py-4 text-center">
-                <p className="font-body text-xs text-[#4E6156] uppercase tracking-[0.15em] mb-1">
+                <p className="font-body text-xs text-[#2D4A3A] uppercase tracking-[0.15em] mb-1">
                   Votre demande concerne
                 </p>
                 <p className="font-heading text-xl text-[#1F2E26]">{offer.title}</p>
@@ -58,7 +58,7 @@ export default function ContactSection() {
                   <Phone size={18} className="text-[#A34D20]" />
                 </div>
                 <div>
-                  <p className="font-body text-xs text-[#4E6156] mb-0.5">Téléphone</p>
+                  <p className="font-body text-xs text-[#2D4A3A] mb-0.5">Téléphone</p>
                   <a href="tel:+41794446977" className="font-body text-[#1F2E26] hover:text-[#A34D20] transition-colors">
                     +41 79 444 69 77
                   </a>
@@ -69,7 +69,7 @@ export default function ContactSection() {
                   <Mail size={18} className="text-[#A34D20]" />
                 </div>
                 <div>
-                  <p className="font-body text-xs text-[#4E6156] mb-0.5">E-mail</p>
+                  <p className="font-body text-xs text-[#2D4A3A] mb-0.5">E-mail</p>
                   <a href={mailto} className="font-body text-[#1F2E26] hover:text-[#A34D20] transition-colors">
                     nuray.posse@gmail.com
                   </a>
@@ -82,7 +82,7 @@ export default function ContactSection() {
                   </svg>
                 </div>
                 <div>
-                  <p className="font-body text-xs text-[#4E6156] mb-0.5">Instagram</p>
+                  <p className="font-body text-xs text-[#2D4A3A] mb-0.5">Instagram</p>
                   <a href="https://www.instagram.com/nurayc.posse/" target="_blank" rel="noopener noreferrer" className="font-body text-[#1F2E26] hover:text-[#A34D20] transition-colors">
                     Nuray C. Posse
                   </a>

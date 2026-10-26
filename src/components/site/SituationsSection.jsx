@@ -41,7 +41,7 @@ export default function SituationsSection() {
           <p className="font-body text-xs tracking-[0.2em] text-[#2D4A3A] uppercase mb-4">
             Quand la vie ne ressemble plus à ce que vous aviez imaginé
           </p>
-          <p className="font-body text-[#4E6156] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
+          <p className="font-body text-[#2D4A3A] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
             Il arrive que l'on perde ses repères, son énergie, le sentiment d'être pleinement soi-même.
           </p>
         </div>

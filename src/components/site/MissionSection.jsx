@@ -30,7 +30,7 @@ function PillarCard({ pillar, index }) {
     >
       <div className="w-px h-10 bg-[#2D4A3A] mx-auto mb-5 transition-colors duration-300 group-hover:bg-[#A34D20]" />
       <h3 className="font-heading text-xl md:text-2xl text-[#1F2E26] mb-3 transition-colors duration-300 group-hover:text-[#A34D20]">{pillar.title}</h3>
-      <p className="font-body text-sm text-[#4E6156] leading-relaxed">{pillar.text}</p>
+      <p className="font-body text-sm text-[#2D4A3A] leading-relaxed">{pillar.text}</p>
     </div>
   );
 }
@@ -69,7 +69,7 @@ export default function MissionSection() {
               <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#1F2E26] mb-6">
                 Vous aider à retrouver votre capacité d'agir
               </h2>
-              <p className="font-body text-[#4E6156] text-base md:text-lg leading-relaxed max-w-xl">
+              <p className="font-body text-[#2D4A3A] text-base md:text-lg leading-relaxed max-w-xl">
                 Vous aider à retrouver votre axe, vos ressources et votre capacité à faire des choix cohérents avec la personne que vous êtes aujourd'hui.
               </p>
             </div>
