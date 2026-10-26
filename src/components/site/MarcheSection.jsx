@@ -20,10 +20,10 @@ export default function MarcheSection() {
   return (
     <section id="marche" className="bg-white">
       <div className="max-w-3xl mx-auto px-6 md:px-10 pt-28 md:pt-40 text-center">
-        <p className="font-body text-xs tracking-[0.2em] text-[#87856C] uppercase mb-3">
+        <p className="font-body text-xs tracking-[0.2em] text-[#6C543B] uppercase mb-3">
           Une modalité d'accompagnement
         </p>
-        <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#2C2C2C] mb-4">
+        <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#241F1B] mb-4">
           Au cabinet ou en marchant
         </h2>
       </div>
@@ -31,13 +31,13 @@ export default function MarcheSection() {
       <div ref={targetRef} style={{ height: "220vh" }} className="relative">
         <div className="sticky top-0 h-screen relative overflow-hidden">
           {/* Base — Au cabinet (sable) */}
-          <div className="absolute inset-0 bg-[#D6CDC0] flex items-center">
+          <div className="absolute inset-0 bg-[#EAD9C7] flex items-center">
             <div className="w-1/2 ml-auto pr-10 md:pr-24 text-right">
               <div className="inline-flex w-14 h-14 rounded-full bg-white/60 items-center justify-center mb-5">
-                <Armchair size={24} className="text-[#87856C]" />
+                <Armchair size={24} className="text-[#6C543B]" />
               </div>
-              <h3 className="font-heading text-2xl md:text-3xl text-[#4a4838] mb-3">Au cabinet</h3>
-              <p className="font-body text-sm md:text-base text-[#5a5848] leading-relaxed max-w-xs ml-auto">
+              <h3 className="font-heading text-2xl md:text-3xl text-[#3E3227] mb-3">Au cabinet</h3>
+              <p className="font-body text-sm md:text-base text-[#604B38] leading-relaxed max-w-xs ml-auto">
                 Certaines rencontres ont besoin d'une table et de silence.
               </p>
             </div>
@@ -46,7 +46,7 @@ export default function MarcheSection() {
           {/* Overlay — En marchant (olive), révélé de gauche à droite */}
           <motion.div
             style={{ clipPath: clipInset }}
-            className="absolute inset-0 bg-[#87856C]"
+            className="absolute inset-0 bg-[#6C543B]"
           >
             <div className="w-screen h-full flex items-center">
               <div className="w-1/2 pl-10 md:pl-24 text-left">
@@ -71,7 +71,7 @@ export default function MarcheSection() {
 
           {/* Synthèse — toujours lisible, centrée en bas */}
           <div className="absolute bottom-12 md:bottom-16 left-0 right-0 px-6 text-center pointer-events-none">
-            <p className="font-body text-sm md:text-base text-[#2C2C2C]/80 leading-relaxed max-w-xl mx-auto bg-white/70 backdrop-blur-sm rounded-full px-6 py-2.5 inline-block">
+            <p className="font-body text-sm md:text-base text-[#241F1B]/80 leading-relaxed max-w-xl mx-auto bg-white/70 backdrop-blur-sm rounded-full px-6 py-2.5 inline-block">
               Lorsque cela fait sens, l'accompagnement peut se poursuivre en marchant dans la nature.
             </p>
           </div>

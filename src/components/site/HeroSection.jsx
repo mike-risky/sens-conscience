@@ -20,7 +20,7 @@ export default function HeroSection() {
           loading="eager"
           className="w-full h-full object-cover scale-105 animate-[slowZoom_30s_ease-in-out_infinite_alternate]"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#3A2E22]/45 via-[#3A2E22]/25 to-[#FDF6EC]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#241F1B]/45 via-[#241F1B]/25 to-[#FBF5EC]" />
       </div>
 
       <div className="relative z-10 max-w-3xl mx-auto px-6 text-center pt-2 pb-10">
@@ -68,7 +68,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="italic text-white text-sm md:text-base leading-relaxed mb-12 max-w-2xl mx-auto bg-[#3A2E22]/55 backdrop-blur-md rounded-2xl px-8 py-6 shadow-lg shadow-black/20"
+          className="italic text-white text-sm md:text-base leading-relaxed mb-12 max-w-2xl mx-auto bg-[#241F1B]/55 backdrop-blur-md rounded-2xl px-8 py-6 shadow-lg shadow-black/20"
         >
           «&nbsp;Nous naissons une première fois dans les circonstances. Osons renaître une seconde fois, en conscience.&nbsp;»
         </motion.blockquote>
@@ -81,13 +81,13 @@ export default function HeroSection() {
         >
           <button
             onClick={() => scrollTo("#contact")}
-            className="px-8 py-3.5 rounded-full bg-[#C07847] text-white font-body font-medium text-sm hover:bg-[#a8663a] transition-all duration-300 shadow-lg shadow-[#C07847]/30"
+            className="px-8 py-3.5 rounded-full bg-[#A34D20] text-white font-body font-medium text-sm hover:bg-[#8C4018] transition-all duration-300 shadow-lg shadow-[#A34D20]/30"
           >
             Échanger avec moi
           </button>
           <button
             onClick={() => scrollTo("#approche")}
-            className="px-8 py-3.5 rounded-full bg-[#87856C] text-white font-body font-medium text-sm hover:bg-[#6e6c57] transition-all duration-300"
+            className="px-8 py-3.5 rounded-full bg-[#6C543B] text-white font-body font-medium text-sm hover:bg-[#54402C] transition-all duration-300"
           >
             Découvrir mon approche
           </button>

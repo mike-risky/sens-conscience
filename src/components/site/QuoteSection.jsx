@@ -14,7 +14,7 @@ export default function QuoteSection() {
           alt="Lac alpin baigné de lumière dorée près de Sion, évoquant la sérénité et la clarté"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-[#3A2E22]/40" />
+        <div className="absolute inset-0 bg-[#241F1B]/40" />
       </div>
       <div
         ref={ref}

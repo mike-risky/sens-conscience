@@ -2,6 +2,7 @@ import React from "react";
 import Header from "@/components/site/Header";
 import ScrollProgress from "@/components/site/ScrollProgress";
 import HeroSection from "@/components/site/HeroSection";
+import DiscoverySection from "@/components/site/DiscoverySection";
 import NarrativeSection from "@/components/site/NarrativeSection";
 import SituationsSection from "@/components/site/SituationsSection";
 import MissionSection from "@/components/site/MissionSection";
@@ -18,10 +19,11 @@ import ImageBand from "@/components/site/ImageBand";
 
 export default function Home() {
   return (
-    <div className="bg-[#F2EEE4] min-h-screen">
+    <div className="bg-[#FBF5EC] min-h-screen">
       <ScrollProgress />
       <Header />
       <HeroSection />
+      <DiscoverySection />
       <NarrativeSection />
       <SituationsSection />
       <MissionSection />

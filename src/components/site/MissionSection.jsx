@@ -25,12 +25,12 @@ function PillarCard({ pillar, index }) {
       ref={ref}
       className={`group text-center rounded-lg p-6 transition-all duration-700 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-      } hover:shadow-xl hover:shadow-[#3A2E22]/10 hover:bg-white/70`}
+      } hover:shadow-xl hover:shadow-[#241F1B]/10 hover:bg-white/70`}
       style={{ transitionDelay: `${index * 150}ms` }}
     >
-      <div className="w-px h-10 bg-[#87856C] mx-auto mb-5 transition-colors duration-300 group-hover:bg-[#C07847]" />
-      <h3 className="font-heading text-xl md:text-2xl text-[#2C2C2C] mb-3 transition-colors duration-300 group-hover:text-[#C07847]">{pillar.title}</h3>
-      <p className="font-body text-sm text-[#5d5648] leading-relaxed">{pillar.text}</p>
+      <div className="w-px h-10 bg-[#6C543B] mx-auto mb-5 transition-colors duration-300 group-hover:bg-[#A34D20]" />
+      <h3 className="font-heading text-xl md:text-2xl text-[#241F1B] mb-3 transition-colors duration-300 group-hover:text-[#A34D20]">{pillar.title}</h3>
+      <p className="font-body text-sm text-[#604B38] leading-relaxed">{pillar.text}</p>
     </div>
   );
 }
@@ -40,7 +40,7 @@ export default function MissionSection() {
   const [imgRef, imgVisible] = useScrollReveal();
 
   return (
-    <section className="py-32 md:py-48 bg-[#D6CDC0]/50">
+    <section className="py-32 md:py-48 bg-[#EAD9C7]/50">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <div
@@ -52,7 +52,7 @@ export default function MissionSection() {
             <img
               src={MISSION_IMG}
               alt="Nature morte chaleureuse au soleil du matin près de Sion — la clarté retrouvée"
-              className="w-full max-w-md mx-auto lg:mx-0 rounded-lg object-cover aspect-[4/5] shadow-lg shadow-[#3A2E22]/10"
+              className="w-full max-w-md mx-auto lg:mx-0 rounded-lg object-cover aspect-[4/5] shadow-lg shadow-[#241F1B]/10"
             />
           </div>
 
@@ -63,13 +63,13 @@ export default function MissionSection() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              <p className="font-body text-xs tracking-[0.2em] text-[#87856C] uppercase mb-4">
+              <p className="font-body text-xs tracking-[0.2em] text-[#6C543B] uppercase mb-4">
                 Ma mission
               </p>
-              <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#2C2C2C] mb-6">
+              <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#241F1B] mb-6">
                 Vous aider à retrouver votre capacité d'agir
               </h2>
-              <p className="font-body text-[#5d5648] text-base md:text-lg leading-relaxed max-w-xl">
+              <p className="font-body text-[#604B38] text-base md:text-lg leading-relaxed max-w-xl">
                 Vous aider à retrouver votre axe, vos ressources et votre capacité à faire des choix cohérents avec la personne que vous êtes aujourd'hui.
               </p>
             </div>
