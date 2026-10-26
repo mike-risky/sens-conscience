@@ -56,7 +56,7 @@ export default function AccompagnementsSection() {
   };
 
   return (
-    <section id="accompagnements" className="py-32 md:py-48 bg-[#E8F0E9]">
+    <section id="accompagnements" className="py-32 md:py-48 bg-[#2D4A3A]">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <div
           ref={ref}
@@ -64,13 +64,13 @@ export default function AccompagnementsSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="font-body text-xs tracking-[0.2em] text-[#2D4A3A] uppercase mb-4">
+          <p className="font-body text-xs tracking-[0.2em] text-[#EAD9C7] uppercase mb-4">
             Les accompagnements
           </p>
-          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#1F2E26] mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-light text-[#FBF5EC] mb-6">
             Trois portes d'entrée
           </h2>
-          <p className="font-body text-[#2D4A3A] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
+          <p className="font-body text-[#EAD9C7] text-base md:text-lg leading-relaxed max-w-xl mx-auto">
             Coach de vie à Sion, j'accompagne la personne dans sa globalité, au-delà de toute étiquette.
           </p>
         </div>
@@ -86,7 +86,7 @@ export default function AccompagnementsSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="font-body text-[#2D4A3A] text-sm md:text-base leading-relaxed">
+          <p className="font-body text-[#EAD9C7] text-sm md:text-base leading-relaxed">
             Ces accompagnements trouvent notamment leur place lors d'une transition, d'un épuisement, de schémas répétitifs ou d'un fonctionnement atypique difficile à réguler.
           </p>
         </div>
@@ -96,21 +96,21 @@ export default function AccompagnementsSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="font-body text-xs tracking-[0.2em] text-[#2D4A3A] uppercase mb-6">
+          <p className="font-body text-xs tracking-[0.2em] text-[#EAD9C7] uppercase mb-6">
             Mes formats
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-6 sm:gap-10">
             <div className="text-center">
-              <p className="font-heading text-lg md:text-xl text-[#1F2E26] mb-1">Séance individuelle</p>
-              <p className="font-body text-sm text-[#2D4A3A] leading-relaxed max-w-[12rem] mx-auto">Une rencontre pour faire le point.</p>
+              <p className="font-heading text-lg md:text-xl text-[#FBF5EC] mb-1">Séance individuelle</p>
+              <p className="font-body text-sm text-[#EAD9C7] leading-relaxed max-w-[12rem] mx-auto">Une rencontre pour faire le point.</p>
             </div>
             <div className="text-center">
-              <p className="font-heading text-lg md:text-xl text-[#1F2E26] mb-1">Plusieurs séances</p>
-              <p className="font-body text-sm text-[#2D4A3A] leading-relaxed max-w-[12rem] mx-auto">Un accompagnement sur la durée.</p>
+              <p className="font-heading text-lg md:text-xl text-[#FBF5EC] mb-1">Plusieurs séances</p>
+              <p className="font-body text-sm text-[#EAD9C7] leading-relaxed max-w-[12rem] mx-auto">Un accompagnement sur la durée.</p>
             </div>
             <div className="text-center">
-              <p className="font-heading text-lg md:text-xl text-[#1F2E26] mb-1">En marchant</p>
-              <p className="font-body text-sm text-[#2D4A3A] leading-relaxed max-w-[12rem] mx-auto">Au cabinet ou dans la nature.</p>
+              <p className="font-heading text-lg md:text-xl text-[#FBF5EC] mb-1">En marchant</p>
+              <p className="font-body text-sm text-[#EAD9C7] leading-relaxed max-w-[12rem] mx-auto">Au cabinet ou dans la nature.</p>
             </div>
           </div>
         </div>
