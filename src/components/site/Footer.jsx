@@ -42,6 +42,9 @@ export default function Footer() {
           <p className="font-body text-xs text-[#EAD9C7]">
             © 2026 Sens & Conscience — Tous droits réservés.
           </p>
+          <p className="font-body text-xs text-[#EAD9C7] mt-2">
+            Made with <span className="text-[#D7833B]" aria-label="love">♥</span> by{" "}<a href="https://smafe.ch" target="_blank" rel="noopener" className="hover:text-[#D7833B] transition-colors">Smafe</a>
+          </p>
         </div>
       </div>
     </footer>
